@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { SubNavBarComponent } from './shared/sub-nav-bar/sub-nav-bar.component';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { PopupNavBarComponent } from './shared/popup-nav-bar/popup-nav-bar.component';
 import { ButtonColoredComponent } from './shared/button-colored/button-colored.component';
 import { ButtonBasicComponent } from './shared/button-basic/button-basic.component';
