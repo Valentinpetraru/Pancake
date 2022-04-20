@@ -32,6 +32,7 @@ import { CardHomepageComponent } from './shared/card-homepage/card-homepage.comp
 import { CardTradeComponent } from './shared/card-trade/card-trade.component';
 import { CardPredictionComponent } from './shared/card-prediction/card-prediction.component';
 import { CardCollectionComponent } from './shared/card-collection/card-collection.component';
+import { SettingsComponent } from './shared/settings/settings.component';
 
 
 
@@ -70,6 +71,7 @@ import { CardCollectionComponent } from './shared/card-collection/card-collectio
     CardTradeComponent,
     CardPredictionComponent,
     CardCollectionComponent,
+    SettingsComponent,
     
   ],
   imports: [
