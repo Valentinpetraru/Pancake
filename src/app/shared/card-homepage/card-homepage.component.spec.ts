@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CardHomepageComponent } from './card-homepage.component';
 
 describe('CardHomepageComponent', () => {

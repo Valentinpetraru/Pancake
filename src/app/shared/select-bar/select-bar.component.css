@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Select bar in white state */
+
+.select_bar_pancake {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+
+.select_bar_pancake input{
+    background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    position: relative;
+    color: rgb(40, 13, 95);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 100%;
+    border: 1px solid rgb(215, 202, 236);
+}
+
+.select_bar_pancake input:focus {
+    box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+     rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+
+/* Select bar in dark state */
+
+.darkmode {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.darkmode input {
+    background-color: rgb(55, 47, 71);
+    border-radius: 16px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    color: rgb(244, 238, 255);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 100%;
+    border: 1px solid rgb(38, 33, 48);
+}
+
+
+.darkmode input:focus {
+    box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+     rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
