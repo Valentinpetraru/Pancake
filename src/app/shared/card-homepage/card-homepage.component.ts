@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
+
 @Component({
   selector: 'cake-card-homepage',
   templateUrl: './card-homepage.component.html',
@@ -13,6 +14,10 @@ export class CardHomepageComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
+ 
+   
+  
 
   homepageCard = {
 
@@ -31,11 +36,26 @@ export class CardHomepageComponent implements OnInit {
     card3:{
       title:"$6.7 bilion",
       h2Title: "staked",
-      pFooter:"total Value Locked",
+      pFooter:"Total Value Locked",
     }
 
   }
+
   
+  arrayCard = Object.values(this.homepageCard);
+
+  getColor(colored: any):any {
+    switch(colored) {
+      case 'users':
+        return 'rgb(154, 106, 255)';
+      
+      case 'traders':
+        return 'rgb(31, 199, 212)';
+      
+      case 'staked':
+        return 'rgb(237, 75, 158)';
+    }
+  };
 
 }
 

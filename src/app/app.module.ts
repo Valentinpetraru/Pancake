@@ -33,6 +33,7 @@ import { CardTradeComponent } from './shared/card-trade/card-trade.component';
 import { CardPredictionComponent } from './shared/card-prediction/card-prediction.component';
 import { CardCollectionComponent } from './shared/card-collection/card-collection.component';
 import { SettingsComponent } from './shared/settings/settings.component';
+import { ConnectWalletComponent } from './shared/connect-wallet/connect-wallet.component';
 
 
 
@@ -72,6 +73,7 @@ import { SettingsComponent } from './shared/settings/settings.component';
     CardPredictionComponent,
     CardCollectionComponent,
     SettingsComponent,
+    ConnectWalletComponent,
     
   ],
   imports: [
