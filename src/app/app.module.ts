@@ -1,81 +1,78 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './core/nav-bar/nav-bar.component';
-import { FooterComponent } from './core/footer/footer.component';
-import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
-import { PopupNavBarComponent } from './shared/popup-nav-bar/popup-nav-bar.component';
-import { ButtonColoredComponent } from './shared/button-colored/button-colored.component';
-import { ButtonBasicComponent } from './shared/button-basic/button-basic.component';
-import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import { BlogsComponent } from './views/blogs/blogs.component';
+import { DocsComponent } from './views/docs/docs.component';
+import { IfoComponent } from './views/ifo/ifo.component';
+import { InfoComponent } from './views/info/info.component';
+import { LeaderbordComponent } from './views/leaderbord/leaderbord.component';
+import { VotingComponent } from './views/voting/voting.component';
+import { FarmsComponent } from './views/farms/farms.component';
+import { PoolsComponent } from './views/pools/pools.component';
+import { ActivityComponent } from './views/activity/activity.component';
+import { CollectionsComponent } from './views/collections/collections.component';
+import { OverviewComponent } from './views/overview/overview.component';
+import { LimitComponent } from './views/limit/limit.component';
+import { LiquidityComponent } from './views/liquidity/liquidity.component';
+import { PerpetualComponent } from './views/perpetual/perpetual.component';
+import { SwapComponent } from './views/swap/swap.component';
+import { LotteryComponent } from './views/lottery/lottery.component';
+import { PredictionComponent } from './views/prediction/prediction.component';
+import { TradingCompetitionComponent } from './views/trading-competition/trading-competition.component';
+import { SettingsComponent } from './shared/settings/settings.component';
 import { SelectBarComponent } from './shared/select-bar/select-bar.component';
-import { HomepageComponent } from './views/homepage/homepage.component';
-import { SwapComponent } from './views/trade/swap/swap.component';
-import { LimitComponent } from './views/trade/limit/limit.component';
-import { LiquidityComponent } from './views/trade/liquidity/liquidity.component';
-import { PerpetualComponent } from './views/trade/perpetual/perpetual.component';
-import { FarmsComponent } from './views/earn/farms/farms.component';
-import { PoolsComponent } from './views/earn/pools/pools.component';
-import { TradingCompetitionComponent } from './views/win/trading-competition/trading-competition.component';
-import { PredictionComponent } from './views/win/prediction/prediction.component';
-import { LotteryComponent } from './views/win/lottery/lottery.component';
-import { OverviewComponent } from './views/nft/overview/overview.component';
-import { CollectionsComponent } from './views/nft/collections/collections.component';
-import { ActivityComponent } from './views/nft/activity/activity.component';
-import { InfoComponent } from './views/dots/info/info.component';
-import { IfoComponent } from './views/dots/ifo/ifo.component';
-import { VotingComponent } from './views/dots/voting/voting.component';
-import { LeaderbordComponent } from './views/dots/leaderbord/leaderbord.component';
-import { BlogsComponent } from './views/dots/blogs/blogs.component';
-import { DocsComponent } from './views/dots/docs/docs.component';
-import { CardHomepageComponent } from './shared/card-homepage/card-homepage.component';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import { PopupNavBarComponent } from './shared/popup-nav-bar/popup-nav-bar.component';
 import { CardTradeComponent } from './shared/card-trade/card-trade.component';
 import { CardPredictionComponent } from './shared/card-prediction/card-prediction.component';
+import { CardHomepageComponent } from './shared/card-homepage/card-homepage.component';
 import { CardCollectionComponent } from './shared/card-collection/card-collection.component';
-import { SettingsComponent } from './shared/settings/settings.component';
-
-
-
+import { ButtonBasicComponent } from './shared/button-basic/button-basic.component';
+import { ButtonConnectComponent } from './shared/button-connect/button-connect.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    FooterComponent,
-    SubNavBarComponent,
-    PopupNavBarComponent,
-    ButtonColoredComponent,
-    ButtonBasicComponent,
-    SearchBarComponent,
-    SelectBarComponent,
-    HomepageComponent,
-    SwapComponent,
+    BlogsComponent,
+    DocsComponent,
+    IfoComponent,
+    InfoComponent,
+    LeaderbordComponent,
+    VotingComponent,
+    FarmsComponent,
+    PoolsComponent,
+    ActivityComponent,
+    CollectionsComponent,
+    OverviewComponent,
     LimitComponent,
     LiquidityComponent,
     PerpetualComponent,
-    FarmsComponent,
-    PoolsComponent,
-    TradingCompetitionComponent,
-    PredictionComponent,
+    SwapComponent,
     LotteryComponent,
-    OverviewComponent,
-    CollectionsComponent,
-    ActivityComponent,
-    InfoComponent,
-    IfoComponent,
-    VotingComponent,
-    LeaderbordComponent,
-    BlogsComponent,
-    DocsComponent,
-    CardHomepageComponent,
+    PredictionComponent,
+    TradingCompetitionComponent,
+    SettingsComponent,
+    SelectBarComponent,
+    SearchBarComponent,
+    PopupNavBarComponent,
     CardTradeComponent,
     CardPredictionComponent,
+    CardHomepageComponent,
     CardCollectionComponent,
-    SettingsComponent,
-    
+    ButtonBasicComponent,
+    ButtonConnectComponent,
+    FooterComponent,
+    NavBarComponent,
+    SubNavBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
