@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Kanit, sans-serif;
+}
+
+:root{
+    --navbar-color-light: rgb(255, 255, 255);
+    --navbar-border-bottom-color-light: rgb(231, 227, 235);
+    --navbar-icons-color-light: rgb(122, 110, 170);
+    --primary-shape-color-light: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);  /*sfumatura celeste*/
+    --secondary-shape-color-light: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);  /*sfumatura viola*/
+    --third-shape-color-light:linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%); /*sfumatura viola-celeste*/
+    --fourth-shape-color-light:linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%); /*sfumatura blu*/
+    --end-shadow-violet-color-light:rgb(216, 203, 237); /*colore svg fine sfumatura viola*/
+    --text-h2-color-light: rgb(40, 13, 95);
+    --background-contenitore-cards-giallo-viola-homepage-color-light: rgba(255, 255, 255, 0.6);
+    --toggle-background-color-light:rgb(189, 194, 196);
+    --sun-fill-color-light:rgb(255, 178, 55);
+    --tollerance-input-color-light:rgb(238, 234, 244);
+    --tollerance-input--border-color-light:rgb(215, 202, 236);
+    --defaul-input-color-light:rgb(239, 244, 245);
+    --liquidity-middle-container-color-light:rgb(238, 238, 238);
+    --harvest-background-color-light:rgb(233, 234, 235);
+    --farms-shape-color-light:linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+    --subnavbar-background-color-light:rgba(255, 255, 255, 0.7);
+    --trading-shape-color-light: linear-gradient(284.18deg, rgb(9, 76, 183) 21.82%, rgb(18, 40, 126) 65.31%, rgb(40, 13, 95) 102.08%);
+    --score-shape-color-light:linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+    --finished-shape-color-light:radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+    --team-ranks-background-color-light:rgb(250, 249, 250);
+
+    
+    
+    --navbar-color-dark: rgb(39, 38, 44);
+    --navbar-border-bottom-color-dark:  rgb(56, 50, 65);
+    --navbar-icons-color-dark: rgb(184, 173, 210);
+    --primary-shape-color-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%); 
+    --secondary-shape-color-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+    --third-shape-color-dark:linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%);
+    --fourth-shape-color-dark:linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
+    --farms-shape-color-dark:linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+    --end-shadow-violet-color-dark: rgb(32, 19, 53);
+    --text-h2-color-dark: rgb(244, 238, 255);
+    --background-contenitore-cards-giallo-viola-homepage-color-dark:rgba(8, 6, 11, 0.6);
+    --toggle-background-color-dark:rgb(102, 97, 113);
+    --sun-fill-color-dark:rgb(39, 38, 44);
+    --tollerance-input-color-dark:rgb(55, 47, 71);
+    --tollerance-input--border-color-dark:rgb(38, 33, 48);
+    --defaul-input-color-dark:rgb(53, 53, 71);
+    --liquidity-middle-container-color-dark:rgb(16, 12, 24);
+    --harvest-background-color-dark:rgb(60, 55, 66);
+    --farms-shape-color-dark: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+    --subnavbar-background-color-dark: rgba(39, 38, 44, 0.7);
+    --trading-shape-color-dark: linear-gradient(284.18deg, rgb(9, 76, 183) 21.82%, rgb(18, 40, 126) 65.31%, rgb(40, 13, 95) 102.08%);
+    --score-shape-color-dark:linear-gradient(rgb(67, 69, 117) 0%, rgb(102, 87, 141) 100%);
+    --finished-shape-color-dark:radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+    --team-ranks-background-color-dark:rgb(8, 6, 11);
+}
+
+
