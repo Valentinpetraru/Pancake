@@ -34,6 +34,8 @@ import { ButtonConnectComponent } from './shared/button-connect/button-connect.c
 import { FooterComponent } from './core/footer/footer.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
+import { ToggleComponent } from './shared/toggle/toggle.component';
+import { HomepageComponent } from './Project/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
     ButtonConnectComponent,
     FooterComponent,
     NavBarComponent,
-    SubNavBarComponent
+    SubNavBarComponent,
+    ToggleComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
