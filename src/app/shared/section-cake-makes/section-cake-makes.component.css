@@ -1,0 +1,103 @@
+.container-cake-makes{
+position: relative;
+flex-direction: column;
+-webkit-box-align: center;
+align-items: center;
+z-index: 1;
+background: rgb(8, 6, 11);
+padding: 48px 0px;
+color: white;
+display:flex;
+}
+
+
+.container-header-cake-makes {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.container-img-cake-makes {
+    display:flex;
+    position: relative;
+    align-items: center;
+    
+}
+
+.container-img-cake-makes img {
+    position: absolute;
+}
+
+
+.container-img-fluttuant-topright {
+    animation: top-right ease-in-out 3s normal none infinite
+}
+
+@keyframes top-right {
+    0%,
+    100% {
+      transform: translate(10px, 0px);
+    }
+   
+    50% {
+      transform: translate(-10px, -8px);
+   }
+}
+
+.container-img-fluttuant-central {
+    animation: coin-center ease-in-out 3s normal none infinite
+}
+
+@keyframes coin-center {
+    0%,
+    100% {
+      transform: translate(0px, 5px);
+    }
+  
+    50% {
+      transform: translate(-5px, -10px);
+   }
+ 
+ }
+.container-img-fluttuant-topleft{
+    animation: top-left ease-in-out 4s normal none infinite
+}
+
+@keyframes top-left {
+    0%,
+    100% {
+      transform: translate(0px, 0px);
+    }
+  
+    50% {
+      transform: translate(-8px, -5px);
+   }
+}
+
+.container-img-fluttuant-bottom-right {
+    animation: bottom-right ease-in-out 3s normal none infinite
+}
+
+@keyframes bottom-right {
+    0%,
+    100% {
+      transform: translate(5px, 10px);
+    }
+  
+    50% {
+      transform: translate(-20px, -10px);
+   }
+}
+
+
+
+
+.container-footer-cake-makes {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}

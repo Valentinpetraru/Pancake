@@ -36,6 +36,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
+import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { HomepageComponent } from './Project/homepage/homepage.component';
     NavBarComponent,
     SubNavBarComponent,
     ToggleComponent,
-    HomepageComponent
+    HomepageComponent,
+    SectionCakeMakesComponent
   ],
   imports: [
     BrowserModule,

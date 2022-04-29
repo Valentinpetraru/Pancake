@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
+.container-card {
+    display: flex;
+    max-width: 900px;
+}
+
 .container_card_homepage {
-    max-width: 235px;
-    height: 100%;
+    max-width: 245px;
     overflow: inherit;
     background: rgb(245, 245, 240);
     border-radius: 24px;
     padding:20px;
     box-shadow: 0px 0px 15px rgba(41, 39, 39, 0.3), 0px 0px 15px rgba(35, 17, 43, 0.5);  
-    margin-bottom: 2rem;
+    margin: 2rem; 
 }
 
 
@@ -53,7 +57,7 @@
 
 
 .darkmode-container {
-    max-width: 235px;
+    max-width: 245px;
     height: 100%;
     overflow: inherit;
     background: rgb(39, 38, 44);
