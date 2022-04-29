@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_card_homepage {
+    max-width: 235px;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(245, 245, 240);
+    border-radius: 24px;
+    padding:20px;
+    box-shadow: 0px 0px 15px rgba(41, 39, 39, 0.3), 0px 0px 15px rgba(35, 17, 43, 0.5);  
+    margin-bottom: 2rem;
+}
+
+
+.header_card_homepage {
+    display: flex;
+    height: 1rem;
+}
+
+.header_card_homepage svg {
+    margin-left: 2.5rem;
+    align-self: center;
+    
+}
+
+.h2_colored {
+    margin-top:0.5rem;
+    color: rgb(31, 199, 212);
+    margin-bottom: 24px;
+}
+
+.footer {
+    color: rgb(122, 110, 170);
+} 
+
+.svg1WhiteMode {
+    fill: rgb(118, 69, 217);;
+}
+
+.svg2WhiteMode {
+    fill: rgb(31, 199, 212);
+}
+
+.svg3WhiteMode {
+    fill: rgb(237, 75, 158);
+}
+
+/* Card dark mode */
+
+
+.darkmode-container {
+    max-width: 235px;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(39, 38, 44);
+    border-radius: 24px;
+    padding:20px;
+    box-shadow: 0px 0px 15px rgba(139, 14, 133, 0.3), 0px 0px 15px rgba(90, 4, 128, 0.6);
+    color: rgb(244, 238, 255); 
+    
+}
+
+
+
+.darkmode-header svg {
+    fill: rgb(154, 106, 255);
+}
+
+.darkmode-h2-colored {
+   color: rgb(154, 106, 255);
+}
+
+.darkmode-footer {
+    color: rgb(184, 173, 210);
+}
+
+
