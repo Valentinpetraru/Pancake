@@ -37,6 +37,8 @@ import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
 import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
+import { SectionPancakeMakesComponent } from './Project/section-pancake-makes/section-pancake-makes.component';
+import { ConnectWalletComponent } from './shared/connect-wallet/connect-wallet.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +76,9 @@ import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-c
     SubNavBarComponent,
     ToggleComponent,
     HomepageComponent,
-    SectionCakeMakesComponent
+    SectionCakeMakesComponent,
+    SectionPancakeMakesComponent,
+    ConnectWalletComponent
   ],
   imports: [
     BrowserModule,
