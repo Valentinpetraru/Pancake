@@ -1,0 +1,228 @@
+
+
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.earn-section{
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+
+.earn-section
+.flex-container-images{
+  
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+
+}
+
+.flex-item-box-images{
+    position: relative;
+    width: 186.97px;
+    height: 193.98px;
+    
+}
+
+.container-image{
+   position: absolute; 
+    width: 186.97px;
+    height: 193.98px;
+    animation-name: earn-images-section;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+img{
+    height: 100%;
+    height: 100%;
+}
+
+@keyframes earn-images-section {
+    from {margin-top: 0;}
+    to {margin-top: 20px;}
+    from {margin-left: 0;}
+    to {margin-left: 20px;}
+}
+
+#pie{
+    animation-name: pie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes pie {
+    from {margin-top: 0;}
+    to {margin-top: 20px;}
+    from {margin-left: 0;}
+    to {margin-left: 20px;}
+}
+
+#stonks{
+    animation: stonks;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+    animation-direction: alternate;
+}
+
+@keyframes stonks {
+    from {margin-top: 0;}
+    to {margin-top: 20px;}
+    from {margin-left: 0;}
+    to {margin-left: 20px;}
+}
+
+
+.flex-item-earn-passive{
+    margin-left: 64px;
+}
+
+.flex-item-earn-passive > h2{
+
+     font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    margin-bottom: 24px;
+
+}
+
+.flex-item-earn-passive > p{
+    margin-bottom: 24px;
+}
+
+.flex-item-earn-passive > h2 > span{
+    color:  rgb(118, 69, 217);
+}
+
+
+
+
+.container-earn-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.farms-syrup-pools-arrow-svg{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+.farms-syrup-pools-arrow-svg > div{
+    cursor: pointer;
+    padding: 0 .8rem;
+}
+
+.farms-syrup-pools-arrow-svg > h2 > span {
+    color:  rgb(118, 69, 217);
+}
+
+.flex-container-data-trade{
+    position: relative;
+    height: 160px;
+
+}
+
+
+.top-item-data-trade-container{
+
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    opacity: 1;
+    transition: margin-top .5s, opacity .5s;
+    
+}
+
+.bottom-item-data-trade-container{
+    /* background-color: lightcoral; */
+    position: absolute;
+    width: 100%;
+    margin-top: 80px;   
+    opacity: 0; 
+    transition: margin-top .5s, opacity .5s;
+}
+
+.animationTopTrade{
+    opacity: 0;
+    margin-top: 80px;
+}
+
+.animationBottomTrade{
+    opacity: 1;
+    margin-top: 0;
+}
+
+.items-top-trade > div, .items-bottom-trade > div{
+    height: 80px;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(215, 202, 236);
+    
+}
+
+.items-top-trade > div > p:first-child{
+  color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.items-bottom-trade > div > p:first-child {
+  color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px){
+    
+}
+
+@media (min-width: 852px){
+    .flex-item-box-images{
+        width: 375.391px;
+        height: 389.484px;
+    }
+     .container-image{
+        width: 375.391px;
+        height: 389.484px;   
+    }
+
+    .container-earnPassive-images{
+        display: flex;
+         flex-direction: row;
+         
+         justify-content: center;
+    }
+   
+}
+
+
+
