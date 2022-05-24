@@ -24,20 +24,47 @@
 </div>    
 <!-- FARMS ENd -->
 
+<!-- FILTTER STARTS -->
 <div class="table-container">
-    <div class="table-filter-container d-flex space-between">
-        <div class="filter-left">
-            <div class="item-left d-flex center vert-center">
-                <img src="../../../assets/farms/filter-farms/card-filter.svg" alt="">
-                <img src="../../../assets/farms/filter-farms/list-filter.svg" alt="">
-                <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                   
-                </label>
-                <p>Staked only</p>
+    <div class="table-filter-container d-flex space-between wrap">
+        <div class="filter-left ">
+            <div class="item-left d-flex center vert-center wrap">
+                <div class="container-svg-list-card-filter-svg">
+
+                    <img class="card-filter-svg" src="../../../assets/farms/filter-farms/card-filter.svg" alt="card">
+                    <img class="list-filter-svg" src="../../../assets/farms/filter-farms/list-filter.svg" alt="list">
+                </div>
+                <div class="container-toggle-text-staked d-flex vert-center">
+                    <div class="container-staked-farms-toggle d-flex" [class.newColorChecked]="toggleColor" (click)="changeColorTogle()">
+                        <input scale="sm" type="checkbox"  id="staked-only-farms" class="toggle-staked-farms">
+                        <div class="slider-toggle"></div>
+                    </div>
+                     <p>Staked only</p>
+                </div>
+                <div class="container-live-finished-toggle">
+                        <a class="farms-link-live">Live</a>
+                        <span class="container-link-finished">
+                            <a>Finished</a>
+                        </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="filter-right d-flex">
+            <div class="container-sort-by">
+                <div style="font-size: 16px">SORT BY</div>
+                <div class="container-list-item d-flex space-between center">
+                    <div style="font-size: 16px">Multiple</div>
+                    <img src="../../../assets/farms/filter-farms/arrow-sort-by.svg" alt="">
+                </div>
+            </div>
+            <div class="container-search">
+                <div style="font-size: 16px">SEARCH</div>
+                <div class="container-search-input d-flex">
+                    <input class="search-bar" type="text" placeholder="Search Farms">
+                </div>
             </div>
         </div>
-        <div class="filter-right">World</div>
     </div>
 </div>
+<!-- FILTTER ENDS -->
