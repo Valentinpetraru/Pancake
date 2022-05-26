@@ -61,6 +61,7 @@ import { TopTradersComponent } from './views/swap/trading-competition/finished/t
 import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
 import { SubMenuComponent } from './core/nav-bar/sub-menu/sub-menu/sub-menu.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
+import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
 
 
 @NgModule({
@@ -123,7 +124,9 @@ import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-s
     PrizesComponent,
     TopTradersComponent,
     SectionCakeMakesComponent,
-    EarnSectionComponent
+    EarnSectionComponent,
+    SectionCakeMakesComponent,
+    PatataInSecondsComponent
 
   ],
   imports: [
