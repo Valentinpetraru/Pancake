@@ -6,6 +6,10 @@
     font-family: Kanit, sans-serif;
 }
 
+
+
+
+
 :root{
     --navbar-color-light: rgb(255, 255, 255);
     --navbar-border-bottom-color-light: rgb(231, 227, 235);
@@ -30,13 +34,14 @@
     --score-shape-color-light:linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
     --finished-shape-color-light:radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
     --team-ranks-background-color-light:rgb(250, 249, 250);
+    --win-backgound-color-light:rgba(255, 255, 255, 0.6);
 
-    
-    
+
+
     --navbar-color-dark: rgb(39, 38, 44);
     --navbar-border-bottom-color-dark:  rgb(56, 50, 65);
     --navbar-icons-color-dark: rgb(184, 173, 210);
-    --primary-shape-color-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%); 
+    --primary-shape-color-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
     --secondary-shape-color-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
     --third-shape-color-dark:linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%);
     --fourth-shape-color-dark:linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
@@ -57,6 +62,21 @@
     --score-shape-color-dark:linear-gradient(rgb(67, 69, 117) 0%, rgb(102, 87, 141) 100%);
     --finished-shape-color-dark:radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
     --team-ranks-background-color-dark:rgb(8, 6, 11);
+    --win-backgound-color-dark:rgba(8, 6, 11, 0.6);
+
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;}
+
+
+::-webkit-scrollbar-thumb{
+  background: rgb(122, 110, 170);
+    border-radius: 8px;
 }
 
 
+::-webkit-scrollbar-track {
+    box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+    border-radius: 10px;}

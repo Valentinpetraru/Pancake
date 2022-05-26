@@ -1,0 +1,86 @@
+
+
+  .container-grey{
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+   
+
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+
+  }
+
+  .title{
+    padding: 24px;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    border-radius: 24px 24px 0px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  .item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 16px;
+  }
+
+  .mod{
+    padding: 24px;
+
+  }
+
+  .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 199, 212);
+    fill: rgb(31, 199, 212);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    gap: 0.4rem;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 0 24px;
+  }
+
+  .right:hover {
+    opacity: 0.7;
+  }
+
+  .left{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .mod-open{
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .hr{
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(215, 202, 236);
+  }
+
+  .item1{
+    margin-top: 28px;
+  }
+
+

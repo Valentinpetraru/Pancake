@@ -1,0 +1,122 @@
+@import url(../../../../styles.css);
+
+
+
+ .contenitore-generale{
+   height: auto;
+   width: 100vw;
+  }
+
+
+ .contenitore-secondario{
+   width: 100vw;
+   padding-top: 48px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: var(--primary-shape-color-light);
+   position: relative;
+   z-index: 1;
+   padding-left: 24px;
+   padding-right: 24px;
+
+ }
+
+ #timer{
+   padding-top: 20px;
+ }
+
+ .contenitore-ternario{
+   width: 100%;
+   display: flex;
+   padding-bottom: 48px;
+   margin-top: 30px ;
+   width: 1152px;
+   height: auto;
+   align-items: center;
+  
+ }
+
+ .title{
+   color:rgb(118, 69, 217) ;
+   margin-bottom: 24px;
+   font-size: 64px;
+   line-height: 1.1;
+ }
+
+
+ #description{
+   font-size: 20px;
+   margin-bottom: 24px;
+   font-weight: 600;
+   color: var(--text-h2-color-light);
+
+ }
+
+
+
+ .buttons{
+   display: flex;
+   gap: 8px;
+ }
+
+ .connect , .trade {
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+   letter-spacing: 0.03em;
+   opacity: 1;
+   border-radius: 16px;
+ }
+
+  .connect  a, .trade a{
+    text-decoration: none;
+  }
+
+   .connect:hover, .trade:hover{
+     opacity: 0.6;
+   }
+
+
+   .connect{
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+   }
+
+   .connect a {
+     color: white;
+   }
+
+   .trade a{
+     color: rgb(31, 199, 212);
+   }
+
+   .trade{
+     background-color: transparent;
+    border: 2px solid rgb(31, 199, 212);
+    box-shadow: none;
+        height: 48px;
+    padding: 0px 24px;
+   }
+
+
+
+
+.contenitore-svg{
+  width: 70%;
+  height: 100%;
+
+}
+
+.contenitore-svg img {
+  width: 100%;
+  height: 100%;
+}
+

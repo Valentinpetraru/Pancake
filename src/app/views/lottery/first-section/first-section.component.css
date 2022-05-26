@@ -1,0 +1,314 @@
+.shadow-wrap{
+    position: relative;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+    padding: 48px 0px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.shadow-middle{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    min-height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.shadow-text-img-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://pancakeswap.finance/images/decorations/bg-star.svg) center 0px no-repeat;
+}
+
+#prize{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+#lot{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.img-shadow-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.img-shadow-wrap img{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+}
+
+#uno{
+    left: 19%;
+    top: 42%;
+    animation: 3s ease-in-out 0.25s infinite normal none running uno;
+}
+
+#due{
+  left: 25%;
+    top: 23%;
+    animation: 3.5s ease-in-out 0.5s infinite normal none running due;
+}
+
+
+#tre{
+ right: 19%;
+    top: 24%;
+    animation: 4s ease-in-out 0.75s infinite normal none running tre;
+}
+
+#quattro{
+  left: 24%;
+    top: 67%;
+
+    animation: 6s ease-in-out 0.2s infinite normal none running quattro;
+}
+
+#cinque{
+    right: 24%;
+    top: 67%;
+    animation: 6s ease-in-out 0s infinite normal none running cinque;
+}
+
+
+@keyframes uno {
+    0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(10px, 10px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+ }
+
+
+
+@keyframes due {
+    0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(10px, 10px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+ }
+
+@keyframes tre {
+    0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(-10px, 10px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+ }
+
+@keyframes quattro {
+    0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(-10px, 15px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+  }
+
+@keyframes cinque {
+    0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(10px, 15px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+.gen{
+
+    margin-bottom: 8px;
+}
+
+.gen span{
+ font-weight:bolder;
+  font-size: 64px;
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.ticket{
+    width: 288px;
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 3s ease-in-out 0s infinite normal none running ticket;
+}
+
+@keyframes ticket {
+
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    transform: rotate(6deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+
+.button-ticket{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.ticket-svg{
+   position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-4deg);
+}
+
+#buy-ticket{
+    width: 240px;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+    border: 0;
+    height: 48px;
+    border-radius:16px ;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#buy-ticket:hover{
+    opacity: 0.6;
+}
+
+
+@media  screen and (max-width: 1080px) {
+
+  #uno{
+    left: 10%;
+    top: 42%;
+  }
+
+  #due{
+    left: 17%;
+    top: 23%;
+}
+
+
+  #tre{
+    right: 10%;
+    top: 24%;
+  }
+
+  #cinque{
+right: 17%;
+    top: 67%;
+  }
+
+  #quattro{
+    left: 17%;
+    top: 67%;
+
+  }
+
+}
+
+
+@media  screen and (max-width: 846px) {
+
+  #uno{
+ left: 3%;
+    top: 42%;
+  }
+
+  #due{
+    left: 9%;
+    top: 23%;
+
+}
+
+
+  #tre{
+    right: 2%;
+    top: 24%;
+  }
+
+  #cinque{
+right: 8%;
+    top: 67%;
+  }
+
+  #quattro{
+    left: 8%;
+    top: 67%;
+
+  }
+
+}
+
+
+@media  screen and (max-width: 555px) {
+
+  #uno, #due,#tre,#quattro,#cinque{
+display: none;
+  }
+
+
+}
+
+
+@media  screen and (max-width: 371px) {
+
+  #uno, #due,#tre,#quattro,#cinque{
+display: none;
+  }
+
+  .ticket{
+    width: 240px;
+    height: 94px;
+  }
+
+  #buy-ticket{
+    width: 200px;
+  }
+}
+
