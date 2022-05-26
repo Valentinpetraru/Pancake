@@ -36,6 +36,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
+<<<<<<< HEAD
 import { MoonComponent } from './Project/homepage/moon/moon.component';
 import { LotteryTimerComponent } from './Project/homepage/moon/lottery-timer/lottery-timer.component';
 import { WinComponent } from './Project/homepage/win/win.component';
@@ -62,6 +63,9 @@ import { TopTradersComponent } from './views/swap/trading-competition/finished/t
 
 
 
+=======
+import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
+>>>>>>> b44786440ccb6fd99612e647aed47fefb63bb8da
 
 @NgModule({
   declarations: [
@@ -99,6 +103,7 @@ import { TopTradersComponent } from './views/swap/trading-competition/finished/t
     SubNavBarComponent,
     ToggleComponent,
     HomepageComponent,
+<<<<<<< HEAD
     MoonComponent,
     LotteryTimerComponent,
     WinComponent,
@@ -122,6 +127,9 @@ import { TopTradersComponent } from './views/swap/trading-competition/finished/t
     PrizesComponent,
     TopTradersComponent,
 
+=======
+    SectionCakeMakesComponent
+>>>>>>> b44786440ccb6fd99612e647aed47fefb63bb8da
   ],
   imports: [
     BrowserModule,
