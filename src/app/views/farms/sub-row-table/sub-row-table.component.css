@@ -1,0 +1,44 @@
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+
+.container-sub-menu{
+    height: 0;
+    overflow: hidden;
+    transition:5s;
+   
+}
+
+.t{
+    height: 200px;
+    
+    background-color: #F6F6F6;
+}
+
+.showSubMenu{
+    height: auto;
+}

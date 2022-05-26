@@ -439,6 +439,10 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
     display: none;
 }
 
+
+.rotate180{
+    transform:  rotate(180deg);
+}
 /* Table data  rows END */
 
 
@@ -489,9 +493,3 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
     }
 }
 
-
-.t{
-    height: 200px;
-    
-    background-color: #F6F6F6;
-}

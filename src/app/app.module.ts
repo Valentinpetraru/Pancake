@@ -37,6 +37,7 @@ import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
+import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-s
     SubNavBarComponent,
     ToggleComponent,
     HomepageComponent,
-    EarnSectionComponent
+    EarnSectionComponent,
+    SubRowTableComponent
   ],
   imports: [
     BrowserModule,

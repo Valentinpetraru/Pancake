@@ -70,7 +70,7 @@
 
 <!-- TABLE DATA  ROWS START -->
     <div class="table-container-data-rows">
-       <div class="grid-container">
+       <div class="grid-container" (click)="rotate()">
                 <div class="grid-item token-title-container d-flex vert-center" style="padding-left: 2rem">
                     <div>
                         <img src="../../../assets/farms/table-farms/token-icon/cake-bnb.png" alt="cake" style="width: 26px; height: 26px">
@@ -119,27 +119,71 @@
                 <div class="grid-item details-container d-flex vert-center">
                     <p class="text-details">Details</p>
                     <div>
-                        <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom">
+                        <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom" [class.rotate180]="subMenuRowTableList"  >
                     </div>
                 </div>
        </div>
-       <div class="t d-flex center vert-center space-around" >
-                <div class="containers-links d-flex column">
-                    <a>Get CAKE-BNB LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
-                    <a>View Contract LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
-                    <a>See Pair Info <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
+
+       <!-- SUB MENU ROW TABLE -->
+       <cake-sub-row-table [subMenuRowTableList]="subMenuRowTableList"></cake-sub-row-table>
+       
+       <div class="grid-container" (click)="rotate()">
+                <div class="grid-item token-title-container d-flex vert-center" style="padding-left: 2rem">
+                    <div>
+                        <img src="../../../assets/farms/table-farms/token-icon/cake-bnb.png" alt="cake" style="width: 26px; height: 26px">
+                    </div>
+                    <p class="title-token">CAKE-BNB</p>
                 </div>
-                <div>
-                    <p>CAKE EARNED</p>
-                    <p>0</p>
-                    <button>Harvest</button>
+                <div class="grid-item core-container d-flex vert-center">
+                    <div class="container-core-checked d-flex vert-center">
+                        <div>
+                            <img src="../../../assets/farms/table-farms/checked.svg" alt="core">
+                        </div>
+                        <p>Core</p>
+                    </div>
                 </div>
-                <div>
-                    <p>START FARMING</p>
-                    <button>Connect Wallet</button>
+                <div class="grid-item spearned-container ">
+                    <p>Earned</p>
+                    <span class="earned-total">0</span>
+                </div>
+                <div class="grid-item apr-container">
+                    <p>APR</p>
+                    <div class="container-percent-calculator d-flex vert-center">
+                        <span class="apr-percent">30.67%</span>
+                        <div>
+                            <img src="../../../assets/farms/table-farms/calculator.svg" alt="Calculator">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item liquidy-container">
+                    <p>Liquidity</p>
+                    <div class="container-total-liquidy d-flex vert-center">
+                        <span class="total-liquidy">$181,1448,102</span>
+                        <div class="svg-question-container">
+                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item container-multiple">
+                    <p>Multiple</p>
+                    <div class="d-flex vert-center">
+                        <span class="multiply">40x</span>
+                        <div class="svg-question-container">
+                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item details-container d-flex vert-center">
+                    <p class="text-details">Details</p>
+                    <div>
+                        <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom" [class.rotate180]="subMenuRowTableList"  >
+                    </div>
                 </div>
        </div>
-     
+
+       <!-- SUB MENU ROW TABLE -->
+       <cake-sub-row-table [subMenuRowTableList]="subMenuRowTableList"></cake-sub-row-table>
+       
 
 
        <div class="container-to-top d-flex center ">
