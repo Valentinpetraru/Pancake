@@ -36,6 +36,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
+import { SubMenuComponent } from './core/nav-bar/sub-menu/sub-menu/sub-menu.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { HomepageComponent } from './Project/homepage/homepage.component';
     FooterComponent,
     NavBarComponent,
     SubNavBarComponent,
+    SubMenuComponent,
     ToggleComponent,
     HomepageComponent
   ],
