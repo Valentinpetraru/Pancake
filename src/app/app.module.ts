@@ -37,6 +37,7 @@ import { SubNavBarComponent } from './core/sub-nav-bar/sub-nav-bar.component';
 import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
 import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
+import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-c
     SubNavBarComponent,
     ToggleComponent,
     HomepageComponent,
-    SectionCakeMakesComponent
+    SectionCakeMakesComponent,
+    PatataInSecondsComponent
   ],
   imports: [
     BrowserModule,
