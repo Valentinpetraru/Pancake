@@ -73,8 +73,7 @@
 }
 
 .button-cake-makes:hover {
-  
-  opacity: 0.65;
+  filter: brightness(0.3);
 }
 
 .span-btn-cake-makes {

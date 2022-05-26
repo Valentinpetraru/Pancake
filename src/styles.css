@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(../src/assets/Kanit/Kanit-Bold.ttf),
+    url(../src/assets/Kanit/Kanit-Medium.ttf),
+    url(../src/assets/Kanit/Kanit-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
