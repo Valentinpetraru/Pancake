@@ -8,6 +8,8 @@
     transition: 15ms;
    color: #7a6eaa;
    font-weight: 600;
+   background-color: #EFF4F5;
+   z-index: 999;
 }
 
 .flex-left, .flex-right{
@@ -60,6 +62,7 @@
 
 .container-dropdown{
     position: relative;
+    z-index: 999;
 
 }
 .container-dropdown > div{

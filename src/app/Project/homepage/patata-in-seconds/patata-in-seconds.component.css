@@ -1,7 +1,45 @@
-.home {
-    display: flex;
-    align-content: center;
+.contenitore-patate
+{
+  overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+        padding-left: 24px;
+    padding-right: 24px;
+        padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    justify-content: center;
-    flex-direction: column;
+
+
+.one,.two, .three, .quattro, .cinque,.sei{
+  position: relative;
+    max-height: 256px;
+}
+
+.one img{
+      position: absolute;
+      height: 100%;
+    top: 0px;
+    left: 0px;
+    animation: 3s ease-in-out 1s infinite normal none running bRTaPl;
+
+}
+
+.two img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.three img {
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }

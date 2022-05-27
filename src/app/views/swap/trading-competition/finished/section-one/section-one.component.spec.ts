@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PnacardComponent } from './pnacard.component';
+import { SectionOneComponent } from './section-one.component';
 
-describe('PnacardComponent', () => {
-  let component: PnacardComponent;
-  let fixture: ComponentFixture<PnacardComponent>;
+describe('SectionOneComponent', () => {
+  let component: SectionOneComponent;
+  let fixture: ComponentFixture<SectionOneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PnacardComponent ]
+      declarations: [ SectionOneComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PnacardComponent);
+    fixture = TestBed.createComponent(SectionOneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

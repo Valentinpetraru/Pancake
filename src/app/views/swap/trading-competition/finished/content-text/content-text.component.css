@@ -1,9 +1,3 @@
- .container{
-    display: flex;
-    background-color: purple;
-
-
-  }
 
 
 
@@ -12,7 +6,7 @@
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
-    font-size: 16px;
+    font-size: 1rem;
     text-shadow: rgb(255 175 0 / 22%) 0px 0px 10px, rgb(255 61 0 / 25%) 0px 0px 8px, rgb(255 135 0 / 55%) 0px 0px 18px;
     text-align: left;
   }
@@ -38,7 +32,7 @@
     line-height: 110%;
     color: rgb(255, 255, 255);
     color:  rgb(189, 249, 218);
-    font-size: 32px;
+    font-size: 2rem;
     white-space: initial;
     text-shadow: rgb(0 255 209 / 22%) 0px 0px 10px, rgb(0 56 255 / 25%) 0px 0px 8px, rgb(0 255 71 / 52%) 0px 0px 18px;
     text-align: left;
@@ -47,7 +41,7 @@
   .trading{
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 110%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -60,7 +54,7 @@
     font-weight: 600;
     line-height: 1.1;
     text-shadow: rgb(255 255 255 / 25%) 0px 0px 8px, rgb(161 101 194 / 88%) 0px 0px 18px, rgb(161 0 255 / 55%) 0px 0px 49px;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: left;
     margin-top: 16px;
     margin-bottom: 140px;
@@ -137,9 +131,7 @@
 
 
 @media screen and (max-width: 850px) {
- .second{
-   white-space: nowrap;
- }
+
 
  .cont{
    display: flex;
@@ -165,4 +157,49 @@
    padding: 20px;
    width: auto;
  }
+
+}
+
+.wave{
+  position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 242px;
+    z-index: -1;
+    background-image: url(https://pancakeswap.finance/_next/static/media/mod-mesh.f35f83b0.png);
+}
+
+
+@media screen and (max-width: 1102px ) {
+
+  .second-coin{
+
+  right: 200px;
+
+  top:15%;
+}
+
+  .first-coin{
+
+  left: 200px;
+
+  top:0%;
+}
+}
+
+
+@media screen and (max-width: 850px) {
+  .first-coin{
+    top: 0%;
+    left: 50px;
+  }
+
+  .second-coin{
+    right: 0px;
+  }
+
+  .cont{
+    width: fit-content;
+  }
 }

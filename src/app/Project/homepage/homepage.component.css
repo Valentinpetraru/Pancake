@@ -1,3 +1,7 @@
+*{
+  overflow-x: hidden;
+}
+
 .container-section-card-homepage {
     display: flex;
     flex-flow: column;
@@ -14,7 +18,7 @@
 
 .container-pancake-face-img:hover {
     animation:imgrotate 1.5s ease;
-    
+
 }
 
 @keyframes imgrotate {
@@ -38,7 +42,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    
+
 }
 
 .container-text-card h2 {

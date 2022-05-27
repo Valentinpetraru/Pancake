@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 16px 24px;
-    margin: 0px 0px 0px 36px;
+    margin: -30px 0px 0px 36px;
    }
 
    .clock-container{
@@ -34,14 +34,14 @@
    }
 
    .title{
-     margin-bottom: 24px;
+     margin-bottom: 1.5rem;
      display: flex;
      justify-content: center;
      align-items: center;
    }
 
    .title h2 {
-     font-size: 24px;
+     font-size: 1.5rem;
      white-space: nowrap;
      text-align: center;
      background-image: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);

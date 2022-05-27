@@ -33,7 +33,7 @@ second:number = 0;
    setInterval(() => {
 
 let today = new Date().getTime()
-let tomorrow = new Date('May 25 2022, 00:00:00:00').getTime()
+let tomorrow = new Date('May 28 2022, 00:00:00:00').getTime()
 let gap = tomorrow - today
 
 let secondi = 1000;

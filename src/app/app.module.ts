@@ -45,7 +45,6 @@ import { ContentTextComponent } from './views/swap/trading-competition/finished/
 import { CalcComponent } from './views/swap/trading-competition/finished/calc/calc.component';
 import { ComComponent } from './views/swap/trading-competition/finished/com/com.component';
 import { MessageComponent } from './views/swap/trading-competition/finished/message/message.component';
-import { PnacardComponent } from './views/swap/trading-competition/finished/pnacard/pnacard.component';
 import { DetailsComponent } from './views/swap/trading-competition/finished/details/details.component';
 import { TablePrizeTeamComponent } from './views/swap/trading-competition/finished/table-prize-team/table-prize-team.component';
 import { StepCardComponent } from './views/lottery/step-card/step-card.component';
@@ -62,7 +61,8 @@ import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-c
 import { SubMenuComponent } from './core/nav-bar/sub-menu/sub-menu/sub-menu.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
 import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
-
+import { RankComponent } from './views/swap/trading-competition/finished/rank/rank.component';
+import { SectionOneComponent } from './views/swap/trading-competition/finished/section-one/section-one.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +110,6 @@ import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/p
     CalcComponent,
     ComComponent,
     MessageComponent,
-    PnacardComponent,
     DetailsComponent,
     TablePrizeTeamComponent,
     StepCardComponent,
@@ -126,7 +125,9 @@ import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/p
     SectionCakeMakesComponent,
     EarnSectionComponent,
     SectionCakeMakesComponent,
-    PatataInSecondsComponent
+    PatataInSecondsComponent,
+    RankComponent,
+    SectionOneComponent,
 
   ],
   imports: [
