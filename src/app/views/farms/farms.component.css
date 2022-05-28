@@ -25,6 +25,9 @@
     align-items: center;
 }
 
+.end{
+    justify-content: end;
+}
 /* Toolbar Start */
 .farms-container, .pools-container{
     margin-right: 20px;
