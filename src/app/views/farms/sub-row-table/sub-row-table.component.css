@@ -27,7 +27,7 @@
 
 
 .container-sub-menu{
-    height: 0;
+    height: auto;
     overflow: hidden;
     transition:5s;
    
