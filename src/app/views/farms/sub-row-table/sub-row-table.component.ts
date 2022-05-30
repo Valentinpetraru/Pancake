@@ -9,9 +9,12 @@ export class SubRowTableComponent implements OnInit, OnChanges {
 
   @Input() subMenuRowTableList: boolean = false;
 
+  @Input() formsData: any = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.formsData)
   }
   ngOnChanges(): void {
 

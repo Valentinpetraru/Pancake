@@ -1,4 +1,7 @@
-import { AfterViewInit, Component, OnInit, QueryList, HostListener, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, OnInit, QueryList, HostListener, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
+import { FarmsApiService } from 'src/app/services/farms-api.service';
+import { SubRowTableComponent } from './sub-row-table/sub-row-table.component';
+import { FarmsDirective } from 'src/app/module-shared/directives/farms.directive';
 
 @Component({
   selector: 'cake-farms',
@@ -8,60 +11,59 @@ import { AfterViewInit, Component, OnInit, QueryList, HostListener, ElementRef }
 export class FarmsComponent implements OnInit {
 
 
-  toggleColor: boolean = false;
 
   subMenuRowTableList: boolean = false;
-  constructor(private el: ElementRef) { }
 
-  // @HostListener('click') rotate(event: any) {
-  //   let part = this.el.nativeElement.querySelectorAll('.grid-container');
+  farmsData: any = [];
 
-  //   part.forEach((el: any, i: number) => {
-  //     if (el.nextSibling.style.display === 'block') {
-  //       el.nextSibling.style.display = 'none'
-  //     } else {
-  //       el.nextSibling.style.display = 'block'
-  //     }
-  //   })
+  objSelected: any = [];
+
+  numberrows: number = 12
+
+  component = SubRowTableComponent;
+
+  constructor(private el: ElementRef, private farmsApiService: FarmsApiService) { }
+
+  // @HostListener('window:scroll', ['$event'])
+  // checkScrollPosition(): void {
+  //   const scrollable = window.innerHeight;
+  //   const scrolled = window.scrollY;
+
+  //   console.log(scrollable, 'scrolly')
+  //   if (Math.ceil(scrolled) === scrollable) {
+  //     console.log('hello')
+  //     this.numberrows = this.numberrows + 12;
+  //   }
+
+
   // }
 
 
   ngOnInit(): void {
+    this.farmsApiService.getApiFarms().subscribe(data => {
+
+      this.farmsData = data;
+    })
   }
 
-  changeColorTogle() {
-    this.toggleColor = (this.toggleColor) ? false : true;
-  }
 
   rotate(ev: any): any {
+
+    // this.objSelected.pop()
+    // this.objSelected.push(this.farmsData[ev])
+
 
     let el = document.querySelectorAll('.grid-container');
 
     const nsibling = el[0]?.nextSibling as HTMLElement;
-    // el.forEach((el: any, index: number) => {
 
-    //   if (index === ev && el.nextSibling.style.display === 'none') {
-
-    //     el.nextSibling.style.display = 'block';
-    //     console.log('first if')
-
-    //   }
-
-    //   if (index === ev && el.nextSibling.style.display === 'block') {
-
-    //     el.nextSibling.style.display = 'none';
-    //     console.log('second if')
-
-    //   }
-
-    // })
 
     for (let index = 0; index < el.length; index++) {
       const nsibling = el[index]?.nextSibling as HTMLElement;
       if (index === ev && nsibling.style.display === 'none') {
 
         nsibling.style.display = 'block';
-        console.log('first if')
+
         return true;
 
       }
@@ -69,7 +71,7 @@ export class FarmsComponent implements OnInit {
       if (index === ev && nsibling.style.display === 'block') {
 
         nsibling.style.display = 'none';
-        console.log('second if')
+
         return true;
 
       }

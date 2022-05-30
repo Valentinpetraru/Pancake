@@ -114,16 +114,21 @@
 
 .container-apr-mul-liq{
     width: 100%;
+    display: none;
    
  }
  .container-apr-mul-liq p{
      color:#280d5f;
     font-weight: 500;
+    
  }
 
 @media only screen and (max-width: 967px){
     .t{
         gap: 1rem;
+    }
+    .container-apr-mul-liq{
+        display: flex;
     }
  .cake-earned-container, .connect-wallet-container{
      width: 48%;

@@ -1,0 +1,24 @@
+[
+    {
+        "svgPath" :"https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png",
+        "nameToken" :"Cake-bnb",
+        "earned" : 0,
+        "rate" : "APR",
+        "percentage" : 60.61,
+        "crowdSourced": "Liquidy",
+        "total": 186168256,
+        "multiplier": "Multiplier",
+        "cakeReward" : 40
+    },
+      {
+        "svgPath" :"https://pancakeswap.finance/images/tokens/0xe552Fb52a4F19e44ef5A967632DBc320B0820639.png",
+        "nameToken" :"Metis-Bnb",
+        "earned" : 0,
+        "rate" : "APR",
+        "percentage" : 76.76,
+        "crowdSourced": "Liquidy",
+        "total": 811822,
+        "multiplier": "Multiplier",
+        "cakeReward" : 0.5
+    }
+]

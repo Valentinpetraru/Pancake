@@ -38,6 +38,12 @@ import { ToggleComponent } from './shared/toggle/toggle.component';
 import { HomepageComponent } from './Project/homepage/homepage.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
 import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FarmsApiService } from './services/farms-api.service';
+import { ModuleSharedModule } from './module-shared/module-shared.module';
+import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.component';
+import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
+
 
 @NgModule({
   declarations: [
@@ -76,13 +82,22 @@ import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.
     ToggleComponent,
     HomepageComponent,
     EarnSectionComponent,
-    SubRowTableComponent
+    SubRowTableComponent,
+    FiltersBarComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
+    ModuleSharedModule
   ],
-  providers: [],
+  providers: [
+    FarmsApiService,
+    FarmsPoolsFiltersToolbarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
