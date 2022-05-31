@@ -14,7 +14,7 @@ export class SubRowTableComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.formsData)
+
   }
   ngOnChanges(): void {
 

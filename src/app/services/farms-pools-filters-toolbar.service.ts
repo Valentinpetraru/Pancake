@@ -6,6 +6,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class FarmsPoolsFiltersToolbarService {
 
-  search: Observable<string> = new BehaviorSubject('');
-  constructor() { }
+  public search$: any = new BehaviorSubject('');
+  public selectedOptionsFilter: any = new BehaviorSubject([]);
+
+
+  constructor() {
+
+  }
 }

@@ -449,6 +449,12 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
 /* Table data  rows END */
 
 
+.container-image-farm-bottom{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
 @media only screen and (max-width: 968px){
     .core-container, .liquidy-container, .container-multiple{
         display: none;

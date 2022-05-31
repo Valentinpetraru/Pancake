@@ -25,16 +25,24 @@
         <div class="filter-right d-flex">
             <div class="container-sort-by">
                 <div style="font-size: 12px">SORT BY</div>
-                <div class="container-list-item d-flex space-between center">
-                    <div style="font-size: 16px">Multiple</div>
-                    <img src="../../../assets/farms/filter-farms/arrow-sort-by.svg" alt="">
+                <div class="container-list-item d-flex space-between center"[class.bottom-border-radius]="showOptions" (click)="show($event)" style="position: relative">
+                    <img src="../../../assets/farms/filter-farms/arrow-sort-by.svg" alt="" style="order: 2">
+                    <div style="font-size: 16px; order: 1;" >{{firstOption}}</div>
+                    <ul class="sub-options-sort-by d-flex column " [class.show-options-sort]="showOptions">
+                        <li *ngFor="let option of options" (click)="changeOption(option)">{{option}}</li>
+                    </ul>
                 </div>
             </div>
             <div class="container-search">
                 <div style="font-size: 12px">SEARCH</div>
                 <div class="container-search-input d-flex">
-                    <input class="search-bar" type="text" placeholder="Search Farms">
+                    <input class="search-bar" type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search Farms">
                 </div>
             </div>
         </div>
+        
     </div>
+
+    
+
+

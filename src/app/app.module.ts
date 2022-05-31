@@ -43,6 +43,8 @@ import { FarmsApiService } from './services/farms-api.service';
 import { ModuleSharedModule } from './module-shared/module-shared.module';
 import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.component';
 import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
+import { FormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './pipes/search-filter.pipe';
 
 
 @NgModule({
@@ -84,6 +86,7 @@ import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-
     EarnSectionComponent,
     SubRowTableComponent,
     FiltersBarComponent,
+    SearchFilterPipe,
 
 
   ],
@@ -91,7 +94,7 @@ import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-
+    FormsModule,
     ModuleSharedModule
   ],
   providers: [
