@@ -1,0 +1,256 @@
+/* Css Reset Start*/
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* Css Reset Start*/
+
+.cards-container{
+    max-width: 1300px;
+   padding: 1.5rem;
+    margin: 0 auto;
+}
+.container-card{
+    border: 1px solid rgb(231, 227, 235);;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    min-width: 350px;
+    margin: 0px 12px 46px;
+    margin: 0px 12px 46px;
+    border-bottom: 3px solid rgb(231, 227, 235);
+
+}
+.card-body{
+  padding: 1.5rem;
+  border-bottom: 2px solid rgb(231, 227, 235);;
+}
+.card-header{
+    margin-bottom: 20px;
+}
+
+.img-left-header-container{
+    position: relative;
+   
+}
+
+.back-img-card-header{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+.front-img-card-header{
+    position: relative;
+    z-index: 4;
+    width: 52px;
+    height: 52px;
+    top: 10px;
+    left: 10px;
+}
+
+.cake-bnb{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    margin-bottom: 8px;
+}
+
+.container-core{
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    display: inline-flex;
+    font-weight: 400;
+    white-space: nowrap;
+    height: 28px;
+    padding: 0px 8px;
+    font-size: 14px;
+    color: rgb(118, 69, 217);
+    background: rgb(250, 249, 250);
+    border: 2px solid rgb(118, 69, 217);
+}
+
+.container-multiplier{
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    font-weight: 400;
+    white-space: nowrap;
+    height: 28px;
+    padding: 0px 8px;
+    font-size: 14px;
+    background-color: rgb(118, 69, 217);
+    margin-left: 4px;
+}
+
+.apr{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.container-percent-svg-calc{
+    font-weight: 600;
+}
+.container-earn-txt-cake p{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.cake-earned-txt{
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.btn-harvest{
+    background-color: rgb(233, 234, 235);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    color: rgb(189, 194, 196);
+    cursor: not-allowed;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    padding: 0px 24px;
+    outline: 0;
+}
+
+.tot-cake-earned{
+    
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(189, 194, 196);
+}
+
+.txt-cake{
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 4px;
+    font-size: 12px;
+}
+
+.txt-earned{
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 4px;
+    font-size: 12px
+}
+
+.btn-connect-wallet{
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    width: 100%;
+    margin-top: 8px;
+}
+.btn-connect-wallet:hover{
+   background-color: #6BD8E0;
+}
+
+.card-footer {
+    padding: 1.5rem;
+}
+
+.txt-details-hide{
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px
+}
+
+/*Sub card details*/
+.sub-card-datails{
+   
+    
+    margin-top: 24px;
+}
+
+.sub-txt-tot-liqui {
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+.containers-links{
+    color: #1fc7d4;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    row-gap: .3rem;
+}
+
+.containers-links img{
+    filter: invert(75%) sepia(93%) saturate(1557%) hue-rotate(139deg) brightness(87%) contrast(89%);
+    margin-left: 10px;
+}
+
+.containers-links{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 575px) {
+  .container-card{
+      width: 100%;
+  }
+}

@@ -45,6 +45,7 @@ import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.compo
 import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
 import { FormsModule } from '@angular/forms';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { CardStyleComponent } from './views/farms/card-style/card-style.component';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import { SearchFilterPipe } from './pipes/search-filter.pipe';
     SubRowTableComponent,
     FiltersBarComponent,
     SearchFilterPipe,
+    CardStyleComponent,
 
 
   ],
