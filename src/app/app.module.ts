@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogsComponent } from './views/blogs/blogs.component';
@@ -26,7 +25,6 @@ import { SelectBarComponent } from './shared/select-bar/select-bar.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { PopupNavBarComponent } from './shared/popup-nav-bar/popup-nav-bar.component';
 import { CardTradeComponent } from './shared/card-trade/card-trade.component';
-import { CardPredictionComponent } from './shared/card-prediction/card-prediction.component';
 import { CardHomepageComponent } from './shared/card-homepage/card-homepage.component';
 import { CardCollectionComponent } from './shared/card-collection/card-collection.component';
 import { ButtonBasicComponent } from './shared/button-basic/button-basic.component';
@@ -64,6 +62,33 @@ import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/p
 import { RankComponent } from './views/swap/trading-competition/finished/rank/rank.component';
 import { SectionOneComponent } from './views/swap/trading-competition/finished/section-one/section-one.component';
 
+import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.component';
+import { LotteryHowtoplayComponent } from './views/lottery/lottery-howtoplay/lottery-howtoplay.component';
+import { StillGotComponent } from './views/lottery/still-got/still-got.component';
+import { StatsComponent } from './views/lottery/stats/stats.component';
+import { CalendarComponent } from './views/lottery/calendar/calendar.component';
+import { PrizeFundsComponent } from './views/lottery/prize-funds/prize-funds.component';
+import { CriteriaComponent } from './views/lottery/criteria/criteria.component';
+import { ParagraphComponent } from './Project/homepage/paragraph/paragraph.component';
+import { TrustedCardsComponent } from './Project/homepage/trusted-cards/trusted-cards.component';
+import { TrustedPComponent } from './Project/homepage/trusted-p/trusted-p.component';
+import { SupplyComponent } from './Project/homepage/supply/supply.component';
+import { CardComponent } from './views/liquidity/card/card.component';
+import { LaterComponent } from './views/prediction/later/later.component';
+import { PrizePoolComponent } from './views/prediction/prize-pool/prize-pool.component';
+import { TrustedPageComponent } from './Project/homepage/trusted-page/trusted-page.component';
+import { TradePageComponent } from './Project/homepage/trade-page/trade-page.component';
+import { CakeComponent } from './Project/homepage/cake/cake.component';
+import { CriteriaPageComponent } from './views/lottery/criteria-page/criteria-page.component';
+import { PrizePageComponent } from './views/lottery/prize-page/prize-page.component';
+import { LastPageComponent } from './views/lottery/last-page/last-page.component';
+import { FinishPageComponent } from './views/lottery/finish-page/finish-page.component';
+import { CardOwnComponent } from './views/prediction/card-own/card-own.component';
+import { CentralComponent } from './views/prediction/central/central.component';
+import { BnbComponent } from './views/prediction/bnb/bnb.component';
+import { ClockpComponent } from './views/prediction/clockp/clockp.component';
+import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -90,7 +115,6 @@ import { SectionOneComponent } from './views/swap/trading-competition/finished/s
     SearchBarComponent,
     PopupNavBarComponent,
     CardTradeComponent,
-    CardPredictionComponent,
     CardHomepageComponent,
     CardCollectionComponent,
     ButtonBasicComponent,
@@ -101,6 +125,7 @@ import { SectionOneComponent } from './views/swap/trading-competition/finished/s
     SubMenuComponent,
     ToggleComponent,
     HomepageComponent,
+
     MoonComponent,
     LotteryTimerComponent,
     WinComponent,
@@ -128,6 +153,35 @@ import { SectionOneComponent } from './views/swap/trading-competition/finished/s
     PatataInSecondsComponent,
     RankComponent,
     SectionOneComponent,
+
+
+    EarnSectionComponent,
+    SubRowTableComponent,
+    LotteryHowtoplayComponent,
+    StillGotComponent,
+    StatsComponent,
+    CalendarComponent,
+    PrizeFundsComponent,
+    CriteriaComponent,
+    ParagraphComponent,
+    TrustedCardsComponent,
+    TrustedPComponent,
+    SupplyComponent,
+    CardComponent,
+    LaterComponent,
+    PrizePoolComponent,
+    TrustedPageComponent,
+    TradePageComponent,
+    CakeComponent,
+    CriteriaPageComponent,
+    PrizePageComponent,
+    LastPageComponent,
+    FinishPageComponent,
+    CardOwnComponent,
+    CentralComponent,
+    BnbComponent,
+    ClockpComponent,
+    CardsThreeComponent
 
   ],
   imports: [

@@ -1,3 +1,56 @@
+
+
+<style>
+  .svg-rando{
+    position: absolute;
+    bottom: -30px;
+    right:50px;
+    width: 560px;
+  }
+
+  .svg-rando img{
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 910px) {
+   .contenitore-content{
+     display: flex;
+     flex-direction: column;
+     order: 1;
+   }
+
+   .txt{
+     order: 2;
+   }
+
+   .svg-rando{
+     position:static ;
+     width: 500px;
+     margin-top: 30px;
+   }
+  }
+
+
+  @media screen and (max-width: 475px) {
+
+      .svg-rando{
+     position:static ;
+     width: 300px;
+     margin-top: 30px;
+   }
+  }
+
+
+
+</style>
+
+
+
+
+
+
+
 <div class="contenitore-totale">
   <div class="contenitore-padding-down">
     <div class="contenitore-padding-margin">
@@ -7,15 +60,12 @@
           <cake-clock></cake-clock>
         </div>
 
-        <!-- <div class="coin-one">
-          <img src="https://pancakeswap.finance/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMoD-banner-dar.1582f3fa.png&w=256&q=75" alt="">
-        </div>
-        <div class="coin-two">
-          <img src="https://pancakeswap.finance/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMoD-banner-dar2.a7704a87.png&w=256&q=75" alt="">
-        </div> -->
-
         <div class="txt">
           <cake-content-text></cake-content-text>
+        </div>
+
+        <div class="svg-rando">
+          <img src="https://pancakeswap.finance/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMoD-hero-bunnies.6dd34786.png&w=640&q=75" alt="">
         </div>
 
       </div>

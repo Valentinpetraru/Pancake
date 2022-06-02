@@ -1,0 +1,60 @@
+  .top{
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(118, 69, 217);
+  }
+
+  .one{
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .paragraph-cont{
+        color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    display: inline;
+
+  }
+
+  a{
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .paragraph-cont::before{
+    content: "•";
+    margin-left: 4px;
+    color: rgb(122, 110, 170);
+  }
+
+  li
+{
+  list-style: none;
+}
+
+
+.container{
+  margin-top: -45px;
+}

@@ -1,9 +1,10 @@
 .container-banner{
   display: flex;
   justify-content: center;
-  width: 100vw;
+  padding-top: 40px;
   padding-left: 43px;
   padding-right: 43px;
+  background:  linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);;
 }
 
     .container{
@@ -88,6 +89,7 @@
     }
 
     button{
+      position: relative;
         background-color: rgb(31, 199, 212);
         padding: 0px 24px;
         height: 48px;
@@ -99,6 +101,7 @@
         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
         font-weight: 600;
         cursor: pointer;
+        z-index: 2;
         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     }
 
@@ -106,6 +109,7 @@
         text-decoration: none;
         color: white;
         fill: white;
+
     }
 
 
@@ -172,3 +176,5 @@
           display: none;
       }
   }
+
+

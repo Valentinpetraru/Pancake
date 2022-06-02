@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .container-content{
@@ -293,7 +295,7 @@ input
 
 .side-left{
   display: flex;
-   
+
   gap: 20px;
   align-items: center;
 

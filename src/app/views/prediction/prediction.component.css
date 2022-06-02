@@ -1,0 +1,21 @@
+.top, .right{
+  display: flex;
+}
+
+.top{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.right{
+  gap: 20px;
+}
+
+
+.contenitore-grande{
+  height: calc(100vh - 100px);
+  width: 100%;
+  background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+}

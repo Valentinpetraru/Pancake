@@ -33,7 +33,6 @@
     color: rgb(255, 255, 255);
     color:  rgb(189, 249, 218);
     font-size: 2rem;
-    white-space: initial;
     text-shadow: rgb(0 255 209 / 22%) 0px 0px 10px, rgb(0 56 255 / 25%) 0px 0px 8px, rgb(0 255 71 / 52%) 0px 0px 18px;
     text-align: left;
   }
@@ -123,11 +122,7 @@
 
 
 
-@media screen and (max-width: 970px) {
- .second{
-   white-space: nowrap;
- }
-}
+
 
 
 @media screen and (max-width: 850px) {
@@ -203,3 +198,108 @@
     width: fit-content;
   }
 }
+
+
+@media screen and (min-width: 840px) {
+
+.second{
+white-space: nowrap;
+}
+}
+
+
+@media screen and (max-width: 840px) {
+
+.second{
+
+  text-align: center;
+  width: 500px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 500px;
+}
+}
+
+@media screen and (max-width: 565px) {
+
+.second{
+
+  text-align: center;
+  width: 400px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 400px;
+    margin-bottom: 0;
+}
+
+.trading{
+  width: 400px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 455px) {
+
+.second{
+
+  text-align: center;
+  width: 350px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 350px;
+}
+
+.trading{
+
+    width: 300px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 386px) {
+
+.second{
+
+  text-align: center;
+  width: 330px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 300px;
+}
+
+.trading{
+
+    width: 300px;
+  text-align: center;
+}
+
+.finished-banner{
+  margin: 0;
+}
+
+.first{
+  width: 300px;
+}
+
+.txt{
+  width: 100%;
+}
+
+.cont{
+  width: 300px;
+}
+}
+
+
