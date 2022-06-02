@@ -1,22 +1,25 @@
-<div class="table-filter-container d-flex space-between wrap">
+<div class="table-filter-container d-flex space-between wrap" >
         <div class="filter-left ">
             <div class="item-left d-flex center vert-center wrap">
-                <div class="container-svg-list-card-filter-svg">
-
-                    <img class="card-filter-svg" src="../../../assets/farms/filter-farms/card-filter.svg" alt="card">
-                    <img class="list-filter-svg" src="../../../assets/farms/filter-farms/list-filter.svg" alt="list">
+                <div class="container-switch-style d-flex" style="column-gap: 1rem">
+                    <div class="container-svg-list-card-filter-svg">
+                        <img (click)="showCard('card')" class="card-filter-svg" [class.active-component-style]="activeCompNav" src="../../../assets/farms/filter-farms/card-filter.svg" alt="card">
+                    </div> 
+                    <div class="container-svg-list-card-filter-svg">
+                        <img (click)="showTable('table')"  class="list-filter-svg" [class.active-component-style]="!activeCompNav" src="../../../assets/farms/filter-farms/list-filter.svg" alt="list">
+                    </div>
                 </div>
                 <div class="container-toggle-text-staked d-flex vert-center">
-                    <div class="container-staked-farms-toggle d-flex" [class.newColorChecked]="toggleColor" (click)="changeColorTogle()">
-                        <input scale="sm" type="checkbox"  id="staked-only-farms" class="toggle-staked-farms">
+                    <div class="container-staked-farms-toggle d-flex" [class.newColorChecked]="toggleColor">
+                        <input [checked]="toggleColor" scale="sm" type="checkbox"  id="staked-only-farms" class="toggle-staked-farms"  (change)="changeColorTogle()" >
                         <div class="slider-toggle"></div>
                     </div>
                      <p>Staked only</p>
                 </div>
                 <div class="container-live-finished-toggle">
-                        <a class="farms-link-live">Live</a>
+                        <a class="farms-link-live switch-live-finished">Live</a>
                         <span class="container-link-finished">
-                            <a>Finished</a>
+                            <a class="link-finished">Finished</a>
                         </span>
                 </div>
             </div>

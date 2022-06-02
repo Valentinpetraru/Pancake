@@ -1,15 +1,19 @@
-<div class="cards-container d-flex center vert-center wrap" style="height: 800px">
-        <div class="container-card">
+<div class="cards-container d-flex center align-start wrap" >
+        <div class="container-card" *ngFor="let data of farmsData | searchFilter: searchKey: 'nameToken'; let i = index">
             <div class="card-body">
                 <div class="card-header d-flex space-between vert-center">
                     <div class="sub-header-left">
                         <div class="img-left-header-container d-flex " >
-                            <img class="back-img-card-header" src="https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"  alt="">
-                            <img class="front-img-card-header"  src="https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"  alt="header">
+                            <div class="container-back-img-card-header">
+                                <img class="back-img-card-header" src="https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"  alt="">
+                            </div>
+                            <div class="container-front-img-card-header">
+                                <img class="front-img-card-header"  src="{{data.svgPath}}"  alt="header">
+                            </div>
                         </div>
                     </div>
                     <div class="sub-header-right">
-                            <h2 class="cake-bnb">CAKE-BNB</h2>
+                            <h2 class="cake-bnb">{{data.nameToken | uppercase}}</h2>
                             <div class="d-flex vert-center">
                                 <div class=" container-core d-flex vert-center">
                                     <svg viewBox="0 0 24 24" width="18px" color="secondary" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 dodMCi" fill="#7645d9">
@@ -27,7 +31,7 @@
                 <div class="d-flex space-between vert-center" style="height: 32px; margin-bottom:8px">
                     <p class="apr">APR</p>
                     <div class="container-percent-svg-calc d-flex vert-center">
-                        <p >29.9%</p>
+                        <p >{{data.apr}}%</p>
                         <svg viewBox="0 0 24 24" width="18px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 mvupn" style="margin-left: 10px" fill="rgb(40, 13, 95)">
                             <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z"></path>
                             <path d="M11.25 7.72H6.25V9.22H11.25V7.72Z"></path>
@@ -44,17 +48,17 @@
                 </div>
                 <p class="cake-earned-txt"><span>CAKE </span>EARNED</p>
                 <div class="d-flex space-between vert-center" style="margin-bottom: 8px">
-                    <h2 class="tot-cake-earned">0.000</h2>
+                    <h2 class="tot-cake-earned">{{data.earned}}.000</h2>
                     <button class="btn-harvest">HARVEST</button>
                 </div>
                 <div class="d-flex" style="margin-bottom: 8px">
-                    <p class="txt-cake">CAKE-BNB LP</p>
+                    <p class="txt-cake">{{data.nameToken | uppercase}} LP</p>
                     <p class="txt-earned">STAKED</p>
                 </div>
                 <button class="btn-connect-wallet">Connect Wallet</button>
             </div>
             <div class="card-footer">
-                <div class="d-flex center">
+                <div class="cont-txt-det-hid-arrow d-flex center" (click)="rotate($event)">
                     
                         <p class="txt-details-hide">Details</p>
                         <svg viewBox="0 0 24 24" color="text" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 mvupn" fill="rgb(31, 199, 212)">
@@ -63,25 +67,23 @@
                     
                     
                 </div>
-                <div class="sub-card-datails">
+                <div class="sub-card-datails" style="display: none" >
                         <div class="sub-txt-tot-liqui d-flex space-between">
                             <p >Total Liquidity</p>
                              <div >
-                                <p>$99999999</p>
+                                <p>{{data.liquidity | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
                             </div>
                         </div>
                         
                          <div class="containers-links d-flex column">
-                                <a class="d-flex">Get CAKE-BNB LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
+                                <a class="d-flex">Get {{data.nameToken | uppercase}} LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
                                 <a  class="d-flex">View Contract LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
                                 <a  class="d-flex">See Pair Info <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
                         </div>
-                            
-                    </div>
+                </div>
             </div>
         </div>
 
-        
 
          
 </div>

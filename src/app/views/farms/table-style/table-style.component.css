@@ -1,0 +1,264 @@
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+
+
+/* Table data  rows START */
+
+.table-container-data-rows{
+    margin-top: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(231, 227, 235);
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 26px;
+    border-radius: 16px;
+    cursor: pointer;
+  
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 28% 9% 9% 16% 18% 12% 8%;
+    border-bottom: 2px solid rgb(233, 234, 235);
+}
+
+.grid-item{
+    padding: 1.5rem 2rem 1.5rem 0 ;
+    font-size: 12px;
+    line-height:12px;
+    color:#7a6eaa;
+    font-weight: 400;
+    column-gap: .4rem;
+
+}
+.container-token-img-back{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    
+}
+
+.container-token-img-front{
+ position: relative;
+ width: 26px;
+ height: 26px;
+ border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.25);
+
+}
+
+.token-back-img{
+    width: 100%;
+    height: 100%;
+}
+
+.token-img-front{
+    width: 100%;
+    height: 100%;
+}
+
+
+.title-token{
+    font-size: 16px;
+    font-weight: 600;
+    color: #280d5f;
+}
+.earned-total{
+    font-size: 16px;
+    color:#bdc2c4;
+    display: inline-block;
+    margin-top: 6px;
+    
+}
+
+.apr-percent{
+    color:#280d5f;
+    font-size: 16px;
+    font-weight: 400px;
+  
+}
+
+.container-percent-calculator img{
+    filter: invert(46%) sepia(32%) saturate(594%) hue-rotate(211deg) brightness(92%) contrast(84%);
+    margin-left: 4px;
+}
+
+.svg-question{
+    filter: invert(46%) sepia(32%) saturate(594%) hue-rotate(211deg) brightness(92%) contrast(84%);
+}
+
+.total-liquidy{
+    font-weight: 400;
+    font-size: 16px;
+     color:#280d5f;
+
+}
+
+.multiply{
+    font-weight: 400;
+    font-size: 16px;
+     color:#280d5f;
+}
+
+
+.container-core-checked{
+    max-width: fit-content;
+    font-size: 12px;
+    color: rgb(118, 69, 217);
+    border-radius: 16px;
+    padding: 0px 4px;
+    white-space: nowrap;
+    height: 24px;
+    background: rgb(250, 249, 250);
+    border: 2px solid rgb(118, 69, 217);
+    font-weight: 400;
+   
+}
+
+.container-core-checked  img{
+    filter: invert(29%) sepia(30%) saturate(4065%) hue-rotate(242deg) brightness(98%) contrast(91%);
+    padding-top: 3px;
+}
+
+.svg-arrow-details{
+     filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(3878%) hue-rotate(139deg) brightness(86%) contrast(91%);
+     
+}
+
+.svg-question-container{
+    margin-left: 10px;
+}
+
+.container-to-top{
+    cursor: auto;
+}
+
+.item-to-top{
+    height: 58px;
+}
+
+.btn-to-top{
+    font-size: 16px;
+    color: #1fc7d4;
+    font-weight: 800;
+    cursor: pointer;
+    background:none;
+    border: none;
+}
+
+.container-to-top-svg img{
+      filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(3878%) hue-rotate(139deg) brightness(86%) contrast(91%);
+      
+}
+
+.text-details{
+    color: #1fc7d4;
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+}
+
+
+.rotate180{
+    transform:  rotate(180deg);
+}
+/* Table data  rows END */
+
+
+@media only screen and (max-width: 968px){
+    .core-container, .liquidy-container, .container-multiple{
+        display: none;
+    }
+    .text-details{
+        display: block;
+    }
+    .grid-container{
+        grid-template-columns: 45% 15% 20% 20%;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+
+    .container-calc-img{
+        display: none;
+    }
+    .filter-left{
+        width: 100%;
+    }
+    .item-left{
+        justify-content: space-between;
+    }
+
+    .grid-container{
+        grid-template-columns: none;
+        grid-template-areas: 
+        "token token token core core core"
+        "earned earnd apr apr details details"
+        ;
+       
+    }
+  .grid-item{
+      padding-left: 1rem!important;
+        padding-right: 1rem!important;
+  }
+    .token-title-container{
+        grid-area: token;
+        padding-bottom: 0;
+    }
+
+    .core-container{
+    display: block;
+    grid-area: core;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 0;
+      
+    }
+
+    .earned-container {
+        grid-area: earned;
+    }
+
+    .apr-container{
+        grid-area: apr;
+    }
+
+    .details-container{
+        grid-area: details;
+        justify-content: end;
+    }
+}
+
+

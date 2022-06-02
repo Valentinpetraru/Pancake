@@ -7,6 +7,7 @@ import { FarmsPoolsFiltersToolbarService } from 'src/app/services/farms-pools-fi
 import { delay } from 'rxjs';
 
 
+
 @Component({
   selector: 'cake-farms',
   templateUrl: './farms.component.html',
@@ -14,14 +15,20 @@ import { delay } from 'rxjs';
 })
 export class FarmsComponent implements OnInit {
 
+  showTableStyleComp: boolean = false;
+  showCardStyleComp: boolean = true;
 
   subMenuRowTableList: boolean = false;
+
+  farmsDataOriginal: any = [];
 
   farmsData: any = [];
 
   objSelected: any = [];
 
-  searchKey: string = ''
+  searchKey: string = '';
+
+  optionSelected: string = '';
 
   constructor(private el: ElementRef, private farmsApiService: FarmsApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) {
 
@@ -32,19 +39,17 @@ export class FarmsComponent implements OnInit {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
 
-    if (scrollable === Math.ceil(scrolled)) {
-      console.log("you've reached scrollable")
-    }
-
-
 
 
   }
 
 
   ngOnInit(): void {
-    this.farmsApiService.getApiFarms().subscribe(data => {
-      this.farmsData = data;
+    this.farmsApiService.getApiFarms().subscribe(response => {
+
+      this.farmsDataOriginal = response;
+
+      this.farmsData = response.slice(0, 12);
 
     })
 
@@ -52,6 +57,10 @@ export class FarmsComponent implements OnInit {
       this.searchKey = value;
     })
 
+    if (sessionStorage.getItem('componentOpen') === 'table') {
+      this.showTableStyleComp = true;
+      this.showCardStyleComp = false;
+    }
 
 
   }
@@ -82,39 +91,44 @@ export class FarmsComponent implements OnInit {
     this.subMenuRowTableList = (this.subMenuRowTableList) ? false : true;
   }
 
+
   filter(option: string) {
-    /*Sorted by latest minus to higher */
-    let sortArr = []
-    console.log(option)
-    switch (option) {
-      case 'latest':
-        sortArr = this.farmsData.sort((a: any, b: any) => parseFloat(a.latest) - parseFloat(b.latest));
-        break;
-      case 'liquidity':/*Higest to lowest */
-        sortArr = this.farmsData.sort((a: any, b: any) => parseFloat(b.liquidity) - parseFloat(a.liquidity));
-        break;
-      case 'earned':/*Higest to lowest */
-        sortArr = this.farmsData.sort((a: any, b: any) => parseFloat(b.earned) - parseFloat(a.earned));
-        break;
-      case 'multiplier':/*Higest to lowest */
-        sortArr = this.farmsData.sort((a: any, b: any) => parseFloat(b.liquidity) - parseFloat(a.liquidity));
-        break;
-      case 'apr': /*Higest to lowest */
-        sortArr = this.farmsData.sort((a: any, b: any) => parseFloat(b.apr) - parseFloat(a.apr));
-        break;
-      case 'hot':
-        sortArr = this.farmsData.sort(() => Math.random() - 0.5);
-        break
+
+    this.optionSelected = option;
+  }
+
+  showComponent(value: any): any {
+
+    if (value === 'card') {
+      this.showCardStyleComp = true;
+      this.showTableStyleComp = false;
+      sessionStorage.removeItem("componentOpen");
+      return true
+    }
+    if (value === 'table') {
+      this.showCardStyleComp = false;
+      this.showTableStyleComp = true;
+      sessionStorage.setItem("componentOpen", "table");
+      return true
+    }
+  }
+
+  onScroll() {
+    let lenFd = this.farmsData.length;
+
+    if (lenFd + 12 <= this.farmsDataOriginal.length) {
+
+      for (let i = lenFd; i < lenFd + 12; i++) {
+        this.farmsData.push(this.farmsDataOriginal[i]);
+      }
     }
 
-    this.farmsData = sortArr
+    if (lenFd + 12 > this.farmsDataOriginal.length && lenFd !== this.farmsDataOriginal.length) {
 
-    // this.farmsPoolsFilters.selectedOptionsFilter.next(sortArr)
-
-    // this.farmsPoolsFilters.selectedOptionsFilter.subscribe((data: any) => {
-    //   this.farmsData = data;
-    // })
-
+      for (let i = lenFd; i < this.farmsDataOriginal.length; i++) {
+        this.farmsData.push(this.farmsDataOriginal[i]);
+      }
+    }
 
   }
 

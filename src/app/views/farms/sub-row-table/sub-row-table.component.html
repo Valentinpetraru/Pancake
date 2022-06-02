@@ -4,7 +4,7 @@
     <div class="t d-flex center vert-center space-between">
 
         <div class="containers-links d-flex column">
-            <a class="d-flex">Get CAKE-BNB LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
+            <a class="d-flex" *ngFor="let data of formsData">Get {{data.nameToken | uppercase}} LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
             <a  class="d-flex">View Contract LP <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
             <a  class="d-flex">See Pair Info <img src="../../../assets/farms/table-farms/external-links.svg" alt=""></a>
         </div>

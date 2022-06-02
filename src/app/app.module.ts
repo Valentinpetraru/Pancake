@@ -46,6 +46,8 @@ import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-
 import { FormsModule } from '@angular/forms';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
 import { CardStyleComponent } from './views/farms/card-style/card-style.component';
+import { TableStyleComponent } from './views/farms/table-style/table-style.component';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 
 @NgModule({
@@ -89,6 +91,7 @@ import { CardStyleComponent } from './views/farms/card-style/card-style.componen
     FiltersBarComponent,
     SearchFilterPipe,
     CardStyleComponent,
+    TableStyleComponent,
 
 
   ],
@@ -97,7 +100,8 @@ import { CardStyleComponent } from './views/farms/card-style/card-style.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModuleSharedModule
+    ModuleSharedModule,
+    InfiniteScrollModule
   ],
   providers: [
     FarmsApiService,
