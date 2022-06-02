@@ -39,6 +39,8 @@ import { HomepageComponent } from './Project/homepage/homepage.component';
 import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-cake-makes.component';
 import { SectionPancakeMakesComponent } from './Project/section-pancake-makes/section-pancake-makes.component';
 import { ConnectWalletComponent } from './core/nav-bar/connect-wallet/connect-wallet.component';
+import { IfoCardsComponent } from './views/ifo/ifo-shared/ifo-cards/ifo-cards.component';
+import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.component';
 
 
 @NgModule({
@@ -79,7 +81,9 @@ import { ConnectWalletComponent } from './core/nav-bar/connect-wallet/connect-wa
     HomepageComponent,
     SectionCakeMakesComponent,
     SectionPancakeMakesComponent,
-    ConnectWalletComponent
+    ConnectWalletComponent,
+    IfoCardsComponent,
+    IfoCakeComponent
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,8 @@
     font-family: 'Kanit';
     src: url(../src/assets/Kanit/Kanit-Bold.ttf),
     url(../src/assets/Kanit/Kanit-Medium.ttf),
-    url(../src/assets/Kanit/Kanit-Regular.ttf);
+    url(../src/assets/Kanit/Kanit-Regular.ttf),
+    url(../src/assets/Kanit/Kanit-Light.ttf);
 }
 
 *{

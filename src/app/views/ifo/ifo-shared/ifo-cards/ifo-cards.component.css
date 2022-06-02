@@ -1,0 +1,124 @@
+.container-cards {
+    max-width: 410px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+    background: #e7e3eb;
+    border-radius: 24px;
+    
+    
+    
+}
+
+.header-container-cards {
+    border-bottom-left-radius: 100% 40px;
+    border-bottom-right-radius: 100% 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../../../../../assets/Ifo-Assets/ifo-coming-soon-desktop.png);
+    width: 100%;
+    height: 110px;   
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+
+.flex-cont {
+   
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card-public-sale, .card-private-sale {
+    background: none;
+    max-width: 368px;
+    width: 100%;
+    margin: 0px auto;
+    height: fit-content;    
+}
+
+.card1 {
+    
+    max-width: 368px;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.459);
+    margin-bottom: 24px;
+  
+}
+
+.nav-public{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(226, 201, 251) 0%, rgb(205, 184, 250) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 16px 24px;
+}
+
+.main-public, .main-private{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    
+}
+
+.main-public p, .main-private p {
+    color: rgb(40, 13, 95);
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+/* Card Private Sale */
+
+
+.nav-private {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(167, 232, 241) 0%, rgb(148, 225, 242) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 16px 24px;
+}
+
+
+
+@media screen and (min-width: 852px) {
+    .container-cards {
+        max-width: 800px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container-cards {
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+        margin: 12px;
+    }
+
+    
+
+    .flex-cont {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+    }
+}
