@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 
 
@@ -11,12 +12,17 @@ export class SectionCakeMakesComponent implements OnInit {
  
  
  
-  number: number = 290853574;
+  number: any = 290853574;
+  element: any;
 
   constructor() { }
 
   ngOnInit(): void {
 
+    
+   
+    
+    
     window.addEventListener('load', () => {
        const interval = setInterval(() =>{
           this.number = Math.floor(Math.random() + (this.number +2411)-800) ;
@@ -25,9 +31,7 @@ export class SectionCakeMakesComponent implements OnInit {
         
     })
 
-
-
-
+    
   }
 
  prova:any = 123;
@@ -40,6 +44,20 @@ export class SectionCakeMakesComponent implements OnInit {
   }
 },10)
 
- }
+
+
+@ViewChild('scrollEventTest') scrollTest!: ElementRef;
+  
+
+  valueScroll() {
+    const element = console.log(this.scrollTest, "scrolled");
+  }
+}
+
+ 
 
   
+
+ 
+
+
