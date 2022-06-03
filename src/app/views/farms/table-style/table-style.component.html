@@ -1,0 +1,87 @@
+<div class="table-container-data-rows">
+
+  
+
+        <ng-container *ngFor="let data of farmsData | searchFilter: searchKey: 'nameToken'; let i = index">
+            <div class="grid-container" (click)="rotate(i)">
+                        <div class="grid-item token-title-container d-flex vert-center" style="padding-left: 2rem">
+                            <div style="position: relative">
+                                <div class="container-token-img-back">
+                                    <img src="https://pancakeswap.finance/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png" class="token-back-img" alt="">
+                                </div>
+                                <div class="container-token-img-front" style=" position: relative;">
+                                    <img class="token-img-front" src="{{data.svgPath}}" alt="cake" >
+                                </div>
+                                
+                            </div>
+                            <p class="title-token">{{data.nameToken | uppercase}}</p>
+                        </div>
+                        <div class="grid-item core-container d-flex vert-center">
+                            <div class="container-core-checked d-flex vert-center">
+                                <div>
+                                    <img src="../../../assets/farms/table-farms/checked.svg" alt="core">
+                                </div>
+                                <p>Core</p>
+                            </div>
+                        </div>
+                        <div class="grid-item earned-container ">
+                            <p>Earned</p>
+                            <span class="earned-total">{{data.earned}}</span>
+                        </div>
+                        <div class="grid-item apr-container">
+                            <p>APR</p>
+                            <div class="container-percent-calculator d-flex vert-center">
+                                <span class="apr-percent">{{data.multiplier}}%</span>
+                                <div class="container-calc-img">
+                                    <img src="../../../assets/farms/table-farms/calculator.svg" alt="Calculator">
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="grid-item liquidy-container">
+                            <p>Liquidity</p>
+                            <div class="container-total-liquidy d-flex vert-center ">
+                                <div class="d-flex vert-center space-between" style="width: 150px">
+                                    <span class="total-liquidy">{{data.liquidity | currency : 'USD' : 'symbol' : '1.0-0' }}</span>
+                                    <div class="svg-question-container">
+                                        <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item container-multiple">
+                            <p>Multiplier</p>
+                            <div class="d-flex vert-center">
+                                <span class="multiply">{{data.multiplier}}x</span>
+                                <div class="svg-question-container">
+                                    <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item details-container d-flex vert-center" style="column-gap: 0">
+                            <p class="text-details">Details</p>
+                            <div>
+                                <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom" [class.rotate180]="subMenuRowTableList"  >
+                            </div>
+                        </div>
+            </div>
+            <!-- SUB MENU ROW TABLE -->
+            <cake-sub-row-table  style="display: none;" [formsData]="[data]"></cake-sub-row-table>
+      </ng-container>
+
+
+       
+       <div class="container-to-top d-flex center ">
+           <div class="item-to-top d-flex vert-center">
+               <a href="#top" style="text-decoration: none">
+                    <button class="btn-to-top d-flex vert-center">
+                        <p>To Top</p>
+                        <div class="container-to-top-svg">
+                             <img src="../../../assets/farms/table-farms/top-top-arrow.svg" alt="">
+                        </div>
+                    </button>
+                </a>
+           </div>
+       </div>
+      
+       
+</div>

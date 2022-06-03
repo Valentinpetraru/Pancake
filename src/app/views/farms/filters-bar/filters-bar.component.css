@@ -149,10 +149,16 @@ button{
 }
 /* TABLE ENDS */
 
+.item-left{
+    column-gap: .5rem;
+}
 .card-filter-svg, .list-filter-svg{
     filter: invert(96%) sepia(0%) saturate(5894%) hue-rotate(257deg) brightness(84%) contrast(86%);
 }
 
+.container-svg-list-card-filter-svg{
+    cursor: pointer;
+}
 /* SWITCH  small toogle STart */
 
 .container-staked-farms-toggle{
@@ -202,11 +208,11 @@ button{
     
 }
 
-
-
+/*Adding removing background color on toggling*/
 .newColorChecked{
     background-color: rgb(49, 208, 170);
 }
+
 
 .container-toggle-text-staked > p{
     color: rgb(40, 13, 95);
@@ -228,6 +234,8 @@ button{
     border: 1px solid rgb(215, 202, 236);
     width: auto;
     cursor: pointer;
+     overflow: hidden;
+    
 }
 
 .container-live-finished-toggle a{
@@ -235,6 +243,7 @@ button{
     padding-right: 12px;
     font-weight: 600;
     color: rgb(122, 110, 170);
+   
 }
 
 
@@ -255,9 +264,20 @@ button{
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     height: 32px;
     padding: 0px 16px;
-     background-color: rgb(122, 110, 170);
-    color: rgb(255, 255, 255)!important;
     
+    
+}
+
+.link-finished{
+    border-radius: 16px;
+}
+
+/*Class for router link*/
+.switch-live-finished{
+     background-color: rgb(122, 110, 170);
+     color: rgb(255, 255, 255)!important;
+     height: 100%;
+     padding: .5rem;  
 }
 
 /* Switch toggle big ends */
@@ -315,27 +335,51 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
 
 
 
-
-
-
-
-.container-image-farm-bottom{
-    max-width: 1200px;
-    margin: 0 auto;
-    
+/*SORT BY OPTION*/
+.sub-options-sort-by{
+    height: 189px;
+    width: 100%;
+    z-index: 10;
+    background: rgb(238, 234, 244);
+    position: absolute;
+    top: 39px;
+    left: 0;
+    border: 1px solid rgb(215, 202, 236);
+    border-radius: 0  0px 16px 16px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px, rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+    -webkit-box-pack: justify;
+    cursor: pointer;
+    justify-content: start;
+    display: none;
+   
+    border-width: 0px 1px 1px;
+    border-style: solid;
+    border-color: rgb(215, 202, 236);
+    border-image: initial;
+    overflow: hidden;
+}
+.sub-options-sort-by li{
+    padding: .6rem 1.1rem .6rem 1.1rem;
+    list-style: none;
+    color:#280d5f;
+    font-weight: 400px;
 }
 
-@media only screen and (max-width: 968px){
-    .core-container, .liquidy-container, .container-multiple{
-        display: none;
-    }
-    .text-details{
-        display: block;
-    }
-    .grid-container{
-        grid-template-columns: 45% 15% 20% 20%;
-    }
+.sub-options-sort-by li:hover{
+    background-color: #d7caec
 }
+
+
+.bottom-border-radius{
+    border-radius: 16px 16px 0 0;
+}
+
+.show-options-sort{
+    display: block;
+}
+
+
+
 
 @media only screen and (max-width: 572px) {
     .filter-left{
@@ -343,6 +387,7 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
     }
     .item-left{
         justify-content: space-between;
+        margin-bottom: 16px;
     }
 
     .grid-container{
@@ -353,14 +398,16 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
     .core-container{
     display: block;
     
-        
     }
-
-
-
-    
+ 
 }
 
+
+@media only screen and (max-width: 412px){
+      .container-live-finished-toggle{
+        margin-top: 16px!important;
+    }
+}
 
 @media only screen and (max-width: 370px) {
     .container-toolbar-farms-pools{
@@ -370,6 +417,19 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
         margin-top: 0;
        
     }
+   
+  
+
+}
+.active-component-style{
+    filter: invert(94%) sepia(92%) saturate(7367%) hue-rotate(146deg) brightness(87%) contrast(88%);
 }
 
 
+
+.search-results{
+    height: 100%;
+    overflow-y: scroll;
+  
+
+}

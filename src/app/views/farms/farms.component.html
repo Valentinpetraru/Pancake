@@ -1,5 +1,5 @@
 <!-- ToolBar Starts -->
-<div class="container-toolbar-farms-pools d-flex center vert-center ">
+<div class="container-toolbar-farms-pools d-flex center vert-center " id="top">
     <div class="farms-container d-flex  column">
         <a class="link-farms">Farms</a>
         <span class="test"></span>
@@ -14,194 +14,54 @@
 <!-- FARMS STart -->
 <div class="farms-title-container">
     <div class="container-title-sub-link">
-        <h1 class="title">Farms</h1>
-        <h2 class="sub-title">Stake Lp tokens to earn</h2>
+        <h1 class="title" >Farms</h1>
+        <h2 class="sub-title">Stake LP tokens to earn.</h2>
         <a class="link-comunity-actions d-flex ">
             <p>Community Auctions</p>
             <img class="svg-forms-link" src="../../../assets/farms/arrow-farms-title.svg" alt="arrow" fill="currentColor">
         </a>
     </div>
-</div>    
+</div>
 <!-- FARMS ENd -->
 
 <!-- FILTTER STARTS -->
 <div class="table-container">
-    <div class="table-filter-container d-flex space-between wrap">
-        <div class="filter-left ">
-            <div class="item-left d-flex center vert-center wrap">
-                <div class="container-svg-list-card-filter-svg">
-
-                    <img class="card-filter-svg" src="../../../assets/farms/filter-farms/card-filter.svg" alt="card">
-                    <img class="list-filter-svg" src="../../../assets/farms/filter-farms/list-filter.svg" alt="list">
-                </div>
-                <div class="container-toggle-text-staked d-flex vert-center">
-                    <div class="container-staked-farms-toggle d-flex" [class.newColorChecked]="toggleColor" (click)="changeColorTogle()">
-                        <input scale="sm" type="checkbox"  id="staked-only-farms" class="toggle-staked-farms">
-                        <div class="slider-toggle"></div>
-                    </div>
-                     <p>Staked only</p>
-                </div>
-                <div class="container-live-finished-toggle">
-                        <a class="farms-link-live">Live</a>
-                        <span class="container-link-finished">
-                            <a>Finished</a>
-                        </span>
-                </div>
-            </div>
-
-        </div>
-        <div class="filter-right d-flex">
-            <div class="container-sort-by">
-                <div style="font-size: 12px">SORT BY</div>
-                <div class="container-list-item d-flex space-between center">
-                    <div style="font-size: 16px">Multiple</div>
-                    <img src="../../../assets/farms/filter-farms/arrow-sort-by.svg" alt="">
-                </div>
-            </div>
-            <div class="container-search">
-                <div style="font-size: 12px">SEARCH</div>
-                <div class="container-search-input d-flex">
-                    <input class="search-bar" type="text" placeholder="Search Farms">
-                </div>
-            </div>
-        </div>
-    </div>
+    <cake-filters-bar (showComponent)="showComponent($event)" (optionEmitted)="filter($event)"></cake-filters-bar>
 <!-- FILTTER ENDS -->
 
 <!-- TABLE DATA  ROWS START -->
-    <div class="table-container-data-rows">
-       <div class="grid-container" (click)="rotate()">
-                <div class="grid-item token-title-container d-flex vert-center" style="padding-left: 2rem">
-                    <div>
-                        <img src="../../../assets/farms/table-farms/token-icon/cake-bnb.png" alt="cake" style="width: 26px; height: 26px">
-                    </div>
-                    <p class="title-token">CAKE-BNB</p>
-                </div>
-                <div class="grid-item core-container d-flex vert-center">
-                    <div class="container-core-checked d-flex vert-center">
-                        <div>
-                            <img src="../../../assets/farms/table-farms/checked.svg" alt="core">
-                        </div>
-                        <p>Core</p>
-                    </div>
-                </div>
-                <div class="grid-item spearned-container ">
-                    <p>Earned</p>
-                    <span class="earned-total">0</span>
-                </div>
-                <div class="grid-item apr-container">
-                    <p>APR</p>
-                    <div class="container-percent-calculator d-flex vert-center">
-                        <span class="apr-percent">30.67%</span>
-                        <div>
-                            <img src="../../../assets/farms/table-farms/calculator.svg" alt="Calculator">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item liquidy-container">
-                    <p>Liquidity</p>
-                    <div class="container-total-liquidy d-flex vert-center">
-                        <span class="total-liquidy">$181,1448,102</span>
-                        <div class="svg-question-container">
-                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item container-multiple">
-                    <p>Multiple</p>
-                    <div class="d-flex vert-center">
-                        <span class="multiply">40x</span>
-                        <div class="svg-question-container">
-                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item details-container d-flex vert-center">
-                    <p class="text-details">Details</p>
-                    <div>
-                        <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom" [class.rotate180]="subMenuRowTableList"  >
-                    </div>
-                </div>
-       </div>
-
-       <!-- SUB MENU ROW TABLE -->
-       <cake-sub-row-table [subMenuRowTableList]="subMenuRowTableList"></cake-sub-row-table>
-       
-       <div class="grid-container" (click)="rotate()">
-                <div class="grid-item token-title-container d-flex vert-center" style="padding-left: 2rem">
-                    <div>
-                        <img src="../../../assets/farms/table-farms/token-icon/cake-bnb.png" alt="cake" style="width: 26px; height: 26px">
-                    </div>
-                    <p class="title-token">CAKE-BNB</p>
-                </div>
-                <div class="grid-item core-container d-flex vert-center">
-                    <div class="container-core-checked d-flex vert-center">
-                        <div>
-                            <img src="../../../assets/farms/table-farms/checked.svg" alt="core">
-                        </div>
-                        <p>Core</p>
-                    </div>
-                </div>
-                <div class="grid-item spearned-container ">
-                    <p>Earned</p>
-                    <span class="earned-total">0</span>
-                </div>
-                <div class="grid-item apr-container">
-                    <p>APR</p>
-                    <div class="container-percent-calculator d-flex vert-center">
-                        <span class="apr-percent">30.67%</span>
-                        <div>
-                            <img src="../../../assets/farms/table-farms/calculator.svg" alt="Calculator">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item liquidy-container">
-                    <p>Liquidity</p>
-                    <div class="container-total-liquidy d-flex vert-center">
-                        <span class="total-liquidy">$181,1448,102</span>
-                        <div class="svg-question-container">
-                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item container-multiple">
-                    <p>Multiple</p>
-                    <div class="d-flex vert-center">
-                        <span class="multiply">40x</span>
-                        <div class="svg-question-container">
-                            <img class="svg-question" src="../../../assets/farms/table-farms/question.svg" alt="question mark">
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item details-container d-flex vert-center">
-                    <p class="text-details">Details</p>
-                    <div>
-                        <img class="svg-arrow-details" src="../../../assets/farms/table-farms/arrow-bottom.svg" alt="arrow-bottom" [class.rotate180]="subMenuRowTableList"  >
-                    </div>
-                </div>
-       </div>
-
-       <!-- SUB MENU ROW TABLE -->
-       <cake-sub-row-table [subMenuRowTableList]="subMenuRowTableList"></cake-sub-row-table>
-       
-
-
-       <div class="container-to-top d-flex center ">
-           <div class="item-to-top d-flex vert-center">
-               <button class="btn-to-top d-flex vert-center">
-                   <p>To Top</p>
-                   <div class="container-to-top-svg">
-                       <img src="../../../assets/farms/table-farms/top-top-arrow.svg" alt="">
-                    </div>
-                </button>
-           </div>
-       </div>
-      
-       
-    </div>
+<div
+      class="search-results"
+      [scrollWindow]="true"
+      infiniteScroll
+      [infiniteScrollDistance]="0"
+     [infiniteScrollUpDistance]="1.5"
+      [infiniteScrollThrottle]="100"
+      (scrolled)="onScroll()"
+    >
+    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style>
 <!-- TABLE DATA  ROWS END -->
 
+
+<!-- TABLE DATA  ROWS START -->
+<cake-card-style *ngIf="showCardStyleComp"  [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-card-style>
+<!-- TABLE DATA  ROWS START -->
 </div>
+
+    <div class="container-image-farm-bottom d-flex center">
+        <img src="https://pancakeswap.finance/images/decorations/3dpan.png" alt="" style="margin-top: 58px">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 

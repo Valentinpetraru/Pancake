@@ -3,4 +3,5 @@ export interface SubMenu {
   visibility: boolean;
   listItems: string[];
   svgPattern?: string;
+  routerPath?:string;
 }

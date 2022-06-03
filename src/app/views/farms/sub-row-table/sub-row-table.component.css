@@ -27,18 +27,122 @@
 
 
 .container-sub-menu{
-    height: 0;
+    height: auto;
     overflow: hidden;
     transition:5s;
+   
    
 }
 
 .t{
-    height: 200px;
-    
+  
+     padding: 1rem 2rem 1rem 2rem;
     background-color: #F6F6F6;
+    flex-wrap: wrap;
 }
 
 .showSubMenu{
     height: auto;
+}
+
+.containers-links{
+    color: #1fc7d4;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.containers-links img{
+    filter: invert(75%) sepia(93%) saturate(1557%) hue-rotate(139deg) brightness(87%) contrast(89%);
+}
+
+.cake-earned-container,  .connect-wallet-container{
+        border: 2px solid rgb(238, 234, 244);
+        padding: 1rem;
+        width: 35%;
+        border-radius: 16px;
+}
+
+.tot-btn-hervest-container p{
+    font-weight: 800;
+    font-size: 20px;
+}
+.pa-cake-earned{
+    font-size: 20px;
+    color: #7645d9;
+    font-weight: 600;
+}
+
+.btn-harvest{
+    height: 48px;
+    padding: 0 1.5rem;
+    background-color: rgb(233, 234, 235);
+    color: rgb(189, 194, 196);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    border: none;
+    cursor: not-allowed;
+    border-radius: 16px;
+}
+
+.connect-wallet-container p{
+    font-size: 12px;
+    color: #7a6eaa;
+    font-weight: 600;
+    padding-bottom: .2rem;
+}
+
+.btn-connect-wallet{
+    height: 48px;
+    width: 100%;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1fc7d4;;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset
+}
+
+.btn-connect-wallet:hover{
+    background-color: #6BD8E0;
+}
+
+.containers-links a:hover{
+    text-decoration: underline
+}
+
+.container-apr-mul-liq{
+    width: 100%;
+    display: none;
+   
+ }
+ .container-apr-mul-liq p{
+     color:#280d5f;
+    font-weight: 500;
+    
+ }
+
+@media only screen and (max-width: 967px){
+    .t{
+        gap: 1rem;
+    }
+    .container-apr-mul-liq{
+        display: flex;
+    }
+ .cake-earned-container, .connect-wallet-container{
+     width: 48%;
+ }
+ .containers-links{
+     order: 4;
+ }
+
+ 
+}
+
+
+@media only screen and (max-width: 514px){
+    .cake-earned-container, .connect-wallet-container{
+     width: 100%;
+ }
 }

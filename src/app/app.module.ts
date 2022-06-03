@@ -61,7 +61,6 @@ import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-s
 import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
 import { RankComponent } from './views/swap/trading-competition/finished/rank/rank.component';
 import { SectionOneComponent } from './views/swap/trading-competition/finished/section-one/section-one.component';
-
 import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.component';
 import { LotteryHowtoplayComponent } from './views/lottery/lottery-howtoplay/lottery-howtoplay.component';
 import { StillGotComponent } from './views/lottery/still-got/still-got.component';
@@ -88,6 +87,18 @@ import { CentralComponent } from './views/prediction/central/central.component';
 import { BnbComponent } from './views/prediction/bnb/bnb.component';
 import { ClockpComponent } from './views/prediction/clockp/clockp.component';
 import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FarmsApiService } from './services/farms-api.service';
+import { ModuleSharedModule } from './module-shared/module-shared.module';
+import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.component';
+import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
+import { FormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { CardStyleComponent } from './views/farms/card-style/card-style.component';
+import { TableStyleComponent } from './views/farms/table-style/table-style.component';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
+
+
 
 @NgModule({
   declarations: [
@@ -153,8 +164,6 @@ import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.
     PatataInSecondsComponent,
     RankComponent,
     SectionOneComponent,
-
-
     EarnSectionComponent,
     SubRowTableComponent,
     LotteryHowtoplayComponent,
@@ -181,14 +190,27 @@ import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.
     CentralComponent,
     BnbComponent,
     ClockpComponent,
-    CardsThreeComponent
+    CardsThreeComponent,
+    SubRowTableComponent,
+    FiltersBarComponent,
+    SearchFilterPipe,
+    CardStyleComponent,
+    TableStyleComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ModuleSharedModule,
+    InfiniteScrollModule
   ],
-  providers: [],
+  providers: [
+    FarmsApiService,
+    FarmsPoolsFiltersToolbarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

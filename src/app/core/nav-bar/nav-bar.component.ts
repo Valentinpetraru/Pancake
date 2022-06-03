@@ -83,6 +83,7 @@ export class NavBarComponent implements OnInit {
     visibility: false,
     listItems: ['Swap', 'Limit', 'Liquidy', 'Perpetual'],
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
+
   },
 
   {
