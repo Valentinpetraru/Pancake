@@ -51,6 +51,7 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { ChartLiquidityComponent } from './views/info/chart-liquidity/chart-liquidity.component';
 import { TopTokensTableComponent } from './views/info/top-tokens-table/top-tokens-table.component';
 import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-table.component';
+import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
 
 
 
@@ -99,6 +100,7 @@ import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-t
     ChartLiquidityComponent,
     TopTokensTableComponent,
     TopPoolsTableComponent,
+    TransactionsTableComponent,
 
 
   ],
