@@ -1,22 +1,25 @@
 
-.wrapper-table{
+ .wrapper-table{
     max-width: 1150px;
     margin: 0 auto;
-    padding: 1.5rem;
-}
+    
+ }
 
 .title-top-tokens{
     font-size: 24px;
+     
     margin: 40px 0 16px 0;
     font-weight: 600;
     line-height: 26.4px;
     color: rgb(40, 13, 95);
+    max-width: 1150px;
+    
 }
 
 .container-table{
     row-gap: 1rem;
     flex-direction: column;
-    max-width: 100%;
+   width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 24px;
     border: 1px solid rgb(231, 227, 235);
