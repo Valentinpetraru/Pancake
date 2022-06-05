@@ -94,6 +94,7 @@ button{
     padding: 0px 24px;
     background-color: rgb(31, 199, 212);
     color: white;
+    z-index: 9;
     margin-top: 24px;
 }
 

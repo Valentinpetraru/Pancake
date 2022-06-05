@@ -77,6 +77,45 @@
 }
 
 
+
 ::-webkit-scrollbar-track {
     box-shadow: rgb(238 234 244) 0px 0px 5px inset;
     border-radius: 10px;}
+
+
+/* Css Reset Start*/
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+

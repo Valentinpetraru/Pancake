@@ -30,18 +30,10 @@ export class FarmsComponent implements OnInit {
 
   optionSelected: string = '';
 
-  constructor(private el: ElementRef, private farmsApiService: FarmsApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) {
+  constructor(private farmsApiService: FarmsApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) {
 
   }
 
-  @HostListener('window:scroll', ['$event'])
-  checkScrollPosition(): void {
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-    const scrolled = window.scrollY;
-
-
-
-  }
 
 
   ngOnInit(): void {

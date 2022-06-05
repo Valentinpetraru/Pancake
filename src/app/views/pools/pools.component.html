@@ -1,0 +1,51 @@
+
+
+<!-- ToolBar Starts -->
+<div class="container-toolbar-farms-pools d-flex center vert-center " id="top">
+    <div class="farms-container d-flex  column">
+        <div class="link-farms" routerLink="/farms">Farms</div>
+        <span ></span>
+    </div>
+    <div class="pools-container d-flex column">
+        <div class="link-pools">Pools</div>
+        <span class="text-decoration"></span>
+    </div>
+</div>
+<!-- Toolbar Ends -->
+
+<!-- FARMS STart -->
+<div class="pools-title-container">
+    <div class="container-title-sub-link">
+        <h1 class="title" >Syrup Pools</h1>
+        <h2 class="sub-title">Just stake some tokens to earn.</h2>
+        <h2 class="sub-title">High APR, low risk.</h2>
+    </div>
+</div>
+<!-- FARMS ENd -->
+<div class="table-container">
+    <cake-filters-bar (showComponent)="showComponent($event)" (optionEmitted)="filter($event)"></cake-filters-bar>
+<!-- FILTTER ENDS -->
+
+<!-- TABLE DATA  ROWS START -->
+<div
+      class="search-results"
+      [scrollWindow]="true"
+      infiniteScroll
+      [infiniteScrollDistance]="0"
+     [infiniteScrollUpDistance]="1.5"
+      [infiniteScrollThrottle]="100"
+      (scrolled)="onScroll()"
+    >
+    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style>
+<!-- TABLE DATA  ROWS END -->
+
+
+<!-- TABLE DATA  ROWS START -->
+<cake-card-style *ngIf="showCardStyleComp"  [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-card-style>
+<!-- TABLE DATA  ROWS START -->
+</div>
+
+    <div class="container-image-farm-bottom d-flex center">
+        <img src="https://pancakeswap.finance/images/decorations/3dpan.png" alt="" style="margin-top: 58px">
+    </div>
+</div>
