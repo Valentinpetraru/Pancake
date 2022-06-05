@@ -8,7 +8,7 @@ import { PredictionComponent } from './views/prediction/prediction.component';
 import { SwapComponent } from './views/swap/swap.component';
 
 const routes: Routes = [
-  {path: 'homepage', component: HomepageComponent},
+  {path: '', component: HomepageComponent},
   {path: 'farms', component:FarmsComponent},
   {path: 'pools', component: PoolsComponent},
   {path: 'swap', component: SwapComponent},

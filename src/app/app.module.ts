@@ -97,6 +97,8 @@ import { SearchFilterPipe } from './pipes/search-filter.pipe';
 import { CardStyleComponent } from './views/farms/card-style/card-style.component';
 import { TableStyleComponent } from './views/farms/table-style/table-style.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -205,7 +207,8 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
     HttpClientModule,
     FormsModule,
     ModuleSharedModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    RouterModule
   ],
   providers: [
     FarmsApiService,
