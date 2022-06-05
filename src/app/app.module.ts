@@ -52,6 +52,7 @@ import { ChartLiquidityComponent } from './views/info/chart-liquidity/chart-liqu
 import { TopTokensTableComponent } from './views/info/top-tokens-table/top-tokens-table.component';
 import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-table.component';
 import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
+import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
 
 
 
@@ -101,6 +102,7 @@ import { TransactionsTableComponent } from './views/info/transactions-table/tran
     TopTokensTableComponent,
     TopPoolsTableComponent,
     TransactionsTableComponent,
+    SearchNavigationComponent,
 
 
   ],
