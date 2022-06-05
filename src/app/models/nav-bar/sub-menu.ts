@@ -1,9 +1,14 @@
 
+export interface RouterLink {
+  itemName?: string;
+  routerLink?: string;
+  routerLinkActive?: string;
+}
 
 export interface SubMenu {
   nameMenu: string;
   visibility: boolean;
-  listItems: string[];
+  listItems: RouterLink[];
   svgPattern?: string;
 
 }

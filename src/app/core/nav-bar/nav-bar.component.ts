@@ -81,7 +81,28 @@ export class NavBarComponent implements OnInit {
   subMenu: SubMenu[] = [{
     nameMenu: 'Trade',
     visibility: false,
-    listItems: ['Swap', 'Limit', 'Liquidy', 'Perpetual'],
+    listItems: [
+      {
+        itemName: 'Swap',
+        routerLink: '/swap',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Limit',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Liquidity',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Perpetual',
+        routerLink: '',
+        routerLinkActive: ''
+      }
+    ],
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
 
   },
@@ -89,25 +110,107 @@ export class NavBarComponent implements OnInit {
   {
     nameMenu: 'Earn',
     visibility: false,
-    listItems: ['Farms', 'Pool'],
+    listItems: [
+      {
+        itemName: 'Farms',
+        routerLink: '/farms',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Pool',
+        routerLink: '/pools',
+        routerLinkActive: ''
+      }
+    ]
+
   },
 
   {
     nameMenu: 'Win',
     visibility: false,
-    listItems: ['Trading Competition', 'Prediction Beta', 'Lottery'],
+    listItems: [
+      {
+        itemName: 'Trading Competition',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Prediction Beta',
+        routerLink: '/prediction',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Lottery',
+        routerLink: '/lottery',
+        routerLinkActive: ''
+      }
+
+    ]
+
   },
 
   {
     nameMenu: 'NFT',
     visibility: false,
-    listItems: ['Overview', 'Collections', 'Activity'],
+    listItems: [
+      {
+        itemName: 'Overview',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Collections',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Activity',
+        routerLink: '',
+        routerLinkActive: ''
+      }
+
+    ]
+
   },
 
   {
     nameMenu: 'dots',
     visibility: false,
-    listItems: ['Info', 'IFO', 'Voting', 'LeaderBoard', 'Blog', 'Docs'],
+    listItems: [
+      {
+        itemName: 'Info',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'IFO',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Voting',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'LeaderBoard',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Blog',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Docs',
+        routerLink: '',
+        routerLinkActive: ''
+
+      }
+
+    ],
+
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
   },
   ];
