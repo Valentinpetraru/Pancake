@@ -16,7 +16,7 @@
        <div class="right-navigation-item">
            <div class="container-search-modal-box" style="position: relative">
                <div class="search-container">
-                   <input class="search" type="text" placeholder="Search pools or tokens">
+                   <input class="search" type="text" placeholder="Search pools or tokens" #event (keyup)="callApiTest(event)">
                </div>
     <!-- Navigation toggle search bar ends -->
 
@@ -83,3 +83,14 @@
        </div>
 </div>
 <!-- Container navigation search Ends -->
+
+
+
+<ng-container *ngIf="img">
+    <img src="{{img}}" alt="">
+</ng-container>
+
+<h1 >CLick me</h1>
+<div >
+
+</div>

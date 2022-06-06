@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoApiService } from 'src/app/services/info-api.service';
 
 @Component({
   selector: 'cake-info',
@@ -9,7 +10,6 @@ export class InfoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
