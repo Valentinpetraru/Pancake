@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DarkModeToggleComponent implements OnInit {
 
+  addClass = false;
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
+
 
 }
