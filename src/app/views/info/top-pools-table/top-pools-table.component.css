@@ -1,0 +1,149 @@
+.wrapper-table{
+    max-width: 1150px;
+    margin: 0 auto;
+  
+}
+
+.title-top-tokens{
+    font-size: 24px;
+    margin: 40px 0 16px 0;
+    font-weight: 600;
+    line-height: 26.4px;
+    color: rgb(40, 13, 95);
+}
+
+.container-table{
+    row-gap: 1rem;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    margin: 0 auto; 
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20px 3.5fr repeat(5, 1fr);
+    gap: 1em;
+    align-items: center;
+    padding: 0 1.5rem!important;
+}
+
+.grid-header{
+    -webkit-box-align: center;
+    padding: 0px 24px;
+    width: 100%;
+    padding-top: 1rem!important;
+
+}
+
+.grid-header span{
+    cursor: pointer;
+}
+
+.grid-body{
+   
+    
+    border-top: 1px solid rgb(231, 227, 235);
+     padding: 0px 1.5rem;
+     padding-top: 1rem!important
+}
+
+/* TH-TABLE*/
+.th-index, .th-name-img-token,  .th-volume-24h,  .th-volume-7d, .th-lp-reward-fees-24h, .th-lp-reward-apr,.th-liquidity{
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 12px;
+    
+}
+
+/* TD-TABLE*/
+a{
+    text-decoration: none;
+     color: rgb(40, 13, 95);
+}
+.td-index, .td-name-img-token, .td-volume-24h, .td-volume-7d .td-lp-reward-fees-24h, .td-lp-reward-apr,.td-liquidity{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: normal;
+    
+}
+
+
+.tokens-img-container{
+    min-width: 32px;
+}
+.img-token{
+    width: 16px;
+    height: 16px;
+}
+
+.container-img-token, .cont-text-name-symbol-token {
+    column-gap: .5rem;
+}
+
+
+
+/*FOOTER TABLE*/
+.footer-table{
+    width: 100%;
+    border-top: 1px solid rgb(231, 227, 235);
+    height: 24px;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem
+    
+}
+
+
+.container-svg-arrow-back, .container-svg-arrow-ahead{
+    padding: 0 1.25rem;
+    cursor: pointer;
+    fill: #cdd1d2;
+}
+.footer-page-index{
+    color:rgb(40, 13, 95);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .th-volume-7d, .th-lp-reward-fees-24h, .td-volume-7d, .td-lp-reward-fees-24h{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: 20px 1.5fr repeat(3, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 530px){
+    .th-lp-reward-apr, .th-liquidity, .td-lp-reward-apr, .td-liquidity{ 
+        display: none;
+    }
+
+      .grid-container{
+        grid-template-columns: 20px 1.5fr repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .th-index, .td-index{ 
+        display: none;
+    }
+
+      .grid-container{
+        grid-template-columns:  2.5fr repeat(1, 1fr);
+    }
+}
+
+

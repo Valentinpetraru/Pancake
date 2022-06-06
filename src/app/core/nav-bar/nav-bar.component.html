@@ -1,3 +1,12 @@
+
+
+
+
+
+<cake-connect-popup *ngIf="connectWallet" (closeWallet)="closeWallet($event)" style="position: absolute; z-index: 999999999;"></cake-connect-popup>
+
+
+
 <nav class="container-nav-bar">
 
   <div class="flex-left">
@@ -91,7 +100,7 @@
       <img class="svg-earth-gear" src="../../../assets/nav-bar/gear-nav-bar.svg" alt=""
         style="height:24px; width: 24px; ">
     </div>
-    <button class="btn-connect-wallet">{{textConnectWallet}}</button>
+    <button class="btn-connect-wallet" (click)="openWallet()">{{textConnectWallet}}</button>
   </div>
 </nav>
 

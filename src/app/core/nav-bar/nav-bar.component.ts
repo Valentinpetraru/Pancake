@@ -17,6 +17,10 @@ import {
 
 export class NavBarComponent implements OnInit {
 
+  connectWallet: boolean = false;
+
+
+
   @HostListener('window:click', ['$event'])
   hideLanguages($event: any): void {
     $event.stoPropagation
@@ -316,7 +320,14 @@ export class NavBarComponent implements OnInit {
     }
   }
 
+  // Funzione bottone connect wallet
+ openWallet ():void{
+    this.connectWallet= !this.connectWallet
+  }
 
+  closeWallet(value:boolean):void{
+    this.connectWallet = value
+  }
 
 }
 
