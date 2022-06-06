@@ -9,6 +9,9 @@ import { debounceTime } from 'rxjs';
 })
 export class SearchNavigationComponent implements OnInit {
 
+  addedWatchlist: boolean = false;
+
+  toggleModalTable: boolean = false;
 
   img: string = '';
   searhcToken = ''
@@ -33,6 +36,27 @@ export class SearchNavigationComponent implements OnInit {
       console.log(data)
     })
 
+  }
+
+
+
+  openModalTable() {
+    document.body.style.overflow = 'hidden';
+    this.toggleModalTable = true;
+  }
+
+  closeModalTable(event: any) {
+
+    if (event.target === event.currentTarget) {
+      this.toggleModalTable = false;
+      document.body.style.overflow = 'visible';
+    }
+
+  }
+
+
+  addWatchlist() {
+    this.addedWatchlist = true;
   }
 
 }
