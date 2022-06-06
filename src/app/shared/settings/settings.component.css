@@ -49,6 +49,10 @@
        padding: 1.5rem;
     }
 
+    .section-dark-btns-stnd-fast-instant{
+        padding-bottom: 1.5rem;
+    }
+
     .txt-global{
         color: rgb(118, 69, 217);
         font-weight: 600;
@@ -57,10 +61,171 @@
         font-size: 12px;
     }
 
+    .container-text-toggle-dark-mode{
+        margin-bottom: 23px;
+    }
+
     .txt-dark-mode{
         color: rgb(40, 13, 95);
         font-weight: 400;
         line-height: 1.5;
-        margin-bottom: 24px;
+        
         font-size: 16px;
     }
+
+    .svg-question{
+     fill: rgb(122, 110, 170);
+     width: 16px;
+     height: 16px;
+    }
+
+    .btn{
+        border: 0px;
+        border-radius: 16px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        outline: 0;
+        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        height: 32px;
+        padding: 0 1rem;
+        margin-top: 4px;
+        margin-right: 4px;
+        box-shadow: none;
+        background-color: rgb(239, 244, 245);
+        color: rgb(31, 199, 212);
+
+    }
+
+/* active btn css toggle */
+    .btn-active{
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+        background-color: rgb(31, 199, 212);
+        color: white;
+    }
+
+.section-liquidity-percent-btns{
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(231, 227, 235);
+    margin-bottom: 24px;
+}
+
+.txt-swaps-liquidity{
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+.container-txt-slippage-svg{
+    margin-bottom: 12px
+}
+
+.txt-slippage-tollerance{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.input-percente{
+    background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    color: rgb(40, 13, 95);
+    display: block;
+    font-size: 16px;
+    height: 32px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 76px;
+    border: 1px solid rgb(215, 202, 236);
+}
+
+.text-percente{
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+.input-percente[type="text"]{
+    font-size: 16px;
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+}
+
+.container-tx-deadline-input{
+    margin-bottom: 24px;
+}
+.txt{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.inp-tx{
+    width: 55px;
+}
+
+.container-toggle{
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(238, 234, 244);
+    border-radius: 24px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+    width: 56px;
+    
+}
+
+.toggle-settings{
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    
+   
+}
+
+.slider-toggle{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 26px;
+    left: 2px;
+    position: absolute;
+    top: 3px;
+    transition: left 200ms ease-in 0s;
+    width: 26px;
+    z-index: 1;
+    
+}
+
+.toggle-settings:hover + .slider-toggle{
+    box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+    
+}
+.toggle-settings:checked + .slider-toggle{
+    left: 27px!important;
+}
+
+.toggle-settings:checked{
+    background-color: red;
+}
+
+
+.last-toggle-row{
+    margin-bottom: 0!important;
+}
