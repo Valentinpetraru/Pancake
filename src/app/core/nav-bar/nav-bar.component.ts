@@ -329,6 +329,7 @@ export class NavBarComponent implements OnInit {
 
   closeSettings(value: boolean) {
     this.settings = false;
+    document.body.style.overflow = 'visible';
   }
 
   // Funzione bottone connect wallet
@@ -339,6 +340,7 @@ export class NavBarComponent implements OnInit {
 
   closeWallet(value: boolean): void {
     this.connectWallet = value
+    document.body.style.overflow = 'visible';
   }
 
 }

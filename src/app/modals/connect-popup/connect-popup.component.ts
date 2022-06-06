@@ -12,7 +12,7 @@ export class ConnectPopupComponent implements OnInit {
 
   closeConnectWallet(): void {
     this.closeWallet.emit(false);
-    document.body.style.overflow = 'visible';
+
   }
 
 
