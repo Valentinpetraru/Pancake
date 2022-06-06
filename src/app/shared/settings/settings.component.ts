@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'cake-settings',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
+  @Output() valueCloseSettings = new EventEmitter<boolean>()
+
+  stateOverlayNavFooter: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  closeSettings(event: any): void {
+    this.valueCloseSettings.emit(false);
   }
 
 }

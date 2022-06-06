@@ -4,7 +4,7 @@
 
 
 <cake-connect-popup *ngIf="connectWallet" (closeWallet)="closeWallet($event)" style="position: absolute; z-index: 999999999;"></cake-connect-popup>
-
+<cake-settings *ngIf="settings" (valueCloseSettings)="closeSettings($event)"></cake-settings>
 
 
 <nav class="container-nav-bar">
@@ -96,7 +96,7 @@
     </div>
 
 
-    <div (click)="openOverlay()">
+    <div (click)="openSettings()">
       <img class="svg-earth-gear" src="../../../assets/nav-bar/gear-nav-bar.svg" alt=""
         style="height:24px; width: 24px; ">
     </div>
@@ -106,8 +106,4 @@
 
 
 
-<div #overlay class="overlay" [class.showOverlay]="stateOverlayNavFooter" (click)="closeOverlay($event)" >
 
-
-
-</div>

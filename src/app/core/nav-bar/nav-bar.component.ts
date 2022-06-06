@@ -18,6 +18,7 @@ import {
 export class NavBarComponent implements OnInit {
 
   connectWallet: boolean = false;
+  settings: boolean = false;
 
 
 
@@ -306,26 +307,37 @@ export class NavBarComponent implements OnInit {
   }
 
 
-  openOverlay(): void {
-    this.stateOverlayNavFooter = true;
+  // openOverlay(): void {
+  //   this.stateOverlayNavFooter = true;
+  //   document.body.style.overflow = 'hidden';
+  // }
+
+  // closeOverlay(event: any): void {
+  //   if (event.target === document.querySelector('.card') as HTMLDivElement) {
+
+  //   } else {
+  //     this.stateOverlayNavFooter = false;
+  //     document.body.style.overflow = 'visible';
+  //   }
+  // }
+
+  // Function show settings
+  openSettings() {
+    this.settings = !this.settings;
     document.body.style.overflow = 'hidden';
   }
 
-  closeOverlay(event: any): void {
-    if (event.target === document.querySelector('.card') as HTMLDivElement) {
-
-    } else {
-      this.stateOverlayNavFooter = false;
-      document.body.style.overflow = 'visible';
-    }
+  closeSettings(value: boolean) {
+    this.settings = false;
   }
 
   // Funzione bottone connect wallet
- openWallet ():void{
-    this.connectWallet= !this.connectWallet
+  openWallet(): void {
+    this.connectWallet = !this.connectWallet;
+    document.body.style.overflow = 'hidden';
   }
 
-  closeWallet(value:boolean):void{
+  closeWallet(value: boolean): void {
     this.connectWallet = value
   }
 

@@ -106,6 +106,7 @@ import { SearchNavigationComponent } from './views/info/search-navigation/search
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -207,6 +208,7 @@ import { SearchNavigationComponent } from './views/info/search-navigation/search
     TopPoolsTableComponent,
     TransactionsTableComponent,
     SearchNavigationComponent,
+
 
 
   ],

@@ -10,14 +10,15 @@ export class ConnectPopupComponent implements OnInit {
 
   @Output() closeWallet = new EventEmitter<boolean>();
 
-  closeConnectWallet():void{
-    this.closeWallet.emit(false)
+  closeConnectWallet(): void {
+    this.closeWallet.emit(false);
+    document.body.style.overflow = 'visible';
   }
 
 
   showWallets: boolean = true;
 
-  sw(){
+  sw() {
     this.showWallets = !this.showWallets
   }
   constructor() { }
