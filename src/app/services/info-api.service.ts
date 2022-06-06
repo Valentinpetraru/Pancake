@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, debounceTime, Observable } from 'rxjs';
+import { BehaviorSubject, debounceTime, delay, Observable } from 'rxjs';
 
 
 
@@ -29,7 +29,7 @@ export class InfoApiService {
 
   requestInfoApi2(): any {
 
-    return this.http.get(this.search).pipe(debounceTime(5000));
+    return this.http.get(this.search).pipe(delay(5000));
 
   }
 
