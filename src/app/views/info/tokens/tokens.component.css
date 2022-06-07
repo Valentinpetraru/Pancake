@@ -1,0 +1,95 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.container-carousel{
+    max-width: 1150px;
+   width: 100%;
+    margin: 16px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid black;
+    padding: 1rem;
+     overflow-x: auto;
+    white-space: nowrap;
+    
+
+    
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.title-carousel{
+    font-weight: 400;
+    color: rgb(40, 13, 95);
+    line-height: 1.5
+}
+
+.container-cards-token{
+    padding: 1rem 0;
+   
+}
+
+
+
+a{
+    display: inline-block;
+    min-width: 190px;
+    margin-left: 16px;
+
+   
+}
+
+
+
+.container-card{
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 24px;
+    padding: 1rem;
+   
+}
+
+.token-img{
+    width: 32px;
+    height: 32px;
+}
+
+.text-symbol{
+    margin-bottom: 12px;
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.container-symbol-price-percentage{
+    margin-left: 16px;
+}
+
+.text-price{
+    margin-right: 6px;
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.text-percentage{
+    color: rgb(49, 208, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
