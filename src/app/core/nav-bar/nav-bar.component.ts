@@ -4,6 +4,7 @@ import {
   OnInit
 } from '@angular/core';
 import { NavMenu } from 'src/app/models/nav-bar/nav-bar-items';
+import { WebsocketService } from 'src/app/services/websocket.service';
 
 import {
   SubMenu
@@ -67,7 +68,7 @@ export class NavBarComponent implements OnInit {
 
   textConnectWallet!: string;
 
-  currencyNavBar: number = 9.222;
+  tradeTokenNav!: number;
 
   langState: boolean = false;
 
@@ -90,22 +91,22 @@ export class NavBarComponent implements OnInit {
       {
         itemName: 'Swap',
         routerLink: '/swap',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Limit',
         routerLink: '/limit',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Liquidity',
         routerLink: '/liquidity',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Perpetual',
         routerLink: 'perpetual',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       }
     ],
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
@@ -119,12 +120,12 @@ export class NavBarComponent implements OnInit {
       {
         itemName: 'Farms',
         routerLink: '/farms',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Pool',
         routerLink: '/pools',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       }
     ]
 
@@ -137,17 +138,17 @@ export class NavBarComponent implements OnInit {
       {
         itemName: 'Trading Competition',
         routerLink: '/competition',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Prediction Beta',
         routerLink: '/prediction',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Lottery',
         routerLink: '/lottery',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       }
 
     ]
@@ -161,17 +162,17 @@ export class NavBarComponent implements OnInit {
       {
         itemName: 'Overview',
         routerLink: '/overview',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Collections',
         routerLink: 'collection',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Activity',
         routerLink: '/activity',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       }
 
     ]
@@ -185,22 +186,22 @@ export class NavBarComponent implements OnInit {
       {
         itemName: 'Info',
         routerLink: '/info',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'IFO',
         routerLink: '/ifo',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Voting',
         routerLink: '/voting',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'LeaderBoard',
         routerLink: '/leaderboard',
-        routerLinkActive: ''
+        routerLinkActive: 'activeLinkNavigation'
       },
       {
         itemName: 'Blog',
@@ -251,10 +252,8 @@ export class NavBarComponent implements OnInit {
     '繁體中文',
   ];
 
-  constructor() {
-    setInterval(() => {
-      this.currencyNavBar += 1;
-    }, 3000);
+  constructor(private websocketService: WebsocketService) {
+
 
 
     setInterval(() => {
@@ -266,6 +265,10 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentScreenSize = window.innerWidth;
+
+    this.websocketService.subject.subscribe((data: any) => {
+      this.tradeTokenNav = JSON.parse(data.p)
+    })
   }
 
   // Show submenu on mouseEnter

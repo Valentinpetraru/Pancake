@@ -13,10 +13,10 @@
     <div class="container-logo-menu-left">
       <!--Containers logo desktop tablet mobile-->
       <div class="container-logo-text" routerLink="/">
-        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; " alt="">
+        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; cursor: pointer; " alt="">
       </div>
-      <div class="container-logo-mobile">
-        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px;" alt="">
+      <div class="container-logo-mobile" routerLink="/">
+        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px; cursor: pointer" alt="">
       </div>
       <!--Container -nav-menu-items-left-->
       <div class="container-nav-menu-items-left">
@@ -75,18 +75,18 @@
 
 
   <div class="flex-right">
-    <div class="container-currency-rabbit-nav-left">
+    <div class="container-currency-rabbit-nav-left" style="cursor: pointer">
       <div>
-        <img src="../../../assets/nav-bar/rabbit-right-icon.svg" style="height:24px; width: 24px;" alt="">
+        <img class="img-banny-nav-right" src="../../../assets/nav-bar/rabbit-right-icon.svg"  alt="">
       </div>
-      <p>${{currencyNavBar}}</p>
+      <p>${{tradeTokenNav}}</p>
     </div>
 
 
 
 
     <div class="container-earth-languages" (click)="showLanguages()">
-      <div>
+      <div style="cursor: pointer">
         <img class="svg-earth-gear" src="../../../assets/nav-bar/earth-nav-bar.svg" alt=""
           style="height:24px; width: 24px;">
       </div>
@@ -96,7 +96,7 @@
     </div>
 
 
-    <div (click)="openSettings()">
+    <div (click)="openSettings()" style="cursor: pointer">
       <img class="svg-earth-gear" src="../../../assets/nav-bar/gear-nav-bar.svg" alt=""
         style="height:24px; width: 24px; ">
     </div>

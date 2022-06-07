@@ -149,10 +149,22 @@
     background-color: transparent;
     box-shadow: none;
 }
-
+.btn-all-languages:hover{
+    color: rgb(122, 110, 170);
+}
 .btn-connect-wallet:hover{
       opacity: 0.65;
 }
+
+.img-banny-nav-right{
+    width:24px;
+    height: 24px;
+    transition: transform .5s; 
+}
+.img-banny-nav-right:hover{
+   transform: scale(1.3);
+}
+
 
 .overlay{
    position: fixed;
