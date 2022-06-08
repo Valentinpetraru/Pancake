@@ -53,6 +53,8 @@ import { TopTokensTableComponent } from './views/info/top-tokens-table/top-token
 import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-table.component';
 import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
 import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
+import { InfoApiService } from './services/info-api.service';
+import { NumberSuffixPipe } from './pipes/number-suffix.pipe';
 
 
 
@@ -103,6 +105,7 @@ import { SearchNavigationComponent } from './views/info/search-navigation/search
     TopPoolsTableComponent,
     TransactionsTableComponent,
     SearchNavigationComponent,
+    NumberSuffixPipe,
 
 
   ],
@@ -116,7 +119,8 @@ import { SearchNavigationComponent } from './views/info/search-navigation/search
   ],
   providers: [
     FarmsApiService,
-    FarmsPoolsFiltersToolbarService
+    FarmsPoolsFiltersToolbarService,
+    InfoApiService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoApiService } from 'src/app/services/info-api.service';
-import { debounceTime } from 'rxjs';
+import { debounceTime, takeLast } from 'rxjs';
 
 @Component({
   selector: 'cake-search-navigation',
@@ -32,9 +32,12 @@ export class SearchNavigationComponent implements OnInit {
     this.infoApi.search = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${this.searhcToken}&sparkline=false`
 
     this.arr = this.infoApi.requestInfoApi2()
-    this.arr.subscribe((data: any) => {
+    this.arr.pipe(
+      takeLast(1)
+    ).subscribe((data: any) => {
       console.log(data)
     })
+
 
   }
 

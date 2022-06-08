@@ -8,8 +8,19 @@ import { InfoApiService } from 'src/app/services/info-api.service';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  public topPoolsTokenParent!: any[];
+  constructor(private infoApi: InfoApiService) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+    this.infoApi.getTopPoolsApi().subscribe(
+
+      (response: any) => console.log(this.topPoolsTokenParent = [...Object.values(response.data)]),
+
+
+    )
+
+
+  }
 
 }
