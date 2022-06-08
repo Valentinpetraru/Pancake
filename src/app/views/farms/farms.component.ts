@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit, QueryList, HostListener, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
-import { FarmsApiService } from 'src/app/services/farms-api.service';
+import { ApiService } from 'src/app/services/api.service';
 import { SubRowTableComponent } from './sub-row-table/sub-row-table.component';
 import { FarmsDirective } from 'src/app/module-shared/directives/farms.directive';
 import { FarmsPoolsFiltersToolbarService } from 'src/app/services/farms-pools-filters-toolbar.service';
@@ -30,14 +30,14 @@ export class FarmsComponent implements OnInit {
 
   optionSelected: string = '';
 
-  constructor(private farmsApiService: FarmsApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) {
+  constructor(private farmsApiService: ApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) {
 
   }
 
 
 
   ngOnInit(): void {
-    this.farmsApiService.getApiFarms().subscribe(response => {
+    this.farmsApiService.getApiFarms().subscribe((response: any) => {
 
       this.farmsDataOriginal = response;
 

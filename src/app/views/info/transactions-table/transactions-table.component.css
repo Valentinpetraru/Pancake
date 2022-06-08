@@ -182,6 +182,10 @@ a{
     font-weight: 400;
 }
 
+/*TOGGLE COLOR FILL ARROW SVG PAGINATION*/
+.back-ahead-avilable{
+    fill: rgb(31, 199, 212);
+}
 
 @media only screen and (max-width: 940px) {
 

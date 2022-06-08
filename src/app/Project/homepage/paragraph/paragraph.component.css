@@ -1,0 +1,70 @@
+.violet{
+  color: rgb(118, 69, 217)
+}
+
+.title h2 {
+      font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    font-size: 40px;
+}
+
+.title{
+  margin-bottom: 24px;
+}
+
+.body{
+  color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.left{
+      position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    margin-right: 16px;
+}
+
+.right{
+   border: none;
+   background-color: transparent;
+   height: 48px;
+   letter-spacing: 0.03em;
+   cursor: pointer;
+
+   border-radius: 16px;
+   color: rgb(31, 199, 212);
+   font-weight: 600;
+   font-size: 17px;
+}
+
+
+.right:hover{
+  text-decoration: underline;
+}
+
+.left:hover{
+  opacity: 0.7;
+}

@@ -1,0 +1,67 @@
+
+
+.container-input{
+    display: flex;
+    align-items: center;
+    background-color: rgb(189, 194, 196);
+    border-radius: 24px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    cursor: pointer;
+    height: 32px;
+    width: 56px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+}
+
+.input-toggle{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+}
+
+.white-mode-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 3px;
+  
+    top: 3px;
+    z-index: 1;
+    
+}
+
+.container-svg-sun{
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    height: 100%;
+    fill: rgb(255, 178, 55)!important;
+}
+
+
+
+
+.container-second-sun-moon-svg{
+    width: 100%;
+   
+}
+
+
+.second-sun-svg, .moon-svg{
+     fill: rgb(255, 255, 255)!important;
+}
+
+ .input-toggle:checked + .white-mode-container{
+    left: 27px;
+} 
+
+
+
+

@@ -1,0 +1,180 @@
+.container-banner{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 43px;
+  padding-right: 43px;
+  background:  linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);;
+}
+
+    .container{
+        width: 70.3125rem;
+        min-width: auto;
+        height: 100%;
+        background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+        border-radius: 32px;
+        padding: 24px;
+        max-height: 192px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+
+
+    }
+
+
+    .left-part{
+         margin-right: 20px;
+    }
+
+
+
+    /* TITOLO */
+    #title{
+        color: white;
+        white-space: nowrap;
+        text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 8px;
+    }
+
+    /* TITOLO */
+
+
+
+    /* TIMER */
+    #timer h2{
+
+       background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+       display: block;
+       font-weight: 600;
+       line-height: 1.1;
+       font-size: 32px;
+       height: 36px;
+    }
+
+    #m,#h,#s{
+      margin-right: 10px;
+    }
+
+    #m span,#h span,#s span{
+      margin-left: -8px;
+      font-size: 16px;
+    }
+
+
+    #timer{
+        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 70% 100% no-repeat;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+        padding: 7px  20px 7px 7px;
+
+    }
+
+    /* TIMER */
+
+
+    /* PARTE BUTTON */
+
+    button, button a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+      position: relative;
+        background-color: rgb(31, 199, 212);
+        padding: 0px 24px;
+        height: 48px;
+        border: none;
+        border-radius: 16px ;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        opacity: 1;
+        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        font-weight: 600;
+        cursor: pointer;
+        z-index: 2;
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    }
+
+    button a, button svg {
+        text-decoration: none;
+        color: white;
+        fill: white;
+
+    }
+
+
+    button a {
+        gap: 4px;
+    }
+
+    button:hover{
+        opacity: 0.7;
+    }
+
+    /* PARTE BUTTON */
+
+
+
+    /* SVG  */
+      .svg-container{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #first{
+        position: absolute;
+        bottom: -3px;
+        max-height: 228px;
+        min-height:130px;
+        min-width: 100%;
+        max-width: 100%;
+        right: 0px;
+        resize: both;
+        display: block;
+
+    }
+    /* SVG  */
+
+
+/* Inizio media query */
+
+    @media screen and (max-width: 969px) {
+
+        #first{
+            display: none;
+        }
+
+          #second{
+        position: absolute;
+        bottom: -3px;
+        right: 0px;
+        height: 150px;
+        z-index: 0;
+        }
+
+        .left-part{
+            position: relative;
+            z-index: 999;
+        }
+    }
+
+  @media screen and (min-width: 969px){
+      #second{
+          display: none;
+      }
+  }
+
+

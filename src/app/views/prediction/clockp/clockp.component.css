@@ -1,0 +1,40 @@
+.container, .text{
+  display: flex;
+}
+
+
+.container{
+  width: fit-content;
+  align-items: center;
+    border-radius: 24px;
+    flex-direction: row;
+    padding: 8px 50px 8px 8px;
+
+background-color: rgb(255, 255, 255);
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    height: 38px;
+    position: relative;
+}
+
+.left{color: rgb(118, 69, 217);
+    font-weight: 600;}
+
+.right{
+  color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 12px;
+text-align: center;
+    width: 32px;
+
+}
+
+
+.svg{
+  position: absolute;
+  right: -10px;
+}
+svg{
+  width: 64px;
+  height: 64px;
+}

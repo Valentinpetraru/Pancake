@@ -1,0 +1,181 @@
+
+
+
+  .container-grey{
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+    
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+
+  }
+
+  .up{
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 24px;
+  }
+
+  .title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(118, 69, 217);
+  }
+
+  .sub-title{
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .switch{
+    padding: 0 24px;
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid rgb(238, 234, 244);
+  }
+
+  .team{
+    border-radius: 16px 16px 0px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(122, 110, 170);
+    background-color: rgb(238, 234, 244);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .team-one{
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 110, 170);
+  }
+
+  .main{
+    padding-top: 24px;
+    width: 100%;
+  }
+
+
+
+  .down{
+    padding: 24px;
+  }
+
+  .down p {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  th{
+    padding: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+td{
+  font-weight: 600;
+      text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+        fill: rgb(49, 208, 170);
+}
+
+.prime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prime img{
+ width: 38px;
+}
+
+.txt{
+  color:  rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 8px;
+    font-size: 12px;;
+}
+
+.gold{
+  color: rgb(255, 191, 51);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.table-team table
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .team{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .team{
+    width: 100%;
+  }
+
+  th{
+    font-size: 10px;
+  }
+
+  td{
+    padding: 4px 0px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  .table-team{
+    width: 100%;
+  }
+
+  tr{
+    width:100%;
+  }
+
+  td{
+    width: 100%;
+  }
+
+  .main{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px ) {
+
+th{
+  padding: 4px;
+}
+}
+
+
+

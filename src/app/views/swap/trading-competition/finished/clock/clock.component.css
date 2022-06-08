@@ -1,0 +1,118 @@
+  .finished-banner{
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+    border: 1px solid rgb(118, 69, 217);
+    border-radius: 0px 0px 24px 24px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px 24px;
+    margin: -30px 0px 0px 36px;
+   }
+
+   .clock-container{
+   margin-bottom: 16px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .clock-container svg {
+    height: 64px;
+    width: 64px;
+        align-self: center;
+    fill: rgb(40, 13, 95);
+    flex-shrink: 0;
+   }
+
+   .status{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+   .title{
+     margin-bottom: 1.5rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .title h2 {
+     font-size: 1.5rem;
+     white-space: nowrap;
+     text-align: center;
+     background-image: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+
+   .status-phases{
+     display: flex;
+   }
+
+   .i{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: rgb(122, 110, 170);
+     fill: rgb(122, 110, 170);
+   }
+
+   .text-subtle{
+     margin-top: 4px;
+     font-weight: 600;
+     font-size: 12px;
+   }
+
+   .space{
+     width: 36px;
+     height: 2px;
+     border: 4px;
+     margin: 12px 8px 0px;
+     background-color: rgb(122, 110, 170);
+   }
+
+
+   .end{
+     color: rgb(31, 199, 212);
+   }
+
+
+@media screen and (max-width: 1100px) {
+
+.finished-banner{
+  flex-direction: row;
+  align-items: flex-start;
+}
+}
+
+
+@media screen and (max-width: 575px) {
+
+.finished-banner{
+ padding: 16px 18px;
+ align-items: center;
+}
+
+.clock-container{
+  margin-right: 12px ;
+}
+
+.clock-container svg{
+  width: 48px;
+  height: 48px;
+}
+}
+
+
+@media screen and (max-width: 370px) {
+
+
+  .finished-banner{
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,275 @@
+
+
+.contenitore-win-generale {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  background: var(--fourth-shape-color-light);
+  padding: 48px 0px;
+  display: flex;
+  z-index: 1;
+}
+
+.contenitore-win {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin: 0px;
+  width: 100%;
+  max-width: 968px;
+  min-height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contenitore-win-set {
+  padding: 40px;
+  border-radius: 72px;
+  background: var(--win-backgound-color-light);
+  border: 1ps solid var(--navbar-border-bottom-color-light);
+  backdrop-filter: blur(12px);
+}
+
+.contenitore-win-inside {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--text-h2-color-light);
+}
+
+#title span {
+  color: rgb(118, 69, 217);
+}
+
+#one,
+#two {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--navbar-icons-color-light);
+}
+
+#two {
+  margin-bottom: 40px;
+}
+
+.contenitore-win-cards {
+  display: flex;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.contenitore-prediction-card {
+  display: flex;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  flex: 1 1 0%;
+  transform: rotate(-2.36deg);
+  padding: 1px 1px 4px;
+  overflow: hidden;
+  position: relative;
+  background: rgb(255, 178, 55);
+  border-radius: 24px;
+  height: fit-content;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(
+    rgb(255, 178, 55) 0%,
+    rgb(255, 205, 81) 51.17%,
+    rgb(255, 231, 106) 100%
+  );
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+}
+
+.inside-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  color: rgb(40, 13, 95);
+}
+
+#pre-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  transform: rotate(-2.36deg);
+  flex-shrink: 0;
+}
+
+#name {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#value {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#bnb {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+#last {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+#pre-btn, #lot-btn {
+  gap: 4px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+}
+
+#pre-btn a, #lot-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#pre-btn svg, #lot-btn svg {
+  fill: white;
+}
+
+.contenitore-lottery-card {
+  display: flex;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  flex: 1 1 0%;
+  transform: rotate(1.43deg);
+  padding: 1px 1px 4px;
+  height: fit-content;
+  background: rgb(60, 23, 134);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
+}
+
+.wrap-l {
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.inside-wrap-l {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  color: white;
+}
+
+#lot-icon-l {
+  transform: rotate(1.43deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  fill: white;
+}
+
+#name-l {
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#value-l {
+  background: -webkit-linear-gradient(
+    rgb(255, 216, 0) 0%,
+    rgb(253, 171, 50) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+
+  font-size: 39px;
+    line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#bnb-l{
+  color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+
+#last-l{
+  color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 850px) {
+.contenitore-win-cards{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.contenitore-prediction-card{
+  margin-bottom: 32px;
+}
+
+.contenitore-lottery-card, .contenitore-prediction-card{
+  max-width: 275px;
+  transform: none;
+  margin-right: 0;
+}
+}

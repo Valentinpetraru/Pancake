@@ -1,1 +1,109 @@
-<p>nav-bar works!</p>
+
+
+
+
+
+<cake-connect-popup *ngIf="connectWallet" (closeWallet)="closeWallet($event)" style="position: absolute; z-index: 999999999;"></cake-connect-popup>
+<cake-settings *ngIf="settings" (valueCloseSettings)="closeSettings($event)"></cake-settings>
+
+
+<nav class="container-nav-bar">
+
+  <div class="flex-left">
+    <div class="container-logo-menu-left">
+      <!--Containers logo desktop tablet mobile-->
+      <div class="container-logo-text" routerLink="/">
+        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; cursor: pointer; " alt="">
+      </div>
+      <div class="container-logo-mobile" routerLink="/">
+        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px; cursor: pointer" alt="">
+      </div>
+      <!--Container -nav-menu-items-left-->
+      <div class="container-nav-menu-items-left">
+        <!--Trade-->
+        <div class="container-dropdown trade" (mouseenter)="showSubMenu(trade)" (mouseleave)="hideSubMenu(trade)">
+          <div class="container-icon-text-nav-footer">
+            <div *ngIf="currentScreenSize <= 576">
+              <img [src]="navMenu[0].iconFooterPath" alt="">
+            </div>
+            <div class="nav-item " #trade>Trade</div>
+          </div>
+          <cake-sub-menu *ngIf="subMenu[0].visibility " [menuChoosen]="menuSelected "></cake-sub-menu>
+        </div>
+        <!--Earn-->
+        <div class="container-dropdown " (mouseenter)="showSubMenu(earn)" (mouseleave)="hideSubMenu(earn)">
+          <div class="container-icon-text-nav-footer">
+             <div *ngIf="currentScreenSize <= 576">
+              <img [src]="navMenu[1].iconFooterPath" alt="">
+            </div>
+            <div class="nav-item" #earn routerLink="/farms">Earn</div>
+          </div>
+          <cake-sub-menu *ngIf="subMenu[1].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
+        </div>
+        <!--Win-->
+        <div class="container-dropdown" (mouseenter)="showSubMenu(win)" (mouseleave)="hideSubMenu(win)">
+          <div class="container-icon-text-nav-footer">
+            <div *ngIf="currentScreenSize <= 576">
+              <img [src]="navMenu[2].iconFooterPath" alt="">
+            </div>
+            <div class="nav-item" #win routerLink="/swap">Win</div>
+          </div>
+          <cake-sub-menu *ngIf="subMenu[2].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
+        </div>
+        <!--NFT-->
+        <div class="container-dropdown" (mouseenter)="showSubMenu(nft)" (mouseleave)="hideSubMenu(nft)">
+          <div class="container-icon-text-nav-footer">
+              <div *ngIf="currentScreenSize <= 576">
+              <img [src]="navMenu[3].iconFooterPath" alt="">
+            </div>
+            <div class="nav-item" #nft>NFT</div>
+          </div>
+          <cake-sub-menu *ngIf="subMenu[3].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
+        </div>
+        <!--dots-->
+        <div class="container-dropdown" (mouseenter)="showSubMenu(dots)" (mouseleave)="hideSubMenu(dots)">
+          <div  class="nav-item dots" #dots data-menu="dots">
+            <img src="../../../assets/nav-bar/dots-nav-bar.svg" style=" width: 20px;" alt="">
+          </div>
+          <cake-sub-menu *ngIf="subMenu[4].visibility" [menuChoosen]="menuSelected"  class="sub-menu-mobile-dots"></cake-sub-menu>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="flex-right">
+    <div class="container-currency-rabbit-nav-left" style="cursor: pointer">
+      <div>
+        <img class="img-banny-nav-right" src="../../../assets/nav-bar/rabbit-right-icon.svg"  alt="">
+      </div>
+      <p>${{tradeTokenNav}}</p>
+    </div>
+
+
+
+
+    <div class="container-earth-languages" (click)="showLanguages()">
+      <div style="cursor: pointer">
+        <img class="svg-earth-gear" src="../../../assets/nav-bar/earth-nav-bar.svg" alt=""
+          style="height:24px; width: 24px;">
+      </div>
+      <div class="container-languages" [class.show-lang]="langState">
+        <button class="btn-all-languages" *ngFor="let item of languages">{{item}}</button>
+      </div>
+    </div>
+
+
+    <div (click)="openSettings()" style="cursor: pointer">
+      <img class="svg-earth-gear" src="../../../assets/nav-bar/gear-nav-bar.svg" alt=""
+        style="height:24px; width: 24px; ">
+    </div>
+    <button class="btn-connect-wallet" (click)="openWallet()">{{textConnectWallet}}</button>
+  </div>
+</nav>
+
+
+
+

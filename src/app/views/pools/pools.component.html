@@ -1,12 +1,13 @@
 
+
 <!-- ToolBar Starts -->
 <div class="container-toolbar-farms-pools d-flex center vert-center " id="top">
     <div class="farms-container d-flex  column">
-        <a class="link-farms">Farms</a>
+        <div class="link-farms" routerLink="/farms">Farms</div>
         <span ></span>
     </div>
     <div class="pools-container d-flex column">
-        <a class="link-pools">Pools</a>
+        <div class="link-pools">Pools</div>
         <span class="text-decoration"></span>
     </div>
 </div>
@@ -19,7 +20,7 @@
         <h2 class="sub-title">Just stake some tokens to earn.</h2>
         <h2 class="sub-title">High APR, low risk.</h2>
     </div>
-</div>    
+</div>
 <!-- FARMS ENd -->
 <div class="table-container">
     <cake-filters-bar (showComponent)="showComponent($event)" (optionEmitted)="filter($event)"></cake-filters-bar>
@@ -35,9 +36,9 @@
       [infiniteScrollThrottle]="100"
       (scrolled)="onScroll()"
     >
-    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style> 
+    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style>
 <!-- TABLE DATA  ROWS END -->
- 
+
 
 <!-- TABLE DATA  ROWS START -->
 <cake-card-style *ngIf="showCardStyleComp"  [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-card-style>

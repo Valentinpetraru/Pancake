@@ -11,15 +11,21 @@
 .align-items{
     align-items: center;
 }
-
+.container-earnPassive-images{
+    margin-bottom: 30px;
+}
 .earn-section{
-    padding: 2rem 1.5rem 3rem 1.5rem;
+    padding: 2rem 2rem 3rem 1.5rem;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
-    width: 100%;
+  
+}
+
+.wrapper{
     max-width: 980px;
     margin: 0 auto;
-    
 }
+
+
 
 .earn-section
 .flex-container-images{
@@ -97,24 +103,53 @@ img{
 
 .flex-item-earn-passive > h2{
 
-     font-size: 32px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 800;
     line-height: 1.1;
     color: rgb(40, 13, 95);
     margin-bottom: 24px;
 
 }
 
-.flex-item-earn-passive > p{
-    margin-bottom: 24px;
-}
 
 .flex-item-earn-passive > h2 > span{
     color:  rgb(118, 69, 217);
+    
+    
 }
 
+.flex-item-earn-passive > p{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #7a6eaa;
+}
 
+.btn-explore{
+    border: 0;
+    border-radius: 16px;
+    box-shadow: rgb(14, 14, 44);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    height: 48px;
+    padding: 0 1.5rem;
+    background-color: rgb(31, 199, 212);
+    margin-right: 16px;
+    color: #fff;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
 
+.link-learn{
+    color: #1fc7d4;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
 
 .container-earn-footer{
     display: flex;
@@ -201,8 +236,15 @@ img{
 
 
 
-@media (min-width: 576px){
-    
+@media (max-width: 576px){
+    .items-top-trade, .items-bottom-trade{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 2rem;
+    }
+    .items-top-trade > div, .items-bottom-trade > div{
+        border-left: none;
+    }
 }
 
 @media (min-width: 852px){
@@ -222,6 +264,16 @@ img{
          justify-content: center;
     }
    
+    
+}
+
+@media (max-width: 852px){
+    .flex-item-earn-passive{
+        margin-left: 0;
+    }
+    .flex-container-images{
+        padding-bottom: 2.5rem;
+    }
 }
 
 

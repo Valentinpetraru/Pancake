@@ -7,6 +7,9 @@
     <div *ngIf="topPoolsTokenParent">
         <cake-top-pools-table [topPoolsTokenOrigin]="topPoolsTokenParent"></cake-top-pools-table>
     </div>
-    <cake-transactions-table></cake-transactions-table>
+    <div *ngIf="transactionsParent">
+        <cake-transactions-table [transactionsOrigin]="transactionsParent"></cake-transactions-table>
+    </div>
+    
    
 </div>

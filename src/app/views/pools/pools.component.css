@@ -11,6 +11,11 @@
     cursor: pointer;
 }
 
+#top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .link-pools{
     color: #7645D9
 }
@@ -70,7 +75,7 @@
 .table-container{
     padding: 2rem 1.5rem 2rem 1.5rem;
     background-color: #FAF9FA;
-    
+
 }
 
 .table-filter-container{
@@ -85,5 +90,5 @@
     .container-toolbar-farms-pools{
         justify-content: start;
     }
-    
+
 }

@@ -1,0 +1,305 @@
+
+
+
+  .date{
+    color: rgb(255, 213, 133);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    text-shadow: rgb(255 175 0 / 22%) 0px 0px 10px, rgb(255 61 0 / 25%) 0px 0px 8px, rgb(255 135 0 / 55%) 0px 0px 18px;
+    text-align: left;
+  }
+
+  .first{
+    width: 780px;
+    text-align: left;
+    line-height: 110%;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+    -webkit-text-stroke: 4px transparent;
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .first svg{
+    text-align: left;
+  }
+
+  .second{
+    width: 410px;
+    line-height: 110%;
+    color: rgb(255, 255, 255);
+    color:  rgb(189, 249, 218);
+    font-size: 2rem;
+    text-shadow: rgb(0 255 209 / 22%) 0px 0px 10px, rgb(0 56 255 / 25%) 0px 0px 8px, rgb(0 255 71 / 52%) 0px 0px 18px;
+    text-align: left;
+  }
+
+  .trading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: rgb(19 16 29) 0px 5px 0px;
+    margin-bottom: 18px;
+  }
+
+  .third{
+    color: rgb(215, 202, 236);
+    font-weight: 600;
+    line-height: 1.1;
+    text-shadow: rgb(255 255 255 / 25%) 0px 0px 8px, rgb(161 101 194 / 88%) 0px 0px 18px, rgb(161 0 255 / 55%) 0px 0px 49px;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 140px;
+  }
+
+  .ww{
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    width: 1257px;
+    height: 205px;
+    background-image: url(https://pancakeswap.finance/_next/static/media/MoD-bg-shine.b56df09c.png);
+    background-size: cover;
+    z-index: 2;
+  }
+  .wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 242px;
+    z-index: -1;
+    background-image: url(https://pancakeswap.finance/_next/static/media/mod-mesh.f35f83b0.png);
+    background-size: cover;
+  }
+
+
+.first-coin
+{position: absolute;
+    top:0;
+    width: 100px;
+    left: 30%;
+    z-index: 2;
+}
+
+.first-coin img{
+  position: absolute;
+    display: block;
+   width: 100px;
+  height: auto;}
+
+
+  .third-coin
+{position: absolute;
+
+  top: 190px; ;
+  right: 70px;
+  z-index: 3;
+  width: 500px;
+}
+
+.third-coin img {
+  width: 537px;
+}
+
+
+
+.second-coin{
+  position: absolute;
+  right: 31%;
+  z-index: 2;
+  top: 10%;
+}
+
+.second-coin img {width: 79px;}
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+
+
+ .cont{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .second{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .first{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .cont{
+   padding: 20px;
+   width: auto;
+ }
+
+}
+
+.wave{
+  position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 242px;
+    z-index: -1;
+    background-image: url(https://pancakeswap.finance/_next/static/media/mod-mesh.f35f83b0.png);
+}
+
+
+@media screen and (max-width: 1102px ) {
+
+  .second-coin{
+
+  right: 200px;
+
+  top:15%;
+}
+
+  .first-coin{
+
+  left: 200px;
+
+  top:0%;
+}
+}
+
+
+@media screen and (max-width: 850px) {
+  .first-coin{
+    top: 0%;
+    left: 50px;
+  }
+
+  .second-coin{
+    right: 0px;
+  }
+
+  .cont{
+    width: fit-content;
+  }
+}
+
+
+@media screen and (min-width: 840px) {
+
+.second{
+white-space: nowrap;
+}
+}
+
+
+@media screen and (max-width: 840px) {
+
+.second{
+
+  text-align: center;
+  width: 500px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 500px;
+}
+}
+
+@media screen and (max-width: 565px) {
+
+.second{
+
+  text-align: center;
+  width: 400px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 400px;
+    margin-bottom: 0;
+}
+
+.trading{
+  width: 400px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 455px) {
+
+.second{
+
+  text-align: center;
+  width: 350px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 350px;
+}
+
+.trading{
+
+    width: 300px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 386px) {
+
+.second{
+
+  text-align: center;
+  width: 330px;
+}
+
+.third{
+  width: 100%;
+  text-align: center;
+    width: 300px;
+}
+
+.trading{
+
+    width: 300px;
+  text-align: center;
+}
+
+.finished-banner{
+  margin: 0;
+}
+
+.first{
+  width: 300px;
+}
+
+.txt{
+  width: 100%;
+}
+
+.cont{
+  width: 300px;
+}
+}
+
+

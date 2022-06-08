@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FarmsApiService } from 'src/app/services/farms-api.service';
+import { ApiService } from 'src/app/services/api.service';
 import { FarmsPoolsFiltersToolbarService } from 'src/app/services/farms-pools-filters-toolbar.service';
 
 @Component({
@@ -24,10 +24,10 @@ export class PoolsComponent implements OnInit {
 
   optionSelected: string = '';
 
-  constructor(private farmsApiService: FarmsApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) { }
+  constructor(private farmsApiService: ApiService, private farmsPoolsFilters: FarmsPoolsFiltersToolbarService) { }
 
   ngOnInit(): void {
-    this.farmsApiService.getApiFarms().subscribe(response => {
+    this.farmsApiService.getApiFarms().subscribe((response: any) => {
 
       this.farmsDataOriginal = response;
 

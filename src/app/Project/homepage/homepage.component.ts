@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+
+  title = 'Pancake';
+  showBanner: string | null = 'true';
+
+  constructor() { 
+
+    this.showBanner = localStorage.getItem('showBanner') || 'true'
+    console.log(this.showBanner);
+  }
 
   ngOnInit(): void {
   }

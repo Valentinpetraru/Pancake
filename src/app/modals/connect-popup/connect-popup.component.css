@@ -1,0 +1,147 @@
+
+
+
+
+
+.tot{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+     position: fixed;
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0;
+   z-index: 9999999;
+}
+
+
+
+
+
+
+
+
+.container{
+  overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 32px;
+    width: 100%;
+    max-height: 100vh;
+    z-index: 100;
+    width: fit-content;
+    min-width: 320px;
+
+}
+
+.up{
+  align-items: center;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+    border-bottom: 1px solid rgb(231, 227, 235);
+    display: flex;
+    padding:24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+      font-weight: 600;
+    line-height: 1.1;
+    color: rgb(40, 13, 95);
+    font-size: 20px;
+}
+
+.close{
+      align-self: center;
+    fill: rgb(31, 199, 212);
+
+}
+
+.main{
+  border-bottom: 1px solid rgb(231, 227, 235);
+  max-height: 453px;
+    overflow-y: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.wallet{
+  padding: 16px 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet-name{
+  color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.down{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq{
+  color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.down button{
+  position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(122, 110, 170);
+
+    width: 100%
+}
+
+.down a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+
+.down button:hover {
+  opacity: 0.8;
+}
+
+.close, .wallet{
+  cursor: pointer;
+}
+
+.wallet:hover{
+  opacity: 0.7;
+}
+

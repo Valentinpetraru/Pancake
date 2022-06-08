@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-popup-bar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    align-items: center;
+    z-index: -7;
+}
+
+.popup-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Kanit, sans-serif;
+  justify-content: center;
+
+}
+.phishing-message{
+    background-color: rgba(39, 38, 44, 0.4);
+    border-radius: 16px;
+    padding: 8px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#warning{
+    color: rgb(255, 178, 55);
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    margin-right: 4px;
+}
+
+.message{
+    color: rgb(189, 194, 196);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+.message a{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+#close svg  {
+    fill: white;
+    font-size: 16px;
+}
+
+#close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 24px;
+    opacity: 1;
+}
+
+#close:hover svg{
+    opacity: 0.7;
+}
+
+ .rabbit{
+ width: 92px;
+ height: auto;
+ position: relative;
+ z-index: 1;
+}
+
+/* Aggiungere un z-index alla navbar maggiore dell'immagine rabbit e anche la position relative  */
+
+@media screen and (max-width: 850px) {
+    .rabbit{
+        display: none;
+    }
+
+
+.phishing-message{
+    width: auto;
+    border-radius: 0%;
+    height: 100%;
+    padding: 12px;
+    background:linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+
+
+
+}
+
+.button-container{
+    height: 100%;
+    display: flex;
+    width: 48px;
+}
+
+#close{
+    padding: 0;
+    width: 20px;
+}
+
+.popup-container{
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    width: auto;
+}
+
+.container-popup-bar{
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    justify-content: flex-start;
+}
+
+
+
+
+}
+
+
+@media  screen and (max-width: 408px) {
+    .phishing-message{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+}

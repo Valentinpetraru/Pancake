@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    width: 128px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    height: 32px;
+    padding: 3px;
+}
+
+
+.left, .right
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: rgb(31, 199, 212);
+  font-size: 16px;
+    font-weight: 600;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+}
+
+
+.left:hover, .right:hover{
+  opacity: 0.7;
+}

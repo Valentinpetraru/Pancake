@@ -1,0 +1,13 @@
+<div class="dropdown-menu">
+  <ul>
+    <li *ngFor="let item of menuChoosen[0].listItems" class="sub-menu-items-container">
+      <div>
+        <p><a routerLink="{{item.routerLink}}" routerLinkActive="{{item.routerLinkActive}}">{{item.itemName}}</a></p>
+      </div>
+      <div *ngIf="item === 'Perpetual' || item === 'Blog'|| item === 'Docs'  ">
+        <img [src]="menuChoosen[0].svgPattern " alt="">
+      </div>
+    </li>
+  </ul>
+
+</div>

@@ -12,6 +12,17 @@ export class NumberSuffixPipe implements PipeTransform {
       return newValue.toFixed(2)
     }
 
+
+    if (newValue < 1000) {
+      return newValue.toFixed(2)
+    }
+
+    if (newValue < 1000) {
+      return newValue.toFixed(2)
+    }
+
+
+
   }
 
 }

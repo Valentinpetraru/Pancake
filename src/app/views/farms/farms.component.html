@@ -1,11 +1,11 @@
 <!-- ToolBar Starts -->
 <div class="container-toolbar-farms-pools d-flex center vert-center " id="top">
     <div class="farms-container d-flex  column">
-        <a class="link-farms">Farms</a>
+        <div class="link-farms">Farms</div>
         <span class="test"></span>
     </div>
     <div class="pools-container d-flex column">
-        <a class="link-pools">Pools</a>
+        <div class="link-pools" routerLink="/pools">Pools</div>
         <span></span>
     </div>
 </div>
@@ -21,7 +21,7 @@
             <img class="svg-forms-link" src="../../../assets/farms/arrow-farms-title.svg" alt="arrow" fill="currentColor">
         </a>
     </div>
-</div>    
+</div>
 <!-- FARMS ENd -->
 
 <!-- FILTTER STARTS -->
@@ -39,9 +39,9 @@
       [infiniteScrollThrottle]="100"
       (scrolled)="onScroll()"
     >
-    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style> 
+    <cake-table-style *ngIf="showTableStyleComp" [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-table-style>
 <!-- TABLE DATA  ROWS END -->
- 
+
 
 <!-- TABLE DATA  ROWS START -->
 <cake-card-style *ngIf="showCardStyleComp"  [farmsData]="farmsData" [optionFilter]="optionSelected"></cake-card-style>
@@ -62,7 +62,7 @@
 
 
 
-
+<router-outlet></router-outlet>
 
 
 
