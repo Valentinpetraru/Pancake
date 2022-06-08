@@ -1,2 +1,4 @@
-<div class="buttonFooter"><button class="sc-a8cf5f33-0 gHVxOO" width="100%" scale="md">Connect
-                Wallet</button></div>
+<div class="buttonFooter">
+    <button (click)="openWallet()" class="sc-a8cf5f33-0 gHVxOO" width="100%" scale="md">Connect Wallet</button>
+</div>
+<cake-connect-popup *ngIf="connectWallet" (closeWallet)="closeWallet($event)"></cake-connect-popup>

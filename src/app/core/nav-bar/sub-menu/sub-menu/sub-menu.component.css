@@ -12,6 +12,7 @@
     overflow: hidden;
     font-size: 16px;
     font-weight: 600;
+    
 }
 
 ul > li{
@@ -54,6 +55,7 @@ a{
     position: absolute;
     left: -165px;
     width: 200px;
+    bottom: 5px;
     
   }
 
