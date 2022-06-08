@@ -88,7 +88,7 @@ import { BnbComponent } from './views/prediction/bnb/bnb.component';
 import { ClockpComponent } from './views/prediction/clockp/clockp.component';
 import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FarmsApiService } from './services/farms-api.service';
+import { ApiService } from './services/api.service';
 import { ModuleSharedModule } from './module-shared/module-shared.module';
 import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.component';
 import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
@@ -224,8 +224,8 @@ import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-m
     RouterModule
   ],
   providers: [
-    FarmsApiService,
-    FarmsPoolsFiltersToolbarService
+    FarmsPoolsFiltersToolbarService,
+    ApiService
   ],
   bootstrap: [AppComponent]
 })

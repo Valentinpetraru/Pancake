@@ -1,0 +1,14 @@
+[
+
+    {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    }
+
+]

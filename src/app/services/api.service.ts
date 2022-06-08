@@ -6,14 +6,20 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class FarmsApiService {
+export class ApiService {
 
-  private farmsApiPath: string = '../assets/json/farms/api.json'
+  private farmsApiPath: string = '../assets/json/farms/api.json';
+
+  private transactionsApiPath: string = '../assets/json/farms/transactions.json'
 
   constructor(private http: HttpClient) { }
 
   getApiFarms(): Observable<any> {
     return this.http.get(this.farmsApiPath)
+  }
+
+  getTransactionsApi(): Observable<any> {
+    return this.http.get(this.transactionsApiPath);
   }
 
 }
