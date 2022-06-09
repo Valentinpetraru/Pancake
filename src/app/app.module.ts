@@ -105,8 +105,10 @@ import { TransactionsTableComponent } from './views/info/transactions-table/tran
 import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
 import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-mode-toggle.component';
 import { PrizeService } from './services/prizes/prize.service';
-
-
+import { SectionPancakeMakesComponent } from './Project/section-pancake-makes/section-pancake-makes.component';
+import { ConnectWalletComponent } from './core/nav-bar/connect-wallet/connect-wallet.component';
+import { IfoCardsComponent } from './views/ifo/ifo-shared/ifo-cards/ifo-cards.component';
+import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.component';
 
 
 
@@ -146,7 +148,6 @@ import { PrizeService } from './services/prizes/prize.service';
     SubMenuComponent,
     ToggleComponent,
     HomepageComponent,
-
     MoonComponent,
     LotteryTimerComponent,
     WinComponent,
@@ -212,8 +213,11 @@ import { PrizeService } from './services/prizes/prize.service';
     TransactionsTableComponent,
     SearchNavigationComponent,
     DarkModeToggleComponent,
-
-
+    SectionCakeMakesComponent,
+    SectionPancakeMakesComponent,
+    ConnectWalletComponent,
+    IfoCardsComponent,
+    IfoCakeComponent
 
   ],
   imports: [

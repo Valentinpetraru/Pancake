@@ -1,37 +1,88 @@
 .container-cake-makes{
-position: relative;
-flex-direction: column;
--webkit-box-align: center;
-align-items: center;
-z-index: 1;
-background: rgb(8, 6, 11);
-padding: 48px 0px;
-color: white;
-display:flex;
-}
+  width:100%;
+  max-width:968px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px 98px;
 
+}
 
 .container-header-cake-makes {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  width: max-content;
+  max-width: 420px;
+  flex-flow: row;
+  margin: 2rem;
+  
 }
 
+.container-head {
+  display: flex;
+  flex-flow: column;
+  color: rgb(40, 13, 95);
+}
 
+.colored-text {
+  color: rgb(118, 69, 217);
+}
 
+.container-paragraph {
+  margin-top: 1rem;
+  
+}
+
+.container-btn-cake-makes {
+  margin-top: 2rem;
+}
+
+.button-cake-makes {
+  margin-right: 1rem;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  margin-right: 16px
+}
+
+.button-cake-makes:hover {
+  /* filter: brightness(110%); */
+  opacity: 0.65;
+}
+
+.span-btn-cake-makes {
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(31, 199, 212);
+}
+
+.span-btn-cake-makes:hover {
+  text-decoration: underline rgb(31, 199, 212);
+}
 
 .container-img-cake-makes {
-    display:flex;
-    position: relative;
-    align-items: center;
-    
+  display: flex;
+  
 }
 
 .container-img-cake-makes img {
     position: absolute;
 }
 
+
+/* Animazione */
 
 .container-img-fluttuant-topright {
     animation: top-right ease-in-out 3s normal none infinite
@@ -97,7 +148,13 @@ display:flex;
 
 
 .container-footer-cake-makes {
+    width: 968px;
+    padding-top: 48px;
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-content:center;
+    margin-top: 4rem;
+    
 }
+

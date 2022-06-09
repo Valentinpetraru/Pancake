@@ -32,11 +32,11 @@ export class SelectBarComponent implements OnInit {
 
 
 
-    /* elementi:any[] = ["prova1", "prova2", "prova3"];
+    elementi:any[] = ["prova1", "prova2", "prova3"];
 
     function() {
       const nuoviElementi = ["a2", "a3", "a4", "a5", "a1"];
       this.elementi.push(...nuoviElementi);
-    } */
+    }
 
 }
