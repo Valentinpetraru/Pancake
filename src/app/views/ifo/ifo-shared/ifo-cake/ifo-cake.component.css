@@ -46,9 +46,9 @@
 
 .img-container {
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: -30px;
-    width: 120px;
+    width: 160px;
     transform: rotate(-318deg);
     color: white;
     text-align: center;
@@ -64,16 +64,15 @@
 
 
 .circle-img {
-    max-height: 64px;
-    max-width: 64px;
+    height: 60px;
+    width: 60px;
     position: relative;
-    width: 100%;
-    position: absolute;
-    width: 92%;
     inset: 0px auto auto 0px;
-    z-index: 5;
-    background-image: url(/Pancake/src/assets/Ifo-Assets/cake-circle.png);
-    border: 1px solid black;
+    z-index: 1;
+    background-image:  url(../../../../../assets/Ifo-Assets/cake-circle.png);
+    background-size: contain;
+    position: relative;
+    
 }
 
 
