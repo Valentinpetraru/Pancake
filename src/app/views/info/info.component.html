@@ -1,7 +1,11 @@
 
 <cake-search-navigation></cake-search-navigation>
 
-<div class="container-info">
+<router-outlet></router-outlet>
+
+
+
+ <div class="container-info">
 
     <cake-top-tokens-table></cake-top-tokens-table>
     <div *ngIf="topPoolsTokenParent">
@@ -10,6 +14,6 @@
     <div *ngIf="transactionsParent">
         <cake-transactions-table [transactionsOrigin]="transactionsParent"></cake-transactions-table>
     </div>
-    
-   
+
+
 </div>

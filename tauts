@@ -1,0 +1,167 @@
+[33mcommit 91d1867880b24138f8b0130309a34c40a7ac28cb[m[33m ([m[1;36mHEAD -> [m[1;32msearch-navigation-info[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Mon Jun 6 17:01:42 2022 +0200
+
+         search-navigation-info version 0.4
+
+[33mcommit df7310d52bf7e590bfec1c73a5650bc4570c3b30[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Mon Jun 6 11:59:22 2022 +0200
+
+     search-navigation-info version 0.3
+
+[33mcommit 60b0ca764bf39db2353315f4d00acbb200ec5c72[m[33m ([m[1;31morigin/search-navigation-info[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sun Jun 5 21:50:56 2022 +0200
+
+    -am search-navigation-info version 0.2
+
+[33mcommit 404b2af0ee45ec7add95573f3d2735b6f58501d0[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sun Jun 5 04:57:39 2022 +0200
+
+    -am search-navigation-info version 0.1
+
+[33mcommit ef44647f43519e7324dd5959431eb7a91a1fc2c1[m[33m ([m[1;32mtransactions-table[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sat Jun 4 23:11:33 2022 +0200
+
+    transactions-table version 0.1
+
+[33mcommit 852558ce284c3d765b62dac7dc6fd5f53d0d0796[m[33m ([m[1;32mtop-pools-table[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sat Jun 4 19:22:43 2022 +0200
+
+    top-pools-table version 0.1
+
+[33mcommit b9cfeae29fc4254b92b283139640c975a5b86bde[m[33m ([m[1;32mtop-tokens-table[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sat Jun 4 14:05:13 2022 +0200
+
+     pools version 0.2
+
+[33mcommit 078f48deece77832f5c99cc28b1a212208ebf767[m[33m ([m[1;31morigin/pools[m[33m, [m[1;32mpools[m[33m, [m[1;32minfo[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Fri Jun 3 01:48:59 2022 +0200
+
+    pools version 0.1
+
+[33mcommit 1c9bf1049dfb82543082280ac0084d503a1255f4[m[33m ([m[1;31morigin/farms[m[33m, [m[1;32mfarms[m[33m)[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Thu Jun 2 21:28:11 2022 +0200
+
+     farms version 1.0
+
+[33mcommit 676e2819d128df0a40e7f2059f2c4b662d7426fc[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Tue May 31 21:44:00 2022 +0200
+
+      farms version 0.9
+
+[33mcommit c026b3dce8a0b121122afa044140c7d742e139ad[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Tue May 31 04:47:54 2022 +0200
+
+     farms version 0.8
+
+[33mcommit 3933c87cdfd1715592c4f38fe810b28aabf164ae[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Mon May 30 02:28:00 2022 +0200
+
+     farms version 0.7
+
+[33mcommit c0dffdba911f15ef91df32d6e46eb563c7b3e216[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sun May 29 01:23:19 2022 +0200
+
+    farms version 0.6
+
+[33mcommit d253161c924a8e3d0809e62b5055ef1be013acd3[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Sat May 28 18:15:27 2022 +0200
+
+    farms versin 0.5
+
+[33mcommit 8b69536d90d3f0092f401fa0f84c243d823ed559[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Thu May 26 18:23:17 2022 +0200
+
+    farms version 0.4
+
+[33mcommit 6864193a6d97e9911123fa51d0ffb54568f42fdf[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Thu May 26 00:47:28 2022 +0200
+
+    farms version 0.3
+
+[33mcommit 78040512b1ace196c6c40d2de929b71fc61e46a4[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Wed May 25 01:35:39 2022 +0200
+
+    farms version 0.2
+
+[33mcommit 1604330cb787ab71f60843863df4c5abaab6db81[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Tue May 24 02:16:18 2022 +0200
+
+    farms version 0.2
+
+[33mcommit d5dba7ebfbda617deae221f9bb23ce68e9528c69[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Tue May 24 02:15:30 2022 +0200
+
+    farms version 0.1
+
+[33mcommit 78c15957e5f9a7e6e13c73af933adc9290da10cd[m
+Author: Emanuele Coluccini <emacoluccini@gmail.com>
+Date:   Mon May 23 20:03:58 2022 +0200
+
+    earn-section-home v0.1
+
+[33mcommit e4de0866c3b73a873a5584739274e9056c3f0cf4[m[33m ([m[1;31morigin/Valentin[m[33m)[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 27 19:55:24 2022 +0200
+
+    Update1.0
+
+[33mcommit f3ea0499815c8f6932f54c06cc151e1f13ccd04b[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 27 19:20:18 2022 +0200
+
+    Update1.0
+
+[33mcommit 10569ef1430c4e35ee418dfa0b81ac5d447fbff5[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 27 10:42:09 2022 +0200
+
+    Update1.0
+
+[33mcommit 90032b3a6e35dfa3eb2efe8f5e6d5567c6d06734[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 27 10:40:25 2022 +0200
+
+    Update1.0
+
+[33mcommit 103bf1ec81b2f2f7633d39d085a9f25a020cf02b[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 20 18:26:10 2022 +0200
+
+    Update1.0
+
+[33mcommit 1ac1833d5213b5a336b2a70a28b8941becf8cd31[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 20 12:22:23 2022 +0200
+
+    first
+
+[33mcommit 23e1866f50e9af64e9526610f8b4aa51c5000274[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Wed Apr 20 12:20:48 2022 +0200
+
+    First
+
+[33mcommit e26602d890c3626ad55904fa99dcfa3ca9ae797d[m
+Author: Valentin Iulian <valentinpetraru@gmail.com>
+Date:   Tue Apr 19 18:54:32 2022 +0200
+
+    First
