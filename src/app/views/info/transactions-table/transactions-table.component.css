@@ -122,6 +122,12 @@
     
 }
 
+.arrow-asc-desc{
+    position: relative;
+    bottom: 2px;
+    padding-left: .1rem;
+}
+
 /* TD-TABLE*/
 
 

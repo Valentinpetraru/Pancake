@@ -29,7 +29,7 @@ export class NavBarComponent implements OnInit {
 
     const elementLang = document.querySelector('.container-earth-languages') as HTMLBodyElement;
 
-    console.log($event.currentTarget)
+    // console.log($event.currentTarget)
     if ($event.target === elementLang.firstChild?.firstChild) {
       this.langState = true;
     } else {

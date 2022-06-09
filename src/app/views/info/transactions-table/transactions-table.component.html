@@ -9,18 +9,18 @@
         <div class="container-filter d-flex">
             <div class="all-swaps-container d-flex">
                 <div class="container-input-label ">
-                    <input class="input-radio" type="radio" checked id="all" name="chooseData" value="all"><label class="text-label" for="all">All</label>
+                    <input (click)="selectTransactions('all')" class="input-radio" type="radio" checked id="all" name="chooseData" value="all"><label class="text-label" for="all">All</label>
                 </div>
                 <div class="container-input-label">
-                    <input class="input-radio" type="radio" id="swaps" name="chooseData" value="swaps"><label class="text-label" for="swaps">Swaps</label>
+                    <input (click)="selectTransactions('swap')" class="input-radio" type="radio" id="swaps" name="chooseData" value="swaps"><label class="text-label" for="swaps">Swaps</label>
                 </div>
             </div>
-            <div class="adds-removes-container d-flex ">
+            <div class="adds-removes-container d-flex " >
                 <div class="container-input-label ">
-                    <input class="input-radio" type="radio" id="adds" name="chooseData" value="adds"><label class="text-label" for="adds">Adds</label>
+                    <input (click)="selectTransactions('add')" class="input-radio" type="radio" id="adds" name="chooseData" value="adds"><label class="text-label" for="adds">Adds</label>
                 </div>
-                <div class="container-input-label ">
-                    <input class="input-radio" type="radio" id="removes" name="chooseData" value="removes"><label class="text-label" for="removes">Removes</label>
+                <div class="container-input-label"  >
+                    <input (click)="selectTransactions('remove')" class="input-radio" type="radio" id="removes" name="chooseData" value="removes"><label class="text-label" for="removes">Removes</label>
                 </div>
             </div>
         </div>
@@ -30,11 +30,11 @@
             <!-- THEADING TABLE -->
             <div class="grid-container grid-header">
                 <div class="th-action d-flex">ACTION</div>
-                <div class="th-total-value"><span>TOTAL VALUE ↓</span></div>
-                <div class="th-amount-first-token"><span>TOKEN AMOUNT ↑</span></div>
-                <div class="th-amount-second-token"><span>TOKEN AMOUNT</span></div>
-                <div class="th-account"><span>ACCOUNT</span></div>
-                <div class="th-time"><span>TIME</span></div>
+                <div class="th-total-value"><span (click)="sort('totalValue')">TOTAL VALUE</span><span *ngIf="stateArrowSorted.totalValue"  class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-amount-first-token"><span (click)="sort('tokenAmountFirst')">TOKEN AMOUNT</span><span *ngIf="stateArrowSorted.tokenAmountFirst"  class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-amount-second-token"><span (click)="sort('tokenAmountSecond')">TOKEN AMOUNT</span><span *ngIf="stateArrowSorted.tokenAmountSecond" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-account"><span (click)="sort('account')">ACCOUNT</span><span *ngIf="stateArrowSorted.account" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-time"><span (click)="sort('time')">TIME</span><span *ngIf="stateArrowSorted.time" class="arrow-asc-desc">{{arrowString}}</span></div>
             </div>
     
     

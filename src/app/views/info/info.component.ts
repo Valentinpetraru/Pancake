@@ -17,7 +17,7 @@ export class InfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.infoApi.getTopPoolsApi().subscribe(
-      (response: any) => console.log(this.topPoolsTokenParent = [...Object.values(response.data)])
+      (response: any) => this.topPoolsTokenParent = [...Object.values(response.data)]
     )
 
     this.api.getTransactionsApi().subscribe(

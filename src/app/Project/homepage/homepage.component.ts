@@ -11,10 +11,10 @@ export class HomepageComponent implements OnInit {
   title = 'Pancake';
   showBanner: string | null = 'true';
 
-  constructor() { 
+  constructor() {
 
     this.showBanner = localStorage.getItem('showBanner') || 'true'
-    console.log(this.showBanner);
+    // console.log(this.showBanner);
   }
 
   ngOnInit(): void {
