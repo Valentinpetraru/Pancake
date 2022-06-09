@@ -87,7 +87,7 @@ export class EarnSectionComponent implements OnInit {
     this.timeOut = setInterval(() => {
       this.index = this.index ? this.index - 1 : this.index + 1;
       this.changeMarket()
-      console.log(this.index)
+
     }, 6000)
 
 
@@ -115,7 +115,7 @@ export class EarnSectionComponent implements OnInit {
     this.index = this.index ? this.index - 1 : this.index + 1;
     this.timeOut = setInterval(() => {
       this.index = this.index ? this.index - 1 : this.index + 1;
-      console.log('Second intervall')
+
       this.changeMarket()
     }, 6000)
   }

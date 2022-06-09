@@ -81,6 +81,7 @@ a{
 .img-token{
     width: 16px;
     height: 16px;
+    border-radius: 50%;
 }
 
 .container-img-token, .cont-text-name-symbol-token {
@@ -112,7 +113,10 @@ a{
     font-weight: 400;
 }
 
-
+/*TOGGLE COLOR FILL ARROW SVG PAGINATION*/
+.back-ahead-avilable{
+    fill: rgb(31, 199, 212);
+}
 
 @media only screen and (max-width: 900px) {
 

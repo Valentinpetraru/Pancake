@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
+import { InfoApiService } from 'src/app/services/info-api.service';
 
 @Component({
   selector: 'cake-info',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  public topPoolsTokenParent!: any[];
+
+  public transactionsParent!: any[];
+
+  constructor(private infoApi: InfoApiService, private api: ApiService) { }
 
   ngOnInit(): void {
-  }
+    this.infoApi.getTopPoolsApi().subscribe(
+      (response: any) => this.topPoolsTokenParent = [...Object.values(response.data)]
+    )
 
+    this.api.getTransactionsApi().subscribe(
+      (response: any) => { this.transactionsParent = [...response] }
+    )
+  }
 }

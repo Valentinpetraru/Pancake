@@ -9,18 +9,18 @@
         <div class="container-filter d-flex">
             <div class="all-swaps-container d-flex">
                 <div class="container-input-label ">
-                    <input class="input-radio" type="radio" checked id="all" name="chooseData" value="all"><label class="text-label" for="all">All</label>
+                    <input (click)="selectTransactions('all')" class="input-radio" type="radio" checked id="all" name="chooseData" value="all"><label class="text-label" for="all">All</label>
                 </div>
                 <div class="container-input-label">
-                    <input class="input-radio" type="radio" id="swaps" name="chooseData" value="swaps"><label class="text-label" for="swaps">Swaps</label>
+                    <input (click)="selectTransactions('swap')" class="input-radio" type="radio" id="swaps" name="chooseData" value="swaps"><label class="text-label" for="swaps">Swaps</label>
                 </div>
             </div>
-            <div class="adds-removes-container d-flex ">
+            <div class="adds-removes-container d-flex " >
                 <div class="container-input-label ">
-                    <input class="input-radio" type="radio" id="adds" name="chooseData" value="adds"><label class="text-label" for="adds">Adds</label>
+                    <input (click)="selectTransactions('add')" class="input-radio" type="radio" id="adds" name="chooseData" value="adds"><label class="text-label" for="adds">Adds</label>
                 </div>
-                <div class="container-input-label ">
-                    <input class="input-radio" type="radio" id="removes" name="chooseData" value="removes"><label class="text-label" for="removes">Removes</label>
+                <div class="container-input-label"  >
+                    <input (click)="selectTransactions('remove')" class="input-radio" type="radio" id="removes" name="chooseData" value="removes"><label class="text-label" for="removes">Removes</label>
                 </div>
             </div>
         </div>
@@ -30,20 +30,20 @@
             <!-- THEADING TABLE -->
             <div class="grid-container grid-header">
                 <div class="th-action d-flex">ACTION</div>
-                <div class="th-total-value"><span>TOTAL VALUE ↓</span></div>
-                <div class="th-amount-first-token"><span>TOKEN AMOUNT ↑</span></div>
-                <div class="th-amount-second-token"><span>TOKEN AMOUNT</span></div>
-                <div class="th-account"><span>ACCOUNT</span></div>
-                <div class="th-time"><span>TIME</span></div>
+                <div class="th-total-value"><span (click)="sort('totalValue')">TOTAL VALUE</span><span *ngIf="stateArrowSorted.totalValue"  class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-amount-first-token"><span (click)="sort('tokenAmountFirst')">TOKEN AMOUNT</span><span *ngIf="stateArrowSorted.tokenAmountFirst"  class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-amount-second-token"><span (click)="sort('tokenAmountSecond')">TOKEN AMOUNT</span><span *ngIf="stateArrowSorted.tokenAmountSecond" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-account"><span (click)="sort('account')">ACCOUNT</span><span *ngIf="stateArrowSorted.account" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-time"><span (click)="sort('time')">TIME</span><span *ngIf="stateArrowSorted.time" class="arrow-asc-desc">{{arrowString}}</span></div>
             </div>
     
     
     
             <!-- TDATA TABLE -->
-            <div class="grid-container grid-body">
+            <div class="grid-container grid-body" *ngFor="let transaction of transactions">
                 <div class="td-action">
                     <a href="#" class="action-container-txt-svg d-flex vert-center">
-                            <p>Spawa WBNB for OSPD</p>
+                            <p>{{transaction.action}}</p>
                             <div class="container-svg-link">
                                 <div class="d-flex vert-center">
                                     <svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 fJSxMQ" fill="rgb(31, 199, 212)">
@@ -54,13 +54,13 @@
                     </a>
                 </div>
                 <div class="td-total-value">
-                    <p>$447.26</p>
+                    <p>${{transaction.totalValue}}</p>
                 </div>
-                <div class="td-amount-first-token"><a>11.96M OSPD</a></div>
-                <div class="td-amount-second-token"><a>1.49 WBNB</a></div>
+                <div class="td-amount-first-token"><a>{{transaction.tokenAmountFirst}} {{transaction.firstToken}}</a></div>
+                <div class="td-amount-second-token"><a>{{transaction.tokenAmountSecond}} {{transaction.secondToken}}</a></div>
                 <div class="td-account">
-                     <a href="#" class="action-container-txt-svg d-flex vert-center">
-                            <p class="txt-address">0x69757656463463467357457564363463463467845634534634cb96</p>
+                     <a href="https://bscscan.com/address/{{transaction.account}}" target="_blank" class="action-container-txt-svg d-flex vert-center">
+                            <p class="txt-address">{{transaction.account}}</p>
                             <div class="container-svg-link">
                                 <div class="d-flex vert-center">
                                     <svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 fJSxMQ" fill="rgb(31, 199, 212)">
@@ -70,20 +70,20 @@
                             </div>
                     </a>
                 </div>
-                <div class="td-time">16 seconds</div> 
+                <div class="td-time">{{transaction.time}} minutes</div> 
             </div>
             
             
             <!-- TFOOTER TABLE -->
             <div class="footer-table d-flex center vert-center">
                 <div class="footer-navigation-table d-flex vert-center" >
-                    <div class="container-svg-arrow-back">
+                    <div class="container-svg-arrow-back" (click)="previousPage()" [class.back-ahead-avilable]="arrowBack">
                         <svg viewBox="0 0 24 24" color="textDisabled" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 kcSykS">
                             <path d="M19 11H7.82998L12.71 6.12C13.1 5.73 13.1 5.09 12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7L4.70998 11.29C4.31998 11.68 4.31998 12.31 4.70998 12.7L11.3 19.29C11.69 19.68 12.32 19.68 12.71 19.29C13.1 18.9 13.1 18.27 12.71 17.88L7.82998 13H19C19.55 13 20 12.55 20 12C20 11.45 19.55 11 19 11Z"></path>
                         </svg>
                     </div>
-                    <div class="footer-page-index" >Page 1 of 8</div>
-                    <div class="container-svg-arrow-ahead">
+                    <div class="footer-page-index" >{{currentPage}} of {{totalPages}}</div>
+                    <div class="container-svg-arrow-ahead" (click)="nextPage()" [class.back-ahead-avilable]="arrowAhead">
                         <svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 etGTJB">
                             <path d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z"></path>
                         </svg>

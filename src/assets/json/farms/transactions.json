@@ -1,0 +1,224 @@
+[
+
+    {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add DEFIWZ and USDT",
+        "firstToken":" DEFIWZ",
+        "SecondToken":"USDT",
+        "totalValue": 19.75,
+        "tokenAmountFirst": 0.26 ,
+        "tokenAmountSecond": 9.88 ,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add LSDOGE and WBNB",
+        "firstToken":"WBNB",
+        "SecondToken":"WBNB",
+        "totalValue": 0.79,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 24.98,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 11
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Remove Cake and WBNB",
+        "firstToken":"CAKE",
+        "SecondToken":"WBNB",
+        "totalValue": 2.76,
+        "tokenAmountFirst": 0.30,
+        "tokenAmountSecond": 0.00047,
+        "account": "0x747d0ed3069acbe7ea48b86ded6e620204c43953",
+        "time": 2
+    },
+     {
+        "action": "Remove Cake and WBNB",
+        "firstToken":"CAKE",
+        "SecondToken":"WBNB",
+        "totalValue": 2.76,
+        "tokenAmountFirst": 0.30,
+        "tokenAmountSecond": 0.00047,
+        "account": "0x747d0ed3069acbe7ea48b86ded6e620204c43953",
+        "time": 2
+    },
+     {
+        "action": "Remove Cake and WBNB",
+        "firstToken":"CAKE",
+        "SecondToken":"WBNB",
+        "totalValue": 2.76,
+        "tokenAmountFirst": 0.30,
+        "tokenAmountSecond": 0.00047,
+        "account": "0x747d0ed3069acbe7ea48b86ded6e620204c43953",
+        "time": 2
+    },
+     {
+        "action": "Remove Cake and WBNB",
+        "firstToken":"CAKE",
+        "SecondToken":"WBNB",
+        "totalValue": 2.76,
+        "tokenAmountFirst": 0.30,
+        "tokenAmountSecond": 0.00047,
+        "account": "0x747d0ed3069acbe7ea48b86ded6e620204c43953",
+        "time": 2
+    },
+     {
+        "action": "Remove Cake and WBNB",
+        "firstToken":"CAKE",
+        "SecondToken":"WBNB",
+        "totalValue": 2.76,
+        "tokenAmountFirst": 0.30,
+        "tokenAmountSecond": 0.00047,
+        "account": "0x747d0ed3069acbe7ea48b86ded6e620204c43953",
+        "time": 2
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "secondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 3
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Add WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Swap WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Swap WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Swap WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Swap WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    },
+     {
+        "action": "Swap WBNB and CEEK",
+        "firstToken":"WBNB",
+        "SecondToken":"CEEK",
+        "totalValue": 172.68,
+        "tokenAmountFirst": 0.29,
+        "tokenAmountSecond": 490.66,
+        "account": "0x0ed943ce24baebf257488771759f9bf482c39706",
+        "time": 5
+    }
+
+]

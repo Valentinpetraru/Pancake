@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class ConnectPopupComponent implements OnInit {
 
 
+
   @Output() closeWallet = new EventEmitter<boolean>();
 
   closeConnectWallet(): void {
