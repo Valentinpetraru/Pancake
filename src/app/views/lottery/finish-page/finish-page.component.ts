@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinishPageComponent implements OnInit {
 
+  open: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -11,6 +11,9 @@ export class CardOwnComponent implements OnInit {
 
 
   randomValue: number = +(Math.random() * (500 - 400) + 400).toFixed(3);
+  randomValueo: number = +(Math.random() * (500 - 400) + 400).toFixed(3);
+  randomValuet: number = +(Math.random() * (500 - 400) + 400).toFixed(3);
+  randomValuett: number = +(Math.random() * (500 - 400) + 400).toFixed(3);
   idnumber: number = 6366;
   num!:number;
 
@@ -20,11 +23,27 @@ export class CardOwnComponent implements OnInit {
 
     users: User[] = [
     {
-      id: this.randomValue
+      id: this.randomValuet,
+      status: 'expired'
     },
     {
-      id: this.randomValue
+      id: this.randomValueo,
+      status: 'expired'
+    },
+
+    {
+      id: this.randomValuett,
+      status: 'expired'
+    },
+    {
+      id: this.randomValue,
+      status: 'live'
+    },
+    {
+      id: this.randomValuet,
+      status: 'next'
     }
+
 
   ]
 
@@ -32,7 +51,11 @@ export class CardOwnComponent implements OnInit {
         setInterval(() => {
 
 
-      this.users.forEach(item => item.id = +(Math.random() * (500 - 400) + 400).toFixed(3))
+      this.users.forEach(item => {
+        if(item.status === 'live'){
+          item.id = +(Math.random() * (500 - 400) + 400).toFixed(3)
+        }
+        })
     }, 2000)
   }
 

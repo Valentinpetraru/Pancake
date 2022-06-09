@@ -1,0 +1,395 @@
+
+.farms-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.prediction-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 4px solid rgb(31, 199,212) ;
+}
+
+
+.link-prediction{
+    color: #7645D9;
+    font-weight: 600;
+
+
+}
+
+
+ .lottery-container:hover{
+    background-color: #EFF4F5;
+}
+
+.farms-container:hover{
+    background-color: #EFF4F5;
+}
+.trading-container:hover{
+    background-color: #EFF4F5;
+}
+
+
+.per
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.per a {
+  text-decoration: none;
+   color: rgb(122, 110, 170);
+}
+
+
+
+.wrap-nav{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white-transparent-whitemode-prediction);
+}
+
+
+.wrap-list{
+    display: flex;
+}
+
+.item-wrap{
+    margin-right: 20px;
+    position: relative;
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    gap: 4px;
+}
+
+.item a{
+    display: flex;
+    height: 42px;
+    align-items: center;
+    color: var(--color-violet-whitemode);
+    padding: 4px 4px 0px;
+    position: relative;
+}
+
+.icon svg{
+    fill: var(--color-violet-whitemode);
+}
+
+.item-wrap:hover{
+    background-color: #eff4f5;
+}
+
+.underline{
+    font-weight: 700;
+
+}
+
+.underline a{
+    color: var(--color-violet-whitemode-title);
+}
+
+.underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-blue-whitemode);
+
+
+}
+
+
+.wrap-main{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+    height: calc(100vh - 100px);
+    padding:32px 32px 0 ;
+}
+
+.wrap-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.grey-wrap{
+    background: rgb(231, 227, 235);
+    width: 100%;
+    max-width: 436px;
+    color: rgb(40, 13, 95);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 1px 1px 3px;
+}
+
+.white-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.up{
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 227, 235);
+}
+
+.left h2{
+    margin: 0px 0px 8px;
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+
+.left p{
+    font-size: 14px;
+    color: rgb(122, 110, 170);
+    font-weight: 500;
+}
+
+.right{
+    display: flex;
+    fill: rgb(122, 110, 170);
+}
+
+.right-icon, .left-icon{
+    width: 32px;
+    cursor: pointer;
+}
+
+.left-icon{
+    margin: 0 8px 0 0;
+
+}
+
+.right-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.middle{
+ padding: 24px;
+ background-color: rgb(238, 238, 238);
+ color: rgb(122, 110, 170);
+ font-weight: 600;
+ text-align: center;
+}
+
+.down{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.down button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    fill: white;
+    border-radius: 16px;
+    border: 0;
+    font-weight: 600;
+    background-color: rgb(31, 199, 212);
+    padding: 0px 24px;
+    height: 48px;
+    width: 100%;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    cursor: pointer;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    font-size: 16px;
+}
+
+.down button:hover{
+  opacity: 0.7;
+}
+
+/* parte sotto pagina */
+
+
+
+
+
+
+
+
+
+
+.help{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.help-right-wrap{
+    display: flex;
+    align-items: center;
+}
+
+
+.rabbit img{
+    height: 108px;
+}
+
+.message svg {
+    fill: rgb(122, 110, 170) ;
+}
+
+.message a{
+
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    opacity: 1;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+}
+
+.message{
+    display: flex;
+}
+
+
+
+
+.check-wrap{
+    background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    display: inline-flex;
+    border: 1px solid rgb(215, 202, 236);
+}
+
+
+#v2{
+
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+}
+
+.check-wrap a {
+    line-height: 32px;
+    padding: 0px 16px;
+    font-weight: 600;
+}
+
+
+#convert{
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#convert svg{
+    fill: rgb(31, 199, 212);
+}
+
+.message:hover{
+    opacity: 0.8;
+}
+
+#convert:hover{
+    text-decoration: underline;
+}
+
+#v2:hover{
+    opacity: 0.8;
+}
+
+
+
+#v1{
+    color: rgb(122, 110, 170);
+}
+
+
+
+
+
+
+.left-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+

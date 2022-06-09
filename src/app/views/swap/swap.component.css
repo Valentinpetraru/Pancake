@@ -1,0 +1,68 @@
+.card{
+width: 100%;
+height: calc(100vh - 100px);
+display: flex;
+justify-content: center;
+background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+padding-top: 30px;
+}
+.farms-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.prediction-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 4px solid rgb(31, 199,212) ;
+}
+
+
+.link-prediction{
+    color: #7645D9;
+    font-weight: 600;
+
+
+}
+
+
+ .lottery-container:hover{
+    background-color: #EFF4F5;
+}
+
+.farms-container:hover{
+    background-color: #EFF4F5;
+}
+.trading-container:hover{
+    background-color: #EFF4F5;
+}
+
+
+.per
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.per a {
+  text-decoration: none;
+   color: rgb(122, 110, 170);
+}

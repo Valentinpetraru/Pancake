@@ -1,7 +1,7 @@
 
 <section class="earn-section">
     <div class="wrapper">
-        
+
         <div class="container-earnPassive-images">
             <div class="flex-container-images">
                 <div class="flex-item-box-images">
@@ -19,11 +19,11 @@
 
                     <div class=" flex-item-earn-passive-container d-flex align-items">
                         <div class="flex-item-earn-passive ">
-                            <h2><span class="title-earn">Earn </span>passive income with crypto.</h2>
+                            <h2 ><span class="title-earn">Earn </span>passive income with crypto.</h2>
                             <p>PancakeSwap makes it easy to make your crypto work for you</p>
                             <div class="d-flex align-items">
-                                <button class="btn-explore"><a>Explore</a></button>
-                                <a class="link-learn">Learn</a>
+                                <button class="btn-explore" routerLink="/farms"><a>Explore</a></button>
+                                <a class="link-learn" href="https://docs.pancakeswap.finance/products/yield-farming">Learn</a>
                             </div>
                         </div>
                     </div>
@@ -48,8 +48,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
+
+
                         <div class=" bottom-item-data-trade-container" [class.animationBottomTrade]="index">
                             <div class="d-flex space-between items-bottom-trade">
                                 <div *ngFor="let trade of trades[1].farms; let i = index">
@@ -58,10 +58,9 @@
                                     <p>{{trade.rate}}</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
     </div>
 </section>
-            
-            
+

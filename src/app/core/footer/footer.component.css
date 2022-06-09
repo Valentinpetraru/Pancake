@@ -311,5 +311,8 @@ input
 }
 
 .svg svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill:  rgb(184, 173, 210);
 }

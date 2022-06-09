@@ -104,6 +104,8 @@ import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-t
 import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
 import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
 import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-mode-toggle.component';
+import { PrizeService } from './services/prizes/prize.service';
+
 
 
 
@@ -225,7 +227,8 @@ import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-m
   ],
   providers: [
     FarmsApiService,
-    FarmsPoolsFiltersToolbarService
+    FarmsPoolsFiltersToolbarService,
+    PrizeService
   ],
   bootstrap: [AppComponent]
 })

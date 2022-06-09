@@ -68,3 +68,11 @@
 .left:hover{
   opacity: 0.7;
 }
+
+
+a
+{
+  color: rgb(31, 199, 212);
+  text-decoration: none;
+
+}
