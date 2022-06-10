@@ -6,11 +6,11 @@
                 <div class="grid-container grid-header">
                 <div class="th-index d-flex">#</div>
                 <div class="th-name-img-token"><span>POOL</span></div>
-                <div class="th-volume-24h"><span>VOLUME 24H</span></div>
-                <div class="th-volume-7d"><span>VOLUME 7D</span></div>
-                <div class="th-lp-reward-fees-24h"><span>LP REWARD FEES 24H</span></div>
-                <div class="th-lp-reward-apr"><span>LP REWARD APR</span></div>
-                <div class="th-liquidity"><span>LIQUIDITY</span></div>
+                <div class="th-volume-24h"><span (click)="sort('volume24h')">VOLUME 24H</span><span *ngIf="stateArrowSorted.volume24h" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-volume-7d"><span (click)="sort('volume7d')">VOLUME 7D</span><span *ngIf="stateArrowSorted.volume7d" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-lp-reward-fees-24h"><span (click)="sort('lpFees')">LP REWARD FEES 24H</span><span *ngIf="stateArrowSorted.lpFees" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-lp-reward-apr"><span (click)="sort('lpApr')">LP REWARD APR</span><span *ngIf="stateArrowSorted.lpApr" class="arrow-asc-desc">{{arrowString}}</span></div>
+                <div class="th-liquidity"><span (click)="sort('liquidity')">LIQUIDITY</span><span *ngIf="stateArrowSorted.liquidity" class="arrow-asc-desc">{{arrowString}}</span></div>
             </div>
 
             
@@ -28,11 +28,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="td-volume-24h"><a>{{token.base_volume }}</a></div>
-                <div class="td-volume-7d"><a>1.63</a></div>
-                <div class="td-lp-reward-fees-24h"><a>$308.14</a></div>
-                <div class="td-lp-reward-apr"><a>$308.14</a></div> 
-                <div class="td-liquidity"><a>${{token.liquidity | currency }}</a></div> 
+                <div class="td-volume-24h"><a>${{token.base_volume | numberSuffix}}</a></div>
+                <div class="td-volume-7d"><a>${{token.quote_volume | numberSuffix}}</a></div>
+                <div class="td-lp-reward-fees-24h"><a>${{token.liquidity_BNB | numberSuffix}}</a></div>
+                <div class="td-lp-reward-apr"><a>{{2 | randomPercentage}}</a></div> 
+                <div class="td-liquidity"><a>${{token.liquidity | numberSuffix}}</a></div> 
             </div>
       
 

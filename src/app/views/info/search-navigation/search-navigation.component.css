@@ -83,6 +83,7 @@ box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4
     background-color: rgb(250, 249, 250);
     box-shadow: rgb(0 0 0 / 4%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 4%);
     border: 1px solid rgb(118, 69, 217);
+    overflow: scroll;
 }
 
 

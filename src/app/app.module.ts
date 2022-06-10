@@ -98,15 +98,10 @@ import { CardStyleComponent } from './views/farms/card-style/card-style.componen
 import { TableStyleComponent } from './views/farms/table-style/table-style.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { RouterModule } from '@angular/router';
-import { ChartLiquidityComponent } from './views/info/chart-liquidity/chart-liquidity.component';
-import { TopTokensTableComponent } from './views/info/top-tokens-table/top-tokens-table.component';
-import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-table.component';
-import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
-import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
-import { TokensComponent } from './views/info/tokens/tokens.component';
+
 
 import { InfoApiService } from './services/info-api.service';
-import { NumberSuffixPipe } from './pipes/number-suffix.pipe';
+
 
 import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-mode-toggle.component';
 import { PrizeService } from './services/prizes/prize.service';
@@ -118,13 +113,14 @@ import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.compo
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     BlogsComponent,
     DocsComponent,
     IfoComponent,
-    InfoComponent,
     LeaderbordComponent,
     VotingComponent,
     FarmsComponent,
@@ -213,22 +209,12 @@ import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.compo
     SearchFilterPipe,
     CardStyleComponent,
     TableStyleComponent,
-    ChartLiquidityComponent,
-    TopTokensTableComponent,
-    TopPoolsTableComponent,
-    TransactionsTableComponent,
-    SearchNavigationComponent,
-    TokensComponent,
-
-    NumberSuffixPipe,
-
     DarkModeToggleComponent,
     SectionCakeMakesComponent,
     SectionPancakeMakesComponent,
     ConnectWalletComponent,
     IfoCardsComponent,
-    IfoCakeComponent
-
+    IfoCakeComponent,
 
   ],
   imports: [
@@ -245,8 +231,6 @@ import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.compo
     PrizeService,
     InfoApiService,
     ApiService
-
-
   ],
   bootstrap: [AppComponent]
 })

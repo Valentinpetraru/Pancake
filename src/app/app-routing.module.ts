@@ -1,5 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+
 import { HomepageComponent } from './Project/homepage/homepage.component';
 import { ActivityComponent } from './views/activity/activity.component';
 import { CollectionsComponent } from './views/collections/collections.component';
@@ -19,33 +21,27 @@ import { SwapComponent } from './views/swap/swap.component';
 import { TradingCompetitionComponent } from './views/swap/trading-competition/trading-competition.component';
 import { VotingComponent } from './views/voting/voting.component';
 
+
 const routes: Routes = [
 
-  {path: '', component: HomepageComponent},
-  {path: 'swap', component: SwapComponent},
-  {path: 'limit', component: LimitComponent},
-  {path: 'liquidity', component: LiquidityComponent},
-  {path: 'perpetual', component: PerpetualComponent},
-  {path: 'farms', component: FarmsComponent},
-  {path: 'pools', component: PoolsComponent},
-  {path: 'competition', component: TradingCompetitionComponent},
-  {path: 'prediction', component: PredictionComponent},
-  {path: 'lottery', component: LotteryComponent},
-  {path: 'overview', component: OverviewComponent},
-  {path: 'collection', component: CollectionsComponent},
-  {path: 'activity', component: ActivityComponent},
-  {path: 'info', component: InfoComponent, children: [
-    {path: 'tokens', component:TokensComponent}
-  ]
-
-  },
-  {path: 'ifo', component: IfoComponent},
-  {path: 'voting', component: VotingComponent},
-  {path: 'leaderboard', component: LeaderbordComponent}
+  { path: '', component: HomepageComponent },
+  { path: 'swap', component: SwapComponent },
+  { path: 'limit', component: LimitComponent },
+  { path: 'liquidity', component: LiquidityComponent },
+  { path: 'perpetual', component: PerpetualComponent },
+  { path: 'farms', component: FarmsComponent },
+  { path: 'pools', component: PoolsComponent },
+  { path: 'competition', component: TradingCompetitionComponent },
+  { path: 'prediction', component: PredictionComponent },
+  { path: 'lottery', component: LotteryComponent },
+  { path: 'overview', component: OverviewComponent },
+  { path: 'collection', component: CollectionsComponent },
+  { path: 'activity', component: ActivityComponent },
+  { path: 'info', loadChildren: () => import('./views/info/info.module').then(m => m.InfoModule) },
+  { path: 'ifo', component: IfoComponent },
+  { path: 'voting', component: VotingComponent },
+  { path: 'leaderboard', component: LeaderbordComponent }
 ];
-
-
-
 
 
 
