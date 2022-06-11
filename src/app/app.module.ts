@@ -98,11 +98,7 @@ import { CardStyleComponent } from './views/farms/card-style/card-style.componen
 import { TableStyleComponent } from './views/farms/table-style/table-style.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { RouterModule } from '@angular/router';
-
-
 import { InfoApiService } from './services/info-api.service';
-
-
 import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-mode-toggle.component';
 import { PrizeService } from './services/prizes/prize.service';
 import { SectionPancakeMakesComponent } from './Project/section-pancake-makes/section-pancake-makes.component';
@@ -215,6 +211,8 @@ import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.compo
     ConnectWalletComponent,
     IfoCardsComponent,
     IfoCakeComponent,
+
+
 
   ],
   imports: [

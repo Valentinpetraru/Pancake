@@ -1,33 +1,33 @@
-
 <div class="wrapper-table">
-   <h2 class="title-top-tokens">{{titleTable}}</h2>
-    <div class="container-table  d-flex column">
-                <div class="grid-container grid-header">
+   <h2 class="title-top-tokens">Your Watchlist</h2>
+   <p *ngIf="watchlistToken.length === 0" class="text-saved-tokens">Saved pools will appear here</p>
+    <div *ngIf="watchlistToken.length > 0" class="container-table  d-flex column">
+            <div class="grid-container grid-header">
                 <div class="th-index d-flex">#</div>
                 <div class="th-name-img-token"><span>NAME</span></div>
                 <div class="th-price"><span>PRICE</span></div>
                 <div class="th-price-change"><span>PRICE CHANGE</span></div>
                 <div class="th-volume-24h"><span>VOLUME 24H</span></div>
-                <div class="th-liquidity"><span>LIQUIDY</span></div>
+                <div class="th-liquidity"><span>LIQUIDITY</span></div>
             </div>
 
             
        
-            <div class="grid-container grid-body">
-                <div class="td-index">1</div>
+            <div class="grid-container grid-body" *ngFor="let token of watchlistToken, let i = index">
+                <div class="td-index">{{i + 1}}</div>
                 <div class="td-name-img-token">
                     <div class="container-img-token d-flex vert-center">
-                        <img class="img-token" src="https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png" alt="">
+                        <img class="img-token" src="{{token.image}}" alt="">
                         <div class="cont-text-name-symbol-token d-flex vert-center">
-                            <p class="txt-name-token">Wrapped BNB</p>
-                            <p class="txt-symbol-token">(WBNB)</p>
+                            <p class="txt-name-token">{{token.name}}</p>
+                            <p class="txt-symbol-token">({{token.symbol | uppercase}})</p>
                         </div>
                     </div>
                 </div>
-                <div class="td-price"><a>$308.14</a></div>
-                <div class="td-price-change"><a>1.63</a></div>
-                <div class="td-volume-24h"><a>$308.14</a></div>
-                <div class="td-liquidity"><a>$308.14</a></div> 
+                <div class="td-price"><a>${{token.current_price | numberSuffix}}</a></div>
+                <div class="td-price-change"><a>{{0 | randomPercentage}}%</a></div>
+                <div class="td-volume-24h"><a>$${{token.circulating_supply | numberSuffix}}</a></div>
+                <div class="td-liquidity"><a>${{token.total_volume | numberSuffix}}</a></div> 
             </div>
             
             
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            
-        </div>
+           
+     </div>
 
 </div>

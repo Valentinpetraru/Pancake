@@ -8,6 +8,9 @@ import { Component, Input, OnInit, } from '@angular/core';
 export class TopPoolsTableComponent implements OnInit {
 
   @Input() topPoolsTokenOrigin: any = [];
+
+  @Input() titleTable: string = '';
+
   public topPoolsToken: any = [];
 
 

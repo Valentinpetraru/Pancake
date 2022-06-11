@@ -25,6 +25,10 @@ export class InfoApiService {
     return this.http.get<any[]>('https://api.pancakeswap.info/api/v2/pairs')
   }
 
+  getAllTokensInfo(): Observable<any> {
+    return this.http.get<any>('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=&sparkline=false')
+  }
+
   getInfoAPi(): Observable<any> {
     return this.http.get('https://api.pancakeswap.info/api/v2/pairs');
   }

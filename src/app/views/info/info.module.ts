@@ -12,6 +12,11 @@ import { InfoContainerComponent } from './info-container.component';
 import { InfoComponent } from './info.component';
 import { NumberSuffixPipe } from './pipes/number-suffix.pipe';
 import { RandomPercentagePipe } from './pipes/random-percentage.pipe';
+import { PoolsComponent } from './pools/pools.component';
+import { WatchlistTokenComponent } from './tokens/watchlist-token/watchlist-token.component';
+import { TopMoversComponent } from './tokens/top-movers/top-movers.component';
+
+
 
 
 
@@ -26,7 +31,11 @@ import { RandomPercentagePipe } from './pipes/random-percentage.pipe';
     InfoContainerComponent,
     InfoComponent,
     NumberSuffixPipe,
-    RandomPercentagePipe
+    RandomPercentagePipe,
+    PoolsComponent,
+    WatchlistTokenComponent,
+    TopMoversComponent,
+
 
   ],
   imports: [
@@ -34,5 +43,6 @@ import { RandomPercentagePipe } from './pipes/random-percentage.pipe';
     HttpClientModule,
     InfoRoutingModule
   ]
+
 })
 export class InfoModule { }

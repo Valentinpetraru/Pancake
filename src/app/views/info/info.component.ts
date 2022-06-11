@@ -13,6 +13,9 @@ export class InfoComponent implements OnInit {
 
   public transactionsParent!: any[];
 
+  public titlePoolsTable: string = 'Top Pools';
+  public titleTokensTable: string = 'Top Tokens';
+
   constructor(private infoApi: InfoApiService, private api: ApiService) { }
 
   ngOnInit(): void {

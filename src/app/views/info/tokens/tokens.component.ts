@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'cake-tokens',
@@ -7,11 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TokensComponent implements OnInit {
 
+  titleTokensTable: string = 'All Tokens';
 
-  cards: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 28, 19, 20]
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }

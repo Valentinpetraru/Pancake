@@ -1,0 +1,36 @@
+
+
+<div class="wrapper" *ngIf="topMoversTokens.length === 20">
+    <div class="container-carousel" >
+        <div class="title-carousel">
+            <h5>Top Movers</h5>
+         </div>
+        <marquee behavior="alternate" loop="infinite" >
+            <div class="container-cards-token">     
+                <a  class="card" *ngFor="let token of topMoversTokens">
+                    <div class="container-card d-flex ">
+                        <div class="container-token-img">
+                            <img class="token-img" src="{{token.image}}" alt="">
+                        </div>
+                        <div class="container-symbol-price-percentage">
+                            <div>
+                                <p class="text-symbol">{{token.symbol | uppercase}}</p> 
+                                <div class="price-percentage d-flex vert-center">
+                                    <p class="text-price">${{token.current_price | numberSuffix}}</p>
+                                    <p class="text-percentage" [ngClass]=" token.percentage > 35  ? 'percentage-positive' : 'percentage-negative' ">
+                                        <span class="arrow-txt" *ngIf="token.percentage > 35">↑</span>
+                                        <span class="arrow-txt" *ngIf="token.percentage < 35">↓</span>
+                                        {{token.percentage}}%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        </marquee>
+    </div>
+</div>
+    
+
