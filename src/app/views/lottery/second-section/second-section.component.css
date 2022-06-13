@@ -1,0 +1,288 @@
+
+.second-gen-wrap{
+    margin-top: -30px;
+}
+
+.wave{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#wave{
+    width: 100%;
+    height: 20px;
+    background: rgb(118, 69, 217);
+    transform: translate(0px, 1px);
+    clip-path: url(#topConcaveCurve);
+}
+
+.second-content-wrap{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+    padding: 14px 0px 48px;
+}
+
+.second-content{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    min-height: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-work{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#getnow{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.time-rest{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 48px;
+
+}
+
+.time{
+    display: flex;
+    align-items: flex-end;
+
+
+
+}
+
+.num{
+    font-size: 32px;
+    background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -4px;
+  margin-right: 4px;
+}
+
+.letter{
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 12px;
+}
+
+#draw{
+    color: white;
+    font-size: 20px;
+}
+
+.card-wrap{
+    width: 756px;
+    background-color: rgb(231, 227, 235);
+    text-align: center;
+    position: relative;
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    padding: 1px 1px 3px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+  .cardup{
+    box-sizing: border-box;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 16px 24px;
+
+}
+
+.card-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-up h2{
+    font-size: 20px;
+    margin: 0 12px 0 0;
+}
+
+.card-middle-wrap{
+    padding: 24px;
+}
+
+.card-middle{
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: auto 1fr;
+
+}
+
+.prize-button, .prize-pot{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.update-prize{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+
+}
+
+.primary span{
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.secondary span{
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.card-middle h2{
+    font-size: 20px;
+}
+
+#prize-button{
+    display: flex;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    max-width: 280px;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+.card-down-wrap{
+    border-top: 1px solid rgb(231, 227, 235);
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 199, 212);
+    height: 48px;
+    padding: 0px 24px;
+    opacity: 1;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    fill: rgb(31, 199, 212);
+}
+
+#details svg{
+    margin-left: 0.5rem
+}
+
+#prize-button:hover, #details:hover{
+   opacity: 0.7;
+}
+
+@media screen and (max-width: 851px) {
+
+  .date{
+    font-size: 14px;
+  }
+
+  .your-ticket{
+    display: none;
+  }
+
+  .card-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .update-prize{
+    display: flex;
+    align-items: center;
+  }
+
+  #prize-button{
+     margin-left: 0;
+  }
+
+  .card-wrap{
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 623px) {
+  .card-wrap{
+    width: 400px;
+  }
+
+  .second-content{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 448px) {
+ .card-wrap{
+   width: 300px;
+ }
+}
+
+@media screen and (max-width: 350px) {
+ .card-wrap{
+   width: 220px;
+ }
+}
+
+
+

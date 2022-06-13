@@ -1,0 +1,31 @@
+.gHVxOO {
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    width: 100%;
+}
+
+.buttonFooter {
+    display: flex;
+    margin-top: 70px;
+    opacity: 1;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    width: 165.16px;
+}
+
+.buttonFooter:hover {
+    opacity: 0.7;
+}

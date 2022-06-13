@@ -66,6 +66,7 @@
 .circle-img {
     height: 60px;
     width: 60px;
+    transform: translateX(-20px);
     position: relative;
     inset: 0px auto auto 0px;
     z-index: 1;
@@ -77,9 +78,11 @@
 
 
 .main-cake {
+    
     display: flex;
     flex-flow: column;
     align-items: center;
+    
 }
 
 
@@ -104,7 +107,7 @@
     border-radius: 16px;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     justify-content: center;
     letter-spacing: 0.03em;
@@ -126,8 +129,158 @@
   .sub-main-text {
       width: 100%;
       margin: 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
       display: flex;
       flex-flow: column;
       align-items: flex-start;
   }
+
+
+.text-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+} 
+
+.btn-mobile {
+    display: none;
+}
+
+.text-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+} 
+
+.btn-mobile {
+    display: none;
+}
+
+
+
+
+.container-card-mobile {
+    max-width: 370px;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: inherit;
+    position: relative;
+    padding: 1px 1px 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.459);
+    overflow: hidden;
+}
+
+.header-mobile {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 1rem;
+    justify-content: space-between;
+    font-size: 10px;
+    align-items: center;
+}
+
+.comntainer-img-right-mobile {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    width: 160px;
+    transform: rotate(-318deg);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(237, 75, 158);
+    z-index: 7;
+    padding: 4px 0px;
+    
+}
+
+.img-container-mobile {
+    position: absolute;
+    top: 5px;
+    right: 250px;
+    width: 160px;
+    transform: rotate(318deg);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(237, 75, 158);
+    z-index: 7;
+    padding: 4px 0px;
+}
+
+.circle-img-mobile{
+    height: 60px;
+    width: 60px;
+    transform: translateX(-20px);
+    position: relative;
+    inset: 0px auto auto 0px;
+    z-index: 1;
+    background-image:  url(../../../../../assets/Ifo-Assets/cake-circle.png);
+    background-size: contain;
+    position: relative;
+}
+
+.text-header-mobile {
+    display: flex;
+    flex-flow: column;
+}
+
+.text-header-mobile p{
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0.65;
+}
+
+.text-mobile-flex {
+    display: flex;
+    flex-flow: column;
+}
+
+.text-mobile-flex p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0.65;
+}
+
+.container-btn-mobile {
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    width: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    fill: white;
+}
+
+
+.container-btn-mobile button {
+    background-color: transparent;
+    border: none;
+    border-radius: 16px;
+    height: 100%;
+    min-width: 48px;
+}
+
+
+

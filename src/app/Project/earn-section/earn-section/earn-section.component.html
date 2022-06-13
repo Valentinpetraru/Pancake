@@ -1,0 +1,67 @@
+
+<section class="earn-section">
+    <div class="wrapper">
+        
+        <div class="container-earnPassive-images">
+            <div class="flex-container-images">
+                <div class="flex-item-box-images">
+                    <div id="pie" class="container-image">
+                        <img src="../../../../assets/home-earn-section/pie.png" alt="ear-sections-flating-images">
+                    </div>
+                    <div id="stonks" class="container-image">
+                        <img src="../../../../assets/home-earn-section/stonks.png" alt="ear-sections-flating-images">
+                            </div>
+                            <div id="folder" class="container-image">
+                                <img src="../../../../assets/home-earn-section/folder.png" alt="ear-sections-flating-images">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" flex-item-earn-passive-container d-flex align-items">
+                        <div class="flex-item-earn-passive ">
+                            <h2><span class="title-earn">Earn </span>passive income with crypto.</h2>
+                            <p>PancakeSwap makes it easy to make your crypto work for you</p>
+                            <div class="d-flex align-items">
+                                <button class="btn-explore"><a>Explore</a></button>
+                                <a class="link-learn">Learn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-earn-footer">
+                    <div class="farms-syrup-pools-arrow-svg">
+                        <h2>Top <span>{{tokenSelected}}</span></h2>
+                        <div (click)="arrowClicked()">
+                            <img src="../../../../assets/home-earn-section/arrows-sort.svg" alt="Hwllo World">
+                        </div>
+                    </div>
+
+                    <div class="flex-container-data-trade">
+
+                        <div class="top-item-data-trade-container" [class.animationTopTrade]="index">
+                            <div class="d-flex space-between items-top-trade">
+                                <div *ngFor="let trade of trades[0].syrupPools; let i = index">
+                                    <p>{{trade.token | titlecase}}</p>
+                                    <p>{{trade.percentage}}%</p>
+                                    <p>{{trade.rate | uppercase}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class=" bottom-item-data-trade-container" [class.animationBottomTrade]="index">
+                            <div class="d-flex space-between items-bottom-trade">
+                                <div *ngFor="let trade of trades[1].farms; let i = index">
+                                    <p>{{trade.token | uppercase}}</p>
+                                    <p>{{trade.percentage}}%</p>
+                                    <p>{{trade.rate}}</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+    </div>
+</section>
+            
+            
