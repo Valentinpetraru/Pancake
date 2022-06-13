@@ -115,6 +115,19 @@ a{
 }
 
 
+/*TOGGLE COLOR FILL ARROW SVG PAGINATION*/
+.back-ahead-avilable{
+    fill: rgb(31, 199, 212);
+}
+
+.percentage-positive{
+     color: rgb(49, 208, 170);
+}
+
+.percentage-negative{
+     color: rgb(237, 75, 158);
+}
+
 @media only screen and (max-width: 900px) {
 
     .th-price-change, .td-price-change{
