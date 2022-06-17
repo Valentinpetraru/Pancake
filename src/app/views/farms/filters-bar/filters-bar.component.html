@@ -1,0 +1,51 @@
+<div class="table-filter-container d-flex space-between wrap" >
+        <div class="filter-left ">
+            <div class="item-left d-flex center vert-center wrap">
+                <div class="container-switch-style d-flex" style="column-gap: 1rem">
+                    <div class="container-svg-list-card-filter-svg">
+                        <img (click)="showCard('card')" class="card-filter-svg" [class.active-component-style]="activeCompNav" src="../../../assets/farms/filter-farms/card-filter.svg" alt="card">
+                    </div>
+                    <div class="container-svg-list-card-filter-svg">
+                        <img (click)="showTable('table')"  class="list-filter-svg" [class.active-component-style]="!activeCompNav" src="../../../assets/farms/filter-farms/list-filter.svg" alt="list">
+                    </div>
+                </div>
+                <div class="container-toggle-text-staked d-flex vert-center">
+                    <div class="container-staked-farms-toggle d-flex" [class.newColorChecked]="toggleColor">
+                        <input [checked]="toggleColor" scale="sm" type="checkbox"  id="staked-only-farms" class="toggle-staked-farms"  (change)="changeColorTogle()" >
+                        <div class="slider-toggle"></div>
+                    </div>
+                     <p>Staked only</p>
+                </div>
+                <div class="container-live-finished-toggle">
+                        <a class="farms-link-live switch-live-finished">Live</a>
+                        <span class="container-link-finished">
+                            <a class="link-finished">Finished</a>
+                        </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="filter-right d-flex">
+            <div class="container-sort-by">
+                <div style="font-size: 12px">SORT BY</div>
+                <div class="container-list-item d-flex space-between center"[class.bottom-border-radius]="showOptions" (click)="show($event)" style="position: relative">
+                    <img src="../../../assets/farms/filter-farms/arrow-sort-by.svg" alt="" style="order: 2">
+                    <div style="font-size: 16px; order: 1;" >{{firstOption}}</div>
+                    <ul class="sub-options-sort-by d-flex column " [class.show-options-sort]="showOptions">
+                        <li *ngFor="let option of options" (click)="changeOption(option)">{{option}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-search">
+                <div style="font-size: 12px">SEARCH</div>
+                <div class="container-search-input d-flex">
+                    <input class="search-bar" type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search Farms">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+

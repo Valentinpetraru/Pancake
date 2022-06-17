@@ -1,3 +1,44 @@
+
+
+
+
+
+.tot{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+     position: fixed;
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0;
+   z-index: 9999999;
+}
+
+.tot::-webkit-scrollbar {
+    width: 0px;}
+
+
+.tot::-webkit-scrollbar-thumb{
+  background:transparent;
+   width: 0;
+}
+
+
+
+.tot::-webkit-scrollbar-track {
+    background-color: transparent;
+   width: 0;
+}
+
+
+
+
+
+
 .container{
   overflow: hidden;
     background: rgb(255, 255, 255);
@@ -9,6 +50,7 @@
     z-index: 100;
     width: fit-content;
     min-width: 320px;
+
 }
 
 .up{

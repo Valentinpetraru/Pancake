@@ -1,0 +1,432 @@
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+/* Toolbar Start */
+.farms-container, .pools-container{
+    margin-right: 20px;
+}
+
+.link-farms, .link-pools{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+}
+
+.link-farms{
+    color: #7645D9
+}
+
+/* ::before, ::after{
+    box-sizing: border-box;
+}
+.link-farms::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+     height: 4px;
+    width: 90%;
+    background-color: rgb(31, 199, 212);
+   
+    border-radius: 2px 2px 0px 0px;
+} */
+
+
+.test{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(31, 199, 212);
+     border-radius: 2px 2px 0px 0px;
+}
+
+ .pools-container:hover{
+    background-color: #EFF4F5;
+}
+
+.farms-container:hover{
+    background-color: #EFF4F5;
+}
+
+/* Tollbar ends */
+
+
+
+/* FARMS Start */
+.farms-title-container{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+}
+
+
+.container-title-sub-link{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 64px;
+    color: rgb(118, 69, 2017);
+    line-height: 70.4px;
+    vertical-align:baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 0px 0px 24px;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 24px;
+    line-height: 26.4px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    color: #280d5f;
+    font-weight: 600;
+    text-align: start;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.link-comunity-actions{
+    color: rgb(31, 199, 212);
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.48px;
+    word-spacing: 0px;
+    margin: 0px 4px 0px 0px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+    
+    .svg-forms-link{
+        filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(3878%) hue-rotate(139deg) brightness(86%) contrast(91%);
+        font-weight: 600;
+    }
+  
+    
+/* Farms end */
+
+/* TABLE START */
+
+.table-container{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color: #FAF9FA;
+    
+}
+
+.table-filter-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* TABLE ENDS */
+
+.item-left{
+    column-gap: .5rem;
+}
+.card-filter-svg, .list-filter-svg{
+    filter: invert(96%) sepia(0%) saturate(5894%) hue-rotate(257deg) brightness(84%) contrast(86%);
+}
+
+.container-svg-list-card-filter-svg{
+    cursor: pointer;
+}
+/* SWITCH  small toogle STart */
+
+.container-staked-farms-toggle{
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(238, 234, 244);
+    border-radius: 24px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    cursor: pointer;
+    display: inline-flex;
+    height: 20px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+    width: 36px;
+}
+
+.toggle-staked-farms{
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+   
+}
+
+.slider-toggle{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: left 200ms ease-in 0s;
+    width: 16px;
+    z-index: 1;
+    
+}
+
+.toggle-staked-farms:hover + .slider-toggle{
+    box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+    
+}
+.toggle-staked-farms:checked + .slider-toggle{
+    left: calc(100% - 18px)!important;
+    
+}
+
+/*Adding removing background color on toggling*/
+.newColorChecked{
+    background-color: rgb(49, 208, 170);
+}
+
+
+.container-toggle-text-staked > p{
+    color: rgb(40, 13, 95);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+/* Swith toogle small ends */
+
+/* Switch toggle big start */
+.container-live-finished-toggle{
+    margin-left: 16px;
+    background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgb(215, 202, 236);
+    width: auto;
+    cursor: pointer;
+     overflow: hidden;
+    
+}
+
+.container-live-finished-toggle a{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 600;
+    color: rgb(122, 110, 170);
+   
+}
+
+
+.farms-link-live{
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    -webkit-box-pack: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    
+}
+
+.link-finished{
+    border-radius: 16px;
+}
+
+/*Class for router link*/
+.switch-live-finished{
+     background-color: rgb(122, 110, 170);
+     color: rgb(255, 255, 255)!important;
+     height: 100%;
+     padding: .5rem;  
+}
+
+/* Switch toggle big ends */
+
+/* Sorte LIST starts */
+
+.container-search{
+    margin-left: 16px;
+}
+.container-list-item{
+    width: 100%;
+    min-width: 168px;
+    height: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    padding: 0px 16px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    border: 1px solid rgb(215, 202, 236);
+    border-radius: 16px;
+    background: rgb(238, 234, 244);
+    transition: border-radius 0.15s ease 0s;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-bar{
+     width: 100%;
+    max-width: 245px;
+    height: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    padding: 0px 16px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    border: 1px solid rgb(215, 202, 236);
+    border-radius: 16px;
+    background: rgb(238, 234, 244);
+    transition: border-radius 0.15s ease 0s;
+    position: relative;
+}
+
+.search-bar:focus{
+outline:1px solid rgb(118 69 217); 
+box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.search-bar[type="text"]{
+    font-size: 16px;
+    font-weight:500;
+    color:rgb(40, 13, 95);
+
+}
+/* Sorte LIST ends */
+
+
+
+/*SORT BY OPTION*/
+.sub-options-sort-by{
+    height: 189px;
+    width: 100%;
+    z-index: 10;
+    background: rgb(238, 234, 244);
+    position: absolute;
+    top: 39px;
+    left: 0;
+    border: 1px solid rgb(215, 202, 236);
+    border-radius: 0  0px 16px 16px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px, rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+    -webkit-box-pack: justify;
+    cursor: pointer;
+    justify-content: start;
+    display: none;
+   
+    border-width: 0px 1px 1px;
+    border-style: solid;
+    border-color: rgb(215, 202, 236);
+    border-image: initial;
+    overflow: hidden;
+}
+.sub-options-sort-by li{
+    padding: .6rem 1.1rem .6rem 1.1rem;
+    list-style: none;
+    color:#280d5f;
+    font-weight: 400px;
+}
+
+.sub-options-sort-by li:hover{
+    background-color: #d7caec
+}
+
+
+.bottom-border-radius{
+    border-radius: 16px 16px 0 0;
+}
+
+.show-options-sort{
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width: 572px) {
+    .filter-left{
+        width: 100%;
+    }
+    .item-left{
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .grid-container{
+        grid-template-columns: 50% 50%;
+       
+
+    }
+    .core-container{
+    display: block;
+    
+    }
+ 
+}
+
+
+@media only screen and (max-width: 412px){
+      .container-live-finished-toggle{
+        margin-top: 16px!important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .container-toolbar-farms-pools{
+        justify-content: start;
+    }
+    .link-comunity-actions{
+        margin-top: 0;
+       
+    }
+   
+  
+
+}
+.active-component-style{
+    filter: invert(94%) sepia(92%) saturate(7367%) hue-rotate(146deg) brightness(87%) contrast(88%);
+}
+
+
+
+.search-results{
+    height: 100%;
+    overflow-y: scroll;
+}

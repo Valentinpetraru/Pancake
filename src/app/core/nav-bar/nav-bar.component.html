@@ -1,13 +1,22 @@
+
+
+
+
+
+<cake-connect-popup *ngIf="connectWallet" (closeWallet)="closeWallet($event)" style="position: absolute; z-index: 999999999;"></cake-connect-popup>
+<cake-settings *ngIf="settings" (valueCloseSettings)="closeSettings($event)"></cake-settings>
+
+
 <nav class="container-nav-bar">
 
   <div class="flex-left">
     <div class="container-logo-menu-left">
       <!--Containers logo desktop tablet mobile-->
-      <div class="container-logo-text">
-        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; " alt="">
+      <div class="container-logo-text" routerLink="/">
+        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; cursor: pointer; " alt="">
       </div>
-      <div class="container-logo-mobile">
-        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px;" alt="">
+      <div class="container-logo-mobile" routerLink="/">
+        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px; cursor: pointer" alt="">
       </div>
       <!--Container -nav-menu-items-left-->
       <div class="container-nav-menu-items-left">
@@ -27,7 +36,7 @@
              <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[1].iconFooterPath" alt="">
             </div>
-            <div class="nav-item" #earn>Earn</div>
+            <div class="nav-item" #earn routerLink="/farms">Earn</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[1].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
         </div>
@@ -37,7 +46,7 @@
             <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[2].iconFooterPath" alt="">
             </div>
-            <div class="nav-item" #win>Win</div>
+            <div class="nav-item" #win routerLink="/swap">Win</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[2].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
         </div>
@@ -56,7 +65,7 @@
           <div  class="nav-item dots" #dots data-menu="dots">
             <img src="../../../assets/nav-bar/dots-nav-bar.svg" style=" width: 20px;" alt="">
           </div>
-          <cake-sub-menu *ngIf="subMenu[4].visibility" [menuChoosen]="menuSelected  "></cake-sub-menu>
+          <cake-sub-menu *ngIf="subMenu[4].visibility" [menuChoosen]="menuSelected"  class="sub-menu-mobile-dots"></cake-sub-menu>
         </div>
       </div>
     </div>
@@ -66,18 +75,18 @@
 
 
   <div class="flex-right">
-    <div class="container-currency-rabbit-nav-left">
+    <div class="container-currency-rabbit-nav-left" style="cursor: pointer">
       <div>
-        <img src="../../../assets/nav-bar/rabbit-right-icon.svg" style="height:24px; width: 24px;" alt="">
+        <img class="img-banny-nav-right" src="../../../assets/nav-bar/rabbit-right-icon.svg"  alt="">
       </div>
-      <p>${{currencyNavBar}}</p>
+      <p>${{tradeTokenNav}}</p>
     </div>
 
 
 
 
     <div class="container-earth-languages" (click)="showLanguages()">
-      <div>
+      <div style="cursor: pointer">
         <img class="svg-earth-gear" src="../../../assets/nav-bar/earth-nav-bar.svg" alt=""
           style="height:24px; width: 24px;">
       </div>
@@ -87,18 +96,14 @@
     </div>
 
 
-    <div (click)="openOverlay()">
+    <div (click)="openSettings()" style="cursor: pointer">
       <img class="svg-earth-gear" src="../../../assets/nav-bar/gear-nav-bar.svg" alt=""
         style="height:24px; width: 24px; ">
     </div>
-    <button class="btn-connect-wallet">{{textConnectWallet}}</button>
+    <button class="btn-connect-wallet" (click)="openWallet()">{{textConnectWallet}}</button>
   </div>
 </nav>
 
 
 
-<div #overlay class="overlay" [class.showOverlay]="stateOverlayNavFooter" (click)="closeOverlay($event)" >
 
-
-
-</div>

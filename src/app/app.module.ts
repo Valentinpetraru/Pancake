@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogsComponent } from './views/blogs/blogs.component';
@@ -26,7 +25,6 @@ import { SelectBarComponent } from './shared/select-bar/select-bar.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { PopupNavBarComponent } from './shared/popup-nav-bar/popup-nav-bar.component';
 import { CardTradeComponent } from './shared/card-trade/card-trade.component';
-import { CardPredictionComponent } from './shared/card-prediction/card-prediction.component';
 import { CardHomepageComponent } from './shared/card-homepage/card-homepage.component';
 import { CardCollectionComponent } from './shared/card-collection/card-collection.component';
 import { ButtonBasicComponent } from './shared/button-basic/button-basic.component';
@@ -45,7 +43,6 @@ import { ContentTextComponent } from './views/swap/trading-competition/finished/
 import { CalcComponent } from './views/swap/trading-competition/finished/calc/calc.component';
 import { ComComponent } from './views/swap/trading-competition/finished/com/com.component';
 import { MessageComponent } from './views/swap/trading-competition/finished/message/message.component';
-import { PnacardComponent } from './views/swap/trading-competition/finished/pnacard/pnacard.component';
 import { DetailsComponent } from './views/swap/trading-competition/finished/details/details.component';
 import { TablePrizeTeamComponent } from './views/swap/trading-competition/finished/table-prize-team/table-prize-team.component';
 import { StepCardComponent } from './views/lottery/step-card/step-card.component';
@@ -62,9 +59,6 @@ import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-c
 import { SubMenuComponent } from './core/nav-bar/sub-menu/sub-menu/sub-menu.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
 import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
-import { IfoCardsComponent } from './views/ifo/ifo-shared/ifo-cards/ifo-cards.component';
-import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.component';
-import { IfoMainComponent } from './views/ifo/ifo-shared/ifo-main/ifo-main.component';
 
 
 @NgModule({
@@ -93,7 +87,6 @@ import { IfoMainComponent } from './views/ifo/ifo-shared/ifo-main/ifo-main.compo
     SearchBarComponent,
     PopupNavBarComponent,
     CardTradeComponent,
-    CardPredictionComponent,
     CardHomepageComponent,
     CardCollectionComponent,
     ButtonBasicComponent,
@@ -113,7 +106,6 @@ import { IfoMainComponent } from './views/ifo/ifo-shared/ifo-main/ifo-main.compo
     CalcComponent,
     ComComponent,
     MessageComponent,
-    PnacardComponent,
     DetailsComponent,
     TablePrizeTeamComponent,
     StepCardComponent,
@@ -130,16 +122,25 @@ import { IfoMainComponent } from './views/ifo/ifo-shared/ifo-main/ifo-main.compo
     EarnSectionComponent,
     SectionCakeMakesComponent,
     PatataInSecondsComponent,
-    IfoCardsComponent,
-    IfoCakeComponent,
-    IfoMainComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ModuleSharedModule,
+    InfiniteScrollModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [
+    FarmsPoolsFiltersToolbarService,
+    PrizeService,
+    InfoApiService,
+    ApiService
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

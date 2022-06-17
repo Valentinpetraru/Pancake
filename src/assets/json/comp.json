@@ -1,0 +1,139 @@
+[
+   {
+      "status": "first",
+      "rank": "1",
+      "premio": "GOLD",
+      "split": "$10.800",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-champion-gold.svg",
+      "achiv": "+2.500",
+      "nft": true
+    },
+   {
+      "status": "first",
+      "rank": "2 ~ 10",
+      "premio": "SILVER",
+      "split": "$25000",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-10-gold.svg",
+      "achiv": "+1.250",
+      "nft": true
+    },
+   {
+      "status": "first",
+      "rank": "11 ~ 100",
+      "premio": "BRONZE",
+      "split": "$21.600",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-100-gold.svg",
+      "achiv": "+1.000",
+      "nft": true
+    },
+   {
+      "status": "first",
+      "rank": "101 ~ 500",
+      "premio": "PURPLE",
+      "split": "$14.400",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-500-gold.svg",
+      "achiv": " +800 ",
+      "nft": false
+    },
+   {
+      "status": "first",
+      "rank": "501+",
+      "premio": "TEAL",
+      "split": "$0",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-participant-gold.svg",
+      "achiv": "+500",
+      "nft": false
+    },
+   {
+      "status": "second",
+      "rank": "1",
+      "premio": "GOLD",
+      "split": "$5.400",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-champion-silver.svg",
+      "achiv": "+2.250",
+      "nft": true
+    },
+   {
+      "status": "second",
+      "rank": "2 ~ 10",
+      "premio": "SILVER",
+      "split": "$12.600",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-10-silver.svg",
+      "achiv": "+1.000",
+      "nft": true
+    },
+   {
+      "status": "second",
+      "rank": "11 ~ 100",
+      "premio": "BRONZE",
+      "split": "$10.800",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-100-silver.svg",
+      "achiv": "+850",
+      "nft": true
+    },
+   {
+      "status": "second",
+      "rank": "101 ~ 500",
+      "premio": "PURPLE",
+      "split": "$7.200",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-500-silver.svg",
+      "achiv": "+500",
+      "nft": false
+    },
+   {
+      "status": "second",
+      "rank": "501+",
+      "premio": "TEAL",
+      "split": "$0",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-participant-silver.svg",
+      "achiv": "+250",
+      "nft": false
+    },
+   {
+      "status": "third",
+      "rank": "1",
+      "premio": "GOLD",
+      "split": "$1.800",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-champion-bronze.svg",
+      "achiv": "+2.100",
+      "nft": true
+    },
+   {
+      "status": "third",
+      "rank": "2 ~ 10",
+      "premio": "SILVER",
+      "split": "$4.200",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-10-bronze.svg",
+      "achiv": "+850",
+      "nft": true
+    },
+   {
+      "status": "third",
+      "rank": "11 ~ 100",
+      "premio": "BRONZE",
+      "split": "$3.600",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-100-bronze.svg",
+      "achiv": "+500",
+      "nft": true
+    },
+   {
+      "status": "third",
+      "rank": "101 ~ 500",
+      "premio": "PURPLE",
+      "split": "$2.400",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-top-500-bronze.svg",
+      "achiv": "+250",
+      "nft": false
+    },
+   {
+      "status": "third",
+      "rank": "501+",
+      "premio": "TEAL",
+      "split": "$ 0",
+      "prizes": "https://pancakeswap.finance/images/achievements/MoD-participant-bronze.svg",
+      "achiv": "+100",
+      "nft": false
+    }
+
+]
+

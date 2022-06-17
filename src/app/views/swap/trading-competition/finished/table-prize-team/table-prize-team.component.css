@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
     padding: 1px 1px 3px;
-    
+
   }
 
   .container{
@@ -177,5 +177,31 @@ th{
 }
 }
 
+.d{
+  font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
+
+.gold
+{color: rgb(255, 191, 51);
+}
+
+.silver{
+color: rgb(193, 193, 193);
+}
+
+.bronze{
+  color: rgb(231, 149, 89);
+}
+
+.purple{
+  color: rgb(165, 124, 253);
+}
+
+.teal{
+color: rgb(76, 210, 221);
+}
 

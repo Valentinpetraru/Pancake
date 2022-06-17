@@ -1,0 +1,32 @@
+.contenitore-padding-vertical{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 4;
+    background: rgb(250, 249, 250);
+    padding: 14px 0px 48px;
+      background:  linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+
+  }
+
+  .contenitore-padding-margin{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    min-height: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .contenitore-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }

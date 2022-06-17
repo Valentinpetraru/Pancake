@@ -1,7 +1,342 @@
-.home {
-    display: flex;
-    align-content: center;
 
-    justify-content: center;
+.container-totale{
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+      padding: 48px 0px;
+      position: relative;
     flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    height: 427px;
 }
+
+.container-shadow{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+svg{
+    height: 400%;
+    width: 400%;
+}
+
+
+.container-text{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+h1{
+  font-size: 40px;
+  font-weight: 600;
+    line-height: 1.1;
+        margin-bottom: 24px;
+        color: white;
+}
+
+.uno{
+  color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+}
+
+.due{
+  color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+
+.tre{
+  color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+button{
+  position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    z-index: 9;
+    margin-top: 24px;
+}
+
+
+
+button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+.contenitore-patate
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+display: flex;
+  max-width: 1200px;
+  padding-left: 24px;
+    padding-right: 24px;
+
+
+}
+
+.cont-inside{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+      position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.misure{
+      position: relative;
+  height: 256px;
+}
+
+
+
+.one img, .two img, .three img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.four img, .five img, .six img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.right{
+  display: flex;
+    position: absolute;
+    right: -900px;
+    bottom: 0px;
+
+}
+
+
+
+@keyframes uno  {
+0% {
+    transform: translate(0px, 0px);
+}
+
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+
+@keyframes due  {
+0% {
+    transform: translate(0px, 0px);
+}
+
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+@keyframes tre  {
+0% {
+    transform: translate(0px, 0px);
+}
+
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+.one img{
+  animation: 3s ease-in-out 0.66s infinite normal none running uno;
+}
+
+.two img{
+  animation: 3s ease-in-out 0.66s infinite normal none running due;
+}
+
+.three img{
+  animation: 3s ease-in-out 0.33s infinite normal none running tre;
+}
+
+
+
+
+
+@keyframes quattro  {
+0% {
+    transform: translate(0px, 0px);
+}
+
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+
+@keyframes cinque {
+0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+@keyframes sei {
+0% {
+    transform: translate(0px, 0px);
+}
+
+50% {
+    transform: translate(5px, 10px);
+}
+
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
+
+.four img{
+  animation: 3s ease-in-out 0.33s infinite normal none running quattro;
+}
+.five img{
+  animation: 3s ease-in-out 0.33s infinite normal none running cinque;
+}
+.six img{
+  animation: 3s ease-in-out 0.33s infinite normal none running sei;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+.one img, .two img, .three img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.four img, .five img, .six img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+}
+
+}
+@media screen and (max-width: 1145px) {
+.one img, .two img, .three img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.four img, .five img, .six img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+}
+
+}
+@media screen and (max-width: 1013px) {
+.one img, .two img, .three img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.four img, .five img, .six img{
+  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -280px;
+}
+}
+
+@media screen and (max-width: 910px) {
+.right, .left {
+  display: none;
+}
+}
+
+

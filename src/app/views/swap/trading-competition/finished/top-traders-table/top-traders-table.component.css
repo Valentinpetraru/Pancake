@@ -301,7 +301,18 @@ align-items: center;
 
 
 
- @media screen and (max-width: 455px) {
+ @media screen and (max-width: 364px) {
+
+  .line{
+    display: block;
+  }
+
+
+  }
+
+
+
+ @media screen and (max-width: 374px) {
 
   .line{
     display: block;
@@ -309,4 +320,17 @@ align-items: center;
 
 
 
+  .switch{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  }
+
+
+
+
+
+
+

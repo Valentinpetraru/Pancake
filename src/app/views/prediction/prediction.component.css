@@ -1,0 +1,177 @@
+
+
+
+.container{
+  background-color: blueviolet;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+
+}
+
+.right
+{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+.middle{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+
+
+
+.later{
+  display: flex;
+}
+
+
+.slides{
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+}
+
+
+.slides::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+@media  screen and (max-width: 960px ) {
+  .mezzo{
+    display: none;
+  }
+}
+
+@media  screen and (max-width: 525px ) {
+  .right{
+    flex-direction: row-reverse;
+  }
+}
+
+
+@media  screen and (max-width: 525px ) {
+  .right{
+    gap: 20px;
+  }
+
+}
+
+@media  screen and (max-width: 378px ) {
+  .right{
+    gap: 12px;
+  }
+}
+@media  screen and (max-width: 372px ) {
+  .right{
+    gap: 10px;
+  }
+}
+
+
+@media  screen and (max-width: 368px ) {
+  .right{
+    gap: 6px;
+  }
+}
+
+@media  screen and (max-width: 362px ) {
+  .right{
+    gap: 3px;
+  }
+}
+
+
+@media  screen and (max-width: 392px ) {
+  .slides{
+    padding: 20px;
+  }
+}
+
+
+
+.farms-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.prediction-container{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 4px solid rgb(31, 199,212) ;
+}
+
+
+.link-prediction{
+    color: #7645D9;
+    font-weight: 600;
+
+
+}
+
+
+ .lottery-container:hover{
+    background-color: #EFF4F5;
+}
+
+.farms-container:hover{
+    background-color: #EFF4F5;
+}
+.trading-container:hover{
+    background-color: #EFF4F5;
+}
+
+

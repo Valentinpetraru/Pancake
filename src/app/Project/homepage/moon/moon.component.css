@@ -1,42 +1,44 @@
-@import url(../../../../styles.css);
 
 
+ .contenitore-padding-vertical{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 4;
+    background: rgb(250, 249, 250);
+    padding: 14px 0px 48px;
+      background:  linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);;
 
- .contenitore-generale{
-   height: auto;
-   width: 100vw;
   }
 
+  .contenitore-padding-margin{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    min-height: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
- .contenitore-secondario{
-   width: 100vw;
-   padding-top: 48px;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: var(--primary-shape-color-light);
-   position: relative;
-   z-index: 1;
-   padding-left: 24px;
-   padding-right: 24px;
+  .contenitore-margin-top{
+    margin-top: 64px;
+  }
 
- }
+  .contenitore-content{
+    display: flex;
+    align-items: center;
+
+  }
 
  #timer{
-   padding-top: 20px;
+   margin-top: 20px;
  }
 
- .contenitore-ternario{
-   width: 100%;
-   display: flex;
-   padding-bottom: 48px;
-   margin-top: 30px ;
-   width: 1152px;
-   height: auto;
-   align-items: center;
-  
- }
+
 
  .title{
    color:rgb(118, 69, 217) ;
@@ -108,15 +110,72 @@
 
 
 
-
 .contenitore-svg{
-  width: 70%;
-  height: 100%;
+  flex: 1 1 0%;
+  position: relative;
 
+      height: 100%;
+    width: 100%;
+
+}
+
+
+.contenitore-testo{
+  flex: 1 1 0%;
+
+}
+
+
+
+@keyframes su {
+ 0%{
+   transform: translate(0px, 0px);
+ }
+
+ 50%{
+   transform: translate(-5px, -5px);
+ }
+
+ 100%{
+       transform: translate(0px, 0px);
+ }
 }
 
 .contenitore-svg img {
-  width: 100%;
-  height: 100%;
+      width: 100%;
+    animation: 3.5s ease-in-out 0s infinite normal none running su;
+    will-change: transform;
 }
 
+ @media screen and (max-width: 690px) {
+   .contenitore-content{
+       flex-direction: column-reverse;
+   }
+
+   .contenitore-svg img {
+     width: 192px;
+     height: auto;
+   }
+
+   .contenitore-svg{
+     display: flex;
+     justify-content: flex-end;
+   }
+
+  }
+
+ @media screen and (max-width: 400px) {
+   .title{
+     font-size: 48px;
+   }
+
+   #description{
+     font-size: 20px;
+   }
+
+    .contenitore-margin-top{
+    margin-top: 0;
+  }
+
+
+  }

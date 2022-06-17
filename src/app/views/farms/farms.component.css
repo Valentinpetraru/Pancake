@@ -1,0 +1,200 @@
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.star{
+    justify-content: start;
+}
+
+.vert-center{
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+/* Toolbar Start */
+.farms-container, .pools-container{
+    margin-right: 20px;
+}
+
+.link-farms, .link-pools{
+    padding: .5rem .25rem .5rem .25rem;
+    position: relative;
+    font-weight: 600;
+    color:rgb(122, 110, 170);
+    cursor: pointer;
+}
+
+.link-farms{
+    color: #7645D9
+}
+
+/* ::before, ::after{
+    box-sizing: border-box;
+}
+.link-farms::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+     height: 4px;
+    width: 90%;
+    background-color: rgb(31, 199, 212);
+   
+    border-radius: 2px 2px 0px 0px;
+} */
+
+
+.test{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(31, 199, 212);
+     border-radius: 2px 2px 0px 0px;
+}
+
+ .pools-container:hover{
+    background-color: #EFF4F5;
+}
+
+.farms-container:hover{
+    background-color: #EFF4F5;
+}
+
+/* Tollbar ends */
+
+
+
+/* FARMS Start */
+.farms-title-container{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+}
+
+
+.container-title-sub-link{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 64px;
+    color: rgb(118, 69, 2017);
+    line-height: 70.4px;
+    vertical-align:baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 0px 0px 24px;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 24px;
+    line-height: 26.4px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    color: #280d5f;
+    font-weight: 600;
+    text-align: start;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.link-comunity-actions{
+    color: rgb(31, 199, 212);
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.48px;
+    word-spacing: 0px;
+    margin: 0px 4px 0px 0px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+    
+    .svg-forms-link{
+        filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(3878%) hue-rotate(139deg) brightness(86%) contrast(91%);
+        font-weight: 600;
+    }
+  
+    
+/* Farms end */
+
+/* TABLE START */
+
+.table-container{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color: #FAF9FA;
+    
+}
+
+.table-filter-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* TABLE ENDS */
+
+.card-filter-svg, .list-filter-svg{
+    filter: invert(96%) sepia(0%) saturate(5894%) hue-rotate(257deg) brightness(84%) contrast(86%);
+}
+
+/* SWITCH  small toogle STart */
+
+@media only screen and (max-width: 968px){
+    .core-container, .liquidy-container, .container-multiple{
+        display: none;
+    }
+    .text-details{
+        display: block;
+    }
+    .grid-container{
+        grid-template-columns: 45% 15% 20% 20%;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .filter-left{
+        width: 100%;
+    }
+    .item-left{
+        justify-content: space-between;
+    }
+
+    .grid-container{
+        grid-template-columns: 50% 50%;
+
+    }
+    .core-container{
+    display: block;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 370px) {
+    .container-toolbar-farms-pools{
+        justify-content: start;
+    }
+    .link-comunity-actions{
+        margin-top: 0;
+       
+    }
+}
+
+

@@ -306,3 +306,74 @@ background: none;
     transform: translate(0px, -1px);
 
   }
+
+   @media screen and (max-width: 468px) {
+
+ .first-section{
+   width: 300px;
+ }
+
+ .c img {
+   width: 90px;
+   height: auto;
+ }
+
+ .due{
+   right: 5px;
+   bottom: 48px;
+ }
+
+ .tre{
+   bottom: 63px;
+   left: 10px;
+ }
+
+ .uno{
+   bottom: 70px;
+   left: 110px;
+ }
+
+  }
+   @media screen and (max-width: 410px) {
+
+     .c img {
+   width: 80px;
+   height: auto;
+ }
+
+  .due{
+   right: 0px;
+   bottom: 40px;
+ }
+
+ .tre{
+   bottom: 50px;
+   left: 8px;
+ }
+
+ .uno{
+   bottom: 70px;
+   left: 90px;
+ }
+
+
+ .first-section{
+   width: 280px;
+
+ }
+
+ .second-section{
+   gap: 20px;
+ }
+
+  }
+
+
+
+   @media screen and (max-width: 396px) {
+
+ .first-section{
+   width: 250px;
+ }
+
+  }

@@ -1,9 +1,10 @@
 .container-banner{
   display: flex;
   justify-content: center;
-  width: 100vw;
+  padding-top: 40px;
   padding-left: 43px;
   padding-right: 43px;
+  background:  linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);;
 }
 
     .container{
@@ -48,13 +49,13 @@
     #timer h2{
 
        background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
-       -webkit-background-clip: text;
        background-clip: text;
        -webkit-text-fill-color: transparent;
        display: block;
        font-weight: 600;
        line-height: 1.1;
        font-size: 32px;
+       height: 36px;
     }
 
     #m,#h,#s{
@@ -62,7 +63,7 @@
     }
 
     #m span,#h span,#s span{
-      margin-left: -8px;
+      margin-left: -4px;
       font-size: 16px;
     }
 
@@ -88,6 +89,7 @@
     }
 
     button{
+      position: relative;
         background-color: rgb(31, 199, 212);
         padding: 0px 24px;
         height: 48px;
@@ -99,6 +101,7 @@
         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
         font-weight: 600;
         cursor: pointer;
+        z-index: 2;
         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     }
 
@@ -106,6 +109,7 @@
         text-decoration: none;
         color: white;
         fill: white;
+
     }
 
 
@@ -172,3 +176,13 @@
           display: none;
       }
   }
+
+
+.left-part button svg{
+  display: flex;
+  align-items: center;
+}
+.left-part button {
+  display: flex;
+  align-items: center;
+}

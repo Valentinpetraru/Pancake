@@ -1,0 +1,84 @@
+.color-container{
+  background: linear-gradient(rgb(83, 222, 233) 0%, rgb(118, 69, 217) 100%);
+    border-radius: 16px;
+    padding: 2px;
+
+}
+
+.container{
+  background: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+  color: rgb(40, 13, 95);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.enter-up{
+      position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(49, 208, 170);
+    color: white;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.enter-down{
+  position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(237, 75, 158);
+    color: white;
+    width: 100%;
+}
+
+.enter:hover{
+  opacity: 0.7;
+}

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopTradersTableComponent implements OnInit {
 
+  see:boolean = false;
   constructor() { }
 
   ngOnInit(): void {

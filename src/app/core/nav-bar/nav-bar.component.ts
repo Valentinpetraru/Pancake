@@ -4,6 +4,7 @@ import {
   OnInit
 } from '@angular/core';
 import { NavMenu } from 'src/app/models/nav-bar/nav-bar-items';
+import { WebsocketService } from 'src/app/services/websocket.service';
 
 import {
   SubMenu
@@ -17,13 +18,18 @@ import {
 
 export class NavBarComponent implements OnInit {
 
+  connectWallet: boolean = false;
+  settings: boolean = false;
+
+
+
   @HostListener('window:click', ['$event'])
   hideLanguages($event: any): void {
     $event.stoPropagation
 
     const elementLang = document.querySelector('.container-earth-languages') as HTMLBodyElement;
 
-    console.log($event.currentTarget)
+    // console.log($event.currentTarget)
     if ($event.target === elementLang.firstChild?.firstChild) {
       this.langState = true;
     } else {
@@ -62,7 +68,7 @@ export class NavBarComponent implements OnInit {
 
   textConnectWallet!: string;
 
-  currencyNavBar: number = 9.222;
+  tradeTokenNav!: number;
 
   langState: boolean = false;
 
@@ -81,32 +87,136 @@ export class NavBarComponent implements OnInit {
   subMenu: SubMenu[] = [{
     nameMenu: 'Trade',
     visibility: false,
-    listItems: ['Swap', 'Limit', 'Liquidy', 'Perpetual'],
+    listItems: [
+      {
+        itemName: 'Swap',
+        routerLink: '/swap',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Limit',
+        routerLink: '/limit',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Liquidity',
+        routerLink: '/liquidity',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Perpetual',
+        routerLink: 'perpetual',
+        routerLinkActive: 'activeLinkNavigation'
+      }
+    ],
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
+
   },
 
   {
     nameMenu: 'Earn',
     visibility: false,
-    listItems: ['Farms', 'Pool'],
+    listItems: [
+      {
+        itemName: 'Farms',
+        routerLink: '/farms',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Pool',
+        routerLink: '/pools',
+        routerLinkActive: 'activeLinkNavigation'
+      }
+    ]
+
   },
 
   {
     nameMenu: 'Win',
     visibility: false,
-    listItems: ['Trading Competition', 'Prediction Beta', 'Lottery'],
+    listItems: [
+      {
+        itemName: 'Trading Competition',
+        routerLink: '/competition',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Prediction Beta',
+        routerLink: '/prediction',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Lottery',
+        routerLink: '/lottery',
+        routerLinkActive: 'activeLinkNavigation'
+      }
+
+    ]
+
   },
 
   {
     nameMenu: 'NFT',
     visibility: false,
-    listItems: ['Overview', 'Collections', 'Activity'],
+    listItems: [
+      {
+        itemName: 'Overview',
+        routerLink: '/overview',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Collections',
+        routerLink: 'collection',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Activity',
+        routerLink: '/activity',
+        routerLinkActive: 'activeLinkNavigation'
+      }
+
+    ]
+
   },
 
   {
     nameMenu: 'dots',
     visibility: false,
-    listItems: ['Info', 'IFO', 'Voting', 'LeaderBoard', 'Blog', 'Docs'],
+    listItems: [
+      {
+        itemName: 'Info',
+        routerLink: '/info',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'IFO',
+        routerLink: '/ifo',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Voting',
+        routerLink: '/voting',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'LeaderBoard',
+        routerLink: '/leaderboard',
+        routerLinkActive: 'activeLinkNavigation'
+      },
+      {
+        itemName: 'Blog',
+        routerLink: '',
+        routerLinkActive: ''
+      },
+      {
+        itemName: 'Docs',
+        routerLink: '',
+        routerLinkActive: ''
+
+      }
+
+    ],
+
     svgPattern: '../../../../../assets/nav-bar/external-sub-menu.svg',
   },
   ];
@@ -142,10 +252,8 @@ export class NavBarComponent implements OnInit {
     '繁體中文',
   ];
 
-  constructor() {
-    setInterval(() => {
-      this.currencyNavBar += 1;
-    }, 3000);
+  constructor(private websocketService: WebsocketService) {
+
 
 
     setInterval(() => {
@@ -157,6 +265,10 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentScreenSize = window.innerWidth;
+
+    this.websocketService.subject.subscribe((data: any) => {
+      this.tradeTokenNav = JSON.parse(data.p)
+    })
   }
 
   // Show submenu on mouseEnter
@@ -198,21 +310,41 @@ export class NavBarComponent implements OnInit {
   }
 
 
-  openOverlay(): void {
-    this.stateOverlayNavFooter = true;
+  // openOverlay(): void {
+  //   this.stateOverlayNavFooter = true;
+  //   document.body.style.overflow = 'hidden';
+  // }
+
+  // closeOverlay(event: any): void {
+  //   if (event.target === document.querySelector('.card') as HTMLDivElement) {
+
+  //   } else {
+  //     this.stateOverlayNavFooter = false;
+  //     document.body.style.overflow = 'visible';
+  //   }
+  // }
+
+  // Function show settings
+  openSettings() {
+    this.settings = !this.settings;
     document.body.style.overflow = 'hidden';
   }
 
-  closeOverlay(event: any): void {
-    if (event.target === document.querySelector('.card') as HTMLDivElement) {
-
-    } else {
-      this.stateOverlayNavFooter = false;
-      document.body.style.overflow = 'visible';
-    }
+  closeSettings(value: boolean) {
+    this.settings = false;
+    document.body.style.overflow = 'visible';
   }
 
+  // Funzione bottone connect wallet
+  openWallet(): void {
+    this.connectWallet = !this.connectWallet;
+    document.body.style.overflow = 'hidden';
+  }
 
+  closeWallet(value: boolean): void {
+    this.connectWallet = value
+    document.body.style.overflow = 'visible';
+  }
 
 }
 

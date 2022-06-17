@@ -1,0 +1,97 @@
+
+.container-cards{
+  display: flex;
+  justify-content: center;
+}
+
+.container-card-grey{
+  height: fit-content;
+    padding: 1px 1px 4px;
+    margin-right: 16px;
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.container{
+
+    overflow: inherit;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 24px;
+    min-width: 280px;
+    width: fit-content;
+    min-height: 168px;
+}
+
+.svg{
+  position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.svg svg{
+  fill:rgb(118, 69, 217);
+}
+
+
+.value{
+      font-weight: 600;
+    line-height: 1.1;
+    font-size: 40px;
+    color: rgb(40, 13, 95);
+    margin-top: 64px;
+}
+
+.status{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  color: rgb(118, 69, 217);
+}
+
+
+.time{
+      color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 927px) {
+
+  .container-cards{
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .container-card-grey{
+    width: 280px;
+    margin-right: 0;
+  }
+
+  .value{
+    margin-top: 0;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    fill: rgb(118, 69, 217);
+  }
+
+  .svg{
+    display: none;
+  }
+
+  .status{
+    font-size: 32px;
+  }
+
+
+}
