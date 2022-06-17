@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'cake-ifo-cake',
@@ -6,10 +6,3 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ifo-cake.component.css']
 })
 export class IfoCakeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}

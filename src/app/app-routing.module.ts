@@ -6,7 +6,6 @@ import { CollectionsComponent } from './views/collections/collections.component'
 import { FarmsComponent } from './views/farms/farms.component';
 import { IfoComponent } from './views/ifo/ifo.component';
 import { InfoComponent } from './views/info/info.component';
-import { TokensComponent } from './views/info/tokens/tokens.component';
 import { LeaderbordComponent } from './views/leaderbord/leaderbord.component';
 import { LimitComponent } from './views/limit/limit.component';
 import { LiquidityComponent } from './views/liquidity/liquidity.component';
@@ -34,11 +33,6 @@ const routes: Routes = [
   {path: 'overview', component: OverviewComponent},
   {path: 'collection', component: CollectionsComponent},
   {path: 'activity', component: ActivityComponent},
-  {path: 'info', component: InfoComponent, children: [
-    {path: 'tokens', component:TokensComponent}
-  ]
-
-  },
   {path: 'ifo', component: IfoComponent},
   {path: 'voting', component: VotingComponent},
   {path: 'leaderboard', component: LeaderbordComponent}

@@ -59,63 +59,6 @@ import { SectionCakeMakesComponent } from './shared/section-cake-makes/section-c
 import { SubMenuComponent } from './core/nav-bar/sub-menu/sub-menu/sub-menu.component';
 import { EarnSectionComponent } from './Project/earn-section/earn-section/earn-section.component';
 import { PatataInSecondsComponent } from './Project/homepage/patata-in-seconds/patata-in-seconds.component';
-import { RankComponent } from './views/swap/trading-competition/finished/rank/rank.component';
-import { SectionOneComponent } from './views/swap/trading-competition/finished/section-one/section-one.component';
-import { SubRowTableComponent } from './views/farms/sub-row-table/sub-row-table.component';
-import { LotteryHowtoplayComponent } from './views/lottery/lottery-howtoplay/lottery-howtoplay.component';
-import { StillGotComponent } from './views/lottery/still-got/still-got.component';
-import { StatsComponent } from './views/lottery/stats/stats.component';
-import { CalendarComponent } from './views/lottery/calendar/calendar.component';
-import { PrizeFundsComponent } from './views/lottery/prize-funds/prize-funds.component';
-import { CriteriaComponent } from './views/lottery/criteria/criteria.component';
-import { ParagraphComponent } from './Project/homepage/paragraph/paragraph.component';
-import { TrustedCardsComponent } from './Project/homepage/trusted-cards/trusted-cards.component';
-import { TrustedPComponent } from './Project/homepage/trusted-p/trusted-p.component';
-import { SupplyComponent } from './Project/homepage/supply/supply.component';
-import { CardComponent } from './views/liquidity/card/card.component';
-import { LaterComponent } from './views/prediction/later/later.component';
-import { PrizePoolComponent } from './views/prediction/prize-pool/prize-pool.component';
-import { TrustedPageComponent } from './Project/homepage/trusted-page/trusted-page.component';
-import { TradePageComponent } from './Project/homepage/trade-page/trade-page.component';
-import { CakeComponent } from './Project/homepage/cake/cake.component';
-import { CriteriaPageComponent } from './views/lottery/criteria-page/criteria-page.component';
-import { PrizePageComponent } from './views/lottery/prize-page/prize-page.component';
-import { LastPageComponent } from './views/lottery/last-page/last-page.component';
-import { FinishPageComponent } from './views/lottery/finish-page/finish-page.component';
-import { CardOwnComponent } from './views/prediction/card-own/card-own.component';
-import { CentralComponent } from './views/prediction/central/central.component';
-import { BnbComponent } from './views/prediction/bnb/bnb.component';
-import { ClockpComponent } from './views/prediction/clockp/clockp.component';
-import { CardsThreeComponent } from './views/prediction/cards-three/cards-three.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ApiService } from './services/api.service';
-import { ModuleSharedModule } from './module-shared/module-shared.module';
-import { FiltersBarComponent } from './views/farms/filters-bar/filters-bar.component';
-import { FarmsPoolsFiltersToolbarService } from './services/farms-pools-filters-toolbar.service';
-import { FormsModule } from '@angular/forms';
-import { SearchFilterPipe } from './pipes/search-filter.pipe';
-import { CardStyleComponent } from './views/farms/card-style/card-style.component';
-import { TableStyleComponent } from './views/farms/table-style/table-style.component';
-import { InfiniteScrollModule } from "ngx-infinite-scroll";
-import { RouterModule } from '@angular/router';
-import { ChartLiquidityComponent } from './views/info/chart-liquidity/chart-liquidity.component';
-import { TopTokensTableComponent } from './views/info/top-tokens-table/top-tokens-table.component';
-import { TopPoolsTableComponent } from './views/info/top-pools-table/top-pools-table.component';
-import { TransactionsTableComponent } from './views/info/transactions-table/transactions-table.component';
-import { SearchNavigationComponent } from './views/info/search-navigation/search-navigation.component';
-import { TokensComponent } from './views/info/tokens/tokens.component';
-
-import { InfoApiService } from './services/info-api.service';
-import { NumberSuffixPipe } from './pipes/number-suffix.pipe';
-
-import { DarkModeToggleComponent } from './shared/toggle/dark-mode-toggle/dark-mode-toggle.component';
-import { PrizeService } from './services/prizes/prize.service';
-import { SectionPancakeMakesComponent } from './Project/section-pancake-makes/section-pancake-makes.component';
-import { ConnectWalletComponent } from './core/nav-bar/connect-wallet/connect-wallet.component';
-import { IfoCardsComponent } from './views/ifo/ifo-shared/ifo-cards/ifo-cards.component';
-import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.component';
-
-
 
 
 @NgModule({
@@ -179,56 +122,6 @@ import { IfoCakeComponent } from './views/ifo/ifo-shared/ifo-cake/ifo-cake.compo
     EarnSectionComponent,
     SectionCakeMakesComponent,
     PatataInSecondsComponent,
-    RankComponent,
-    SectionOneComponent,
-    EarnSectionComponent,
-    SubRowTableComponent,
-    LotteryHowtoplayComponent,
-    StillGotComponent,
-    StatsComponent,
-    CalendarComponent,
-    PrizeFundsComponent,
-    CriteriaComponent,
-    ParagraphComponent,
-    TrustedCardsComponent,
-    TrustedPComponent,
-    SupplyComponent,
-    CardComponent,
-    LaterComponent,
-    PrizePoolComponent,
-    TrustedPageComponent,
-    TradePageComponent,
-    CakeComponent,
-    CriteriaPageComponent,
-    PrizePageComponent,
-    LastPageComponent,
-    FinishPageComponent,
-    CardOwnComponent,
-    CentralComponent,
-    BnbComponent,
-    ClockpComponent,
-    CardsThreeComponent,
-    SubRowTableComponent,
-    FiltersBarComponent,
-    SearchFilterPipe,
-    CardStyleComponent,
-    TableStyleComponent,
-    ChartLiquidityComponent,
-    TopTokensTableComponent,
-    TopPoolsTableComponent,
-    TransactionsTableComponent,
-    SearchNavigationComponent,
-    TokensComponent,
-
-    NumberSuffixPipe,
-
-    DarkModeToggleComponent,
-    SectionCakeMakesComponent,
-    SectionPancakeMakesComponent,
-    ConnectWalletComponent,
-    IfoCardsComponent,
-    IfoCakeComponent
-
 
   ],
   imports: [
