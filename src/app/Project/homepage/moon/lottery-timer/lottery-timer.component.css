@@ -18,6 +18,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        overflow: hidden;
 
 
 
@@ -26,6 +27,8 @@
 
     .left-part{
          margin-right: 20px;
+         position: relative;
+         z-index: 1;
     }
 
 
@@ -90,7 +93,7 @@
 
     button{
       position: relative;
-        background-color: rgb(31, 199, 212);
+        background-color: #1473e6;
         padding: 0px 24px;
         height: 48px;
         border: none;
@@ -132,18 +135,18 @@
         position: absolute;
         left: 0;
         top: 0;
+        z-index: 0;
     }
 
     #first{
         position: absolute;
-        bottom: -3px;
-        max-height: 228px;
-        min-height:130px;
+        bottom: -394px;
         min-width: 100%;
         max-width: 100%;
         right: 0px;
         resize: both;
         display: block;
+        z-index: 0;
 
     }
     /* SVG  */

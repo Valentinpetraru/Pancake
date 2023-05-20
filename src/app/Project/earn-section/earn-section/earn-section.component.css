@@ -17,7 +17,7 @@
 .earn-section{
     padding: 2rem 2rem 3rem 1.5rem;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
-  
+
 }
 
 .wrapper{
@@ -29,7 +29,7 @@
 
 .earn-section
 .flex-container-images{
-  
+
     display: flex;
     justify-content: right;
     align-items: flex-start;
@@ -40,11 +40,11 @@
     position: relative;
     width: 186.97px;
     height: 193.98px;
-    
+
 }
 
 .container-image{
-   position: absolute; 
+   position: absolute;
     width: 186.97px;
     height: 193.98px;
     animation-name: earn-images-section;
@@ -114,8 +114,8 @@ img{
 
 .flex-item-earn-passive > h2 > span{
     color:  rgb(118, 69, 217);
-    
-    
+
+
 }
 
 .flex-item-earn-passive > p{
@@ -137,14 +137,14 @@ img{
     outline: 0px;
     height: 48px;
     padding: 0 1.5rem;
-    background-color: rgb(31, 199, 212);
+    background-color: #1473e6;
     margin-right: 16px;
     color: #fff;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
 
 .link-learn{
-    color: #1fc7d4;
+    color: #1473e6;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -184,15 +184,15 @@ img{
     margin-top: 0;
     opacity: 1;
     transition: margin-top .5s, opacity .5s;
-    
+
 }
 
 .bottom-item-data-trade-container{
     /* background-color: lightcoral; */
     position: absolute;
     width: 100%;
-    margin-top: 80px;   
-    opacity: 0; 
+    margin-top: 80px;
+    opacity: 0;
     transition: margin-top .5s, opacity .5s;
 }
 
@@ -210,7 +210,7 @@ img{
     height: 80px;
     padding-left: 1rem;
     border-left: 1px solid rgb(215, 202, 236);
-    
+
 }
 
 .items-top-trade > div > p:first-child{
@@ -254,17 +254,17 @@ img{
     }
      .container-image{
         width: 375.391px;
-        height: 389.484px;   
+        height: 389.484px;
     }
 
     .container-earnPassive-images{
         display: flex;
          flex-direction: row;
-         
+
          justify-content: center;
     }
-   
-    
+
+
 }
 
 @media (max-width: 852px){

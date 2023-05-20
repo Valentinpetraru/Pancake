@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    background: linear-gradient(rgb(37, 98, 230) 0%, rgb(4, 35, 120) 100%);
     align-items: center;
     z-index: -7;
 }

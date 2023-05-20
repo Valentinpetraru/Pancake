@@ -13,10 +13,12 @@
     <div class="container-logo-menu-left">
       <!--Containers logo desktop tablet mobile-->
       <div class="container-logo-text" routerLink="/">
-        <img src="../../../assets/nav-bar/logo-home.svg" style="height:34px; cursor: pointer; " alt="">
+        <img src="../../../assets/nav-bar/logo.png" style="height:34px; cursor: pointer; " alt="">
+        <div>MOON CLUB</div>
       </div>
       <div class="container-logo-mobile" routerLink="/">
-        <img src="../../../assets/nav-bar/logo-mobile.svg" style="height:34px; cursor: pointer" alt="">
+        <img src="../../../assets/nav-bar/logo.png" style="height:34px; cursor: pointer" alt="">
+
       </div>
       <!--Container -nav-menu-items-left-->
       <div class="container-nav-menu-items-left">
@@ -26,7 +28,7 @@
             <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[0].iconFooterPath" alt="">
             </div>
-            <div class="nav-item " #trade>Trade</div>
+            <div class="nav-item " #trade>Home</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[0].visibility " [menuChoosen]="menuSelected "></cake-sub-menu>
         </div>
@@ -36,7 +38,7 @@
              <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[1].iconFooterPath" alt="">
             </div>
-            <div class="nav-item" #earn routerLink="/farms">Earn</div>
+            <div class="nav-item" #earn routerLink="/farms">Servizi</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[1].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
         </div>
@@ -46,7 +48,7 @@
             <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[2].iconFooterPath" alt="">
             </div>
-            <div class="nav-item" #win routerLink="/swap">Win</div>
+            <div class="nav-item" #win routerLink="/swap">Membership</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[2].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
         </div>
@@ -56,16 +58,9 @@
               <div *ngIf="currentScreenSize <= 576">
               <img [src]="navMenu[3].iconFooterPath" alt="">
             </div>
-            <div class="nav-item" #nft>NFT</div>
+            <div class="nav-item" #nft>BLOG</div>
           </div>
           <cake-sub-menu *ngIf="subMenu[3].visibility" [menuChoosen]="menuSelected "></cake-sub-menu>
-        </div>
-        <!--dots-->
-        <div class="container-dropdown" (mouseenter)="showSubMenu(dots)" (mouseleave)="hideSubMenu(dots)">
-          <div  class="nav-item dots" #dots data-menu="dots">
-            <img src="../../../assets/nav-bar/dots-nav-bar.svg" style=" width: 20px;" alt="">
-          </div>
-          <cake-sub-menu *ngIf="subMenu[4].visibility" [menuChoosen]="menuSelected"  class="sub-menu-mobile-dots"></cake-sub-menu>
         </div>
       </div>
     </div>
@@ -79,7 +74,6 @@
       <div>
         <img class="img-banny-nav-right" src="../../../assets/nav-bar/rabbit-right-icon.svg"  alt="">
       </div>
-      <p>${{tradeTokenNav}}</p>
     </div>
 
 

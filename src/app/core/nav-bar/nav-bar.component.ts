@@ -258,7 +258,7 @@ export class NavBarComponent implements OnInit {
 
     setInterval(() => {
       this.onResize();
-      this.textConnectWallet = (this.currentScreenSize <= 851) ? 'Connect' : 'Connect Wallet';
+      this.textConnectWallet = (this.currentScreenSize <= 851) ? 'Entra' : 'Area Riservata';
     }, 200)
 
   }
